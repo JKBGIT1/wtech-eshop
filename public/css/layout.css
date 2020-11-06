@@ -1,0 +1,218 @@
+html {
+    font-size: 10px;
+}
+
+/* This styles are needed for header */
+/* This styles are needed for navbar */
+button:focus {
+    outline: none;
+}
+
+header {
+    box-shadow: 1px 1px 1px lightgrey;
+}
+
+header .navbar {
+    padding: 0 1.7rem;
+}
+
+header .navbar .navbar-brand {
+    font-size: 2.25rem;
+}
+
+header .navbar .btn-light {
+    line-height: 1;
+    font-size: 2rem;
+    border-radius: .25rem;
+    padding: .25rem .75rem;
+    border: 1px solid transparent;
+}
+
+header .navbar .navbar-nav .nav-link {
+    padding: 0.6rem;
+    color: black;
+    font-size: 1.6rem;
+    line-height: 1;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+}
+
+header .navbar-light .navbar-toggler {
+    color: rgba(0,0,0,1);
+    border-color: rgba(0,0,0,0);
+}
+
+header .navbar .navbar-nav .dropdown-menu {
+    margin: 0;
+    padding: 0;
+    min-width: 100%;
+}
+
+header .navbar .navbar-nav .dropdown-item {
+    font-size: 1.6rem;
+    padding: 0.6rem 2.1rem;
+}
+
+header .navbar #form-inside-navbar {
+    display: none;
+}
+
+header .navbar #form-inside-navbar .form-control {
+    margin: 0 0.5rem;
+    font-size: 1.6rem;
+}
+/* There ends navbar styles */
+header #form-under-navbar .header-search {
+    z-index: 1;
+    width: 100%;
+    position: absolute;
+    background-color: #f8f9fa;
+    border-top: 1px solid #ced4da;
+    box-shadow: 1px 1px 1px lightgrey;
+}
+
+header #form-under-navbar .header-search .btn {
+    /* .header-search is parent div */
+    top: 0; /* Moving from the top of parent div */
+    right: 2px; /* Moving from the right of parent div */
+    font-size: 2rem;
+    position: absolute;
+    display: inline-block;
+}
+
+header #form-under-navbar .header-search .form-control {
+    border: none;
+    font-size: 1.75rem;
+    padding: 2rem 1.2rem;
+    background-color: #f8f9fa;
+}
+/* There ends header styles */
+
+/* This styles are needed for main */
+main {
+    margin: 60px 0 20px 0;
+}
+/* There ends main styles */
+
+/* This styles are needed for footer */
+footer {
+    padding: 2rem 0;
+    background-color: #f8f9fa;
+    box-shadow: -1px -1px 1px lightgrey;
+}
+
+footer .container .row {
+    font-size: 1.6rem;
+}
+
+footer .container .row div ul {
+    margin: 0;
+    list-style: none;
+    padding: 0 0 2rem 0;
+}
+
+footer .container .row div ul li {
+    padding: 0.35rem 0;
+}
+
+footer .container .row div ul li a {
+    color: black;
+}
+
+footer .container .row div ul li a i {
+    color: #343a40;
+    padding: 0 0.4rem;
+    font-size: 2.75rem;
+}
+
+footer .container .row div p {
+    font-weight: 750;
+    font-size: 2.25rem;
+    border-bottom: 0.5px solid black;
+}
+/* There ends footer styles */
+
+@media (min-width: 410px) {
+    header .navbar .btn-light {
+        font-size: 2.2rem;
+    }
+
+    header .navbar {
+        padding: 0 2rem;
+    }
+
+    header .navbar .navbar-brand {
+        padding-right: 1rem;
+        font-size: 2.5rem;
+    }
+
+    header .navbar .navbar-nav .nav-link {
+        padding: 0.8rem;
+        font-size: 1.65rem;
+    }
+
+    header .navbar .navbar-nav .dropdown-item {
+        font-size: 1.65rem;
+        padding: 0.8rem 2.3rem;
+    }
+
+    header #form-under-navbar .header-search .btn {
+        font-size: 2.2rem;
+    }
+
+    header #form-under-navbar .header-search .form-control {
+        font-size: 1.95rem;
+        padding: 2.2rem 1.4rem;
+    }
+
+    footer .container .row {
+        font-size: 1.9rem;
+    }
+
+    footer .container .row div p {
+        font-size: 2.5rem;
+    }
+
+    footer .container .row div ul li {
+        padding: 0.5rem 0;
+    }
+
+    footer .container .row div ul li a i {
+        padding: 0 0.5rem;
+        font-size: 3rem;
+    }
+}
+
+@media (min-width: 991px) {
+    header .navbar {
+        padding: 0.5rem 2rem;
+    }
+
+    header .navbar .navbar-brand {
+        padding: 0 1rem;
+    }
+
+    header .navbar .collapse .navbar-collapse {
+        order: 2;
+    }
+
+    header .navbar .container-search-user-cart {
+        order: 3;
+    }
+
+    header .navbar #form-inside-navbar {
+        display: block;
+    }
+
+    header #form-under-navbar {
+        display: none;
+    }
+
+    main {
+        margin: 20px 0;
+    }
+
+    footer .container .row div ul {
+        padding: 0 0 1rem 0;
+    }
+}

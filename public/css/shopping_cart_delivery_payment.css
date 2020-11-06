@@ -1,0 +1,42 @@
+main form .form-check {
+    margin: 0.5rem;
+}
+
+main form .form-header, main form .summary-price-name  {
+    font-weight: bold;
+}
+
+main form section {
+    margin-bottom: 2rem;
+}
+
+main form .summary-name {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.form-row>.col, .form-row>[class*=col-] {
+    padding: 0 1rem;
+}
+
+main form .col-2, main form .summary-price {
+    text-align: right;
+}
+
+main .last-summary-row {
+    margin-bottom: 3rem;
+}
+
+main form .btn {
+    margin: 1rem 0;
+}
+
+@media (min-width: 991px) {
+    main form .summary-name {
+        font-size: 2.4rem;
+    }
+
+    main .container .shopping-cart-container {
+        padding: 1rem;
+    }
+}

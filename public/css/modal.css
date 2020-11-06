@@ -1,0 +1,28 @@
+/*Modal login start*/
+
+header div.container-search-user-cart div.modal h5{
+    font-size: 2rem;
+}
+
+header div.container-search-user-cart div.modal {
+    font-size: 1.6rem;
+}
+
+header div.container-search-user-cart div.modal input{
+    font-size: 1.4rem;
+}
+
+header div.container-search-user-cart div.modal button{
+    font-size: 1.8rem;
+}
+
+header div.container-search-user-cart div.modal div.modal-body form a{
+    font-size: 1.4rem;
+    margin-left: 2.5rem;
+}
+
+header div.container-search-user-cart div.modal a.btn{
+    font-size: 1.8rem;
+}
+
+/*Modal login end*/

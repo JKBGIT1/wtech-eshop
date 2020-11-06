@@ -1,0 +1,119 @@
+main .container .pagination .page-item .page-link {
+    color: black;
+}
+
+main .container .pagination .page-item.active .page-link {
+    color: white;
+    border-color: #343a40;
+    background-color: #343a40;
+}
+
+main .container .my-dropdown-container {
+    margin: 0.5rem 0;
+    padding: 0.5rem 0;
+    justify-content: center;
+    border-bottom: 1px solid lightgrey;
+}
+
+main .container .my-dropdown-container:hover {
+    cursor: pointer;
+    border: 1px solid grey;
+}
+
+main .container .my-dropdown-container div {
+    padding: 0;
+}
+
+main .container .my-dropdown-container i {
+    font-size: 2rem;
+}
+
+main .container .my-dropdown-container div:nth-child(2) {
+    text-align: right;
+    padding-right: 0.75rem;
+}
+
+#price_from, #price_to {
+    font-size: 1.6rem;
+}
+
+main .container .btn {
+    margin-top: 1rem;
+    font-size: 1.6rem;
+}
+
+main .container form {
+    margin: 0.5rem;
+}
+
+main form .form-check label {
+    padding: 0.5rem;
+}
+
+main .container form .form-check-input {
+    margin-top: 1rem;
+}
+
+main .container .big-device-filtering {
+    display: none;
+}
+
+main .container .pagination {
+    margin: 1rem 0;
+}
+
+#big_price_from, #big_price_to {
+    font-size: 1.9rem;
+}
+
+@media (min-width: 992px) {
+    main .container h2 {
+        font-size: 2.5rem;
+    }
+
+    main .container .btn {
+        font-size: 1.9rem;
+    }
+
+    main .container .collapse {
+        font-size: 1.6rem;
+    }
+
+    main .container .my-dropdown-container {
+        font-size: 1.6rem;
+    }
+
+    main .container .pagination {
+        font-size: 1.9rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    main .container h2 {
+        margin-bottom: 1rem;
+    }
+
+    main .container .btn {
+        font-size: 1.6rem;
+    }
+
+    main .container .big-device-filtering {
+        display: block;
+    }
+
+    main .container .small-devices-filter {
+        display: none;
+    }
+
+    main .container .my-dropdown-container {
+        z-index: 10;
+        padding: 1rem;
+        border: 1px solid lightgrey;
+    }
+
+    main .container .big-device-filtering form {
+        margin: 0.5rem 0;
+        padding: 0.5rem 1rem;
+        border: 1px solid lightgrey;
+    }
+}

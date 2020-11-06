@@ -1,0 +1,130 @@
+main p {
+    margin: 0;
+}
+
+main .container {
+    font-size: 1.6rem;
+}
+
+main .summary-name, main .shopping-cart-name {
+    font-weight: bold;
+    font-size: 2.25rem;
+}
+
+main .container .btn-dark, main .container .btn-outline-dark {
+    margin-bottom: 2rem;
+    font-size: 1.6rem;
+}
+
+main .last-summary-row {
+    margin-bottom: 3rem;
+}
+
+main .container img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+main .keep-shopping {
+    color: black;
+    margin-bottom: 1rem;
+}
+
+main .product-container {
+    padding: 0
+}
+
+main .product-container .product-container-row {
+    max-width: 100%;
+    margin: 2.5rem 1.5rem;
+    border: 1px solid lightgrey;
+}
+
+main .product-container .product-container-row > div {
+    padding: 2rem;
+}
+
+main .remove-icon {
+    font-size: 2rem;
+    text-align: right;
+}
+
+main .product-input-container {
+    margin-top: 2rem;
+}
+
+main .product-input-container div {
+    font-size: 2rem;
+    text-align: center;
+    justify-content: center;
+}
+
+main .product-input-container div input {
+    font-size: 1.8rem;
+    text-align: center;
+    justify-content: center;
+}
+
+main .product-price-container {
+    margin-top: 2rem;
+}
+
+main .product-price-container p {
+    text-align: right;
+}
+
+main .summary-price-container {
+    text-align: right;
+}
+
+main .summary-section p {
+    margin-bottom: 1rem;
+}
+
+main .button-container {
+    justify-content: center;
+}
+
+@media (min-width: 576px) {
+    main .product-image-container {
+        order: 1;
+    }
+
+    main .product-name-number-container {
+        order: 2;
+    }
+
+    main .product-input-container {
+        order: 3;
+    }
+
+    main .product-price-container {
+        order: 4;
+    }
+
+    main .product-name-number-container div {
+        justify-content: center;
+    }
+}
+
+@media (min-width: 992px) {
+    main .container {
+        font-size: 1.9rem;
+    }
+
+    main .discard-product {
+        order: 5;
+    }
+
+    main .container .btn-dark, main .container .btn-outline-dark {
+        font-size: 1.9rem;
+    }
+
+    main .product-price-container p {
+        text-align: center;
+    }
+
+    main .summary-name, main .shopping-cart-name {
+        font-size: 2.4rem;
+    }
+}

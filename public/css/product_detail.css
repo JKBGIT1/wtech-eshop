@@ -1,0 +1,143 @@
+main div.container {
+    align-self: center;
+    font-size: 1.6rem;
+}
+
+/*Margin two parts(columns) of page*/
+
+main div.container div.row div.col-md-6{
+    margin: auto;
+}
+
+main div.container div.row div.col-md-5{
+    margin: auto;
+}
+/*---------------------------------*/
+
+
+main div.container div.row div.col-md-5 h2{
+    margin-top: 2rem;
+}
+
+/*Sizing and positioning images start*/
+main div.container div.row div.col-md-6 div.row.col-12.col-sm-12.col-md-12.col-lg-12 {
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    margin-left: 0rem;
+}
+
+main div.container div.row div.col-md-6 div.row.col-12.col-sm-12.col-md-12.col-lg-12 img{
+    height: 80%;
+    width: 80%;
+}
+
+main div.container div.row .col-4.col-sm-4.col-md-4{
+    align-self: center;
+    background-color: lightgrey;
+    justify-items: center;
+    align-items: center;
+    margin: auto;
+}
+
+main div.container div.row div.col-4.col-sm-4.col-md-4 img{
+    width: 60%;
+    height: 60%;
+    justify-self: center;
+    padding-left: 20%;
+}
+/*Sizing and positioning images end*/
+
+
+main div.container div.row div.col-12 h2{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+main div.container div.row div.col-12 p{
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+
+/*Make offset o icon from text in <p> tag*/
+main div.container div.row div.col-12 p i{
+    margin-left: 2rem;
+}
+
+
+main div.container div.row button.btn-lg {
+    font-size: 1.8rem;
+    margin: auto;
+    width: 50%;
+}
+
+
+@media (min-width: 991px) {
+    main .container {
+        padding: 1rem;
+        font-size: 1.9rem;
+    }
+
+    /*Move big image to center*/
+    main div.container div.row div.col-md-6 div.row.col-12.col-sm-12.col-md-12.col-lg-12{
+        margin-left: 1rem;
+    }
+
+    /*Sizing of big image*/
+    main div.container div.row div.col-md-6 div.row.col-12.col-sm-12.col-md-12.col-lg-12 img{
+        height: 90%;
+        width: 90%;
+    }
+
+    /*Sizing of small images*/
+    main div.container div.row div.col-4.col-sm-4.col-md-4 img{
+        width: 80%;
+        height: 80%;
+    }
+
+    main div.container div.row button.btn-lg {
+        font-size: 1.9rem;
+    }
+
+}
+
+
+@media (min-width: 768px) {
+    main .container {
+        padding: 1rem;
+        font-size: 1.6rem;
+    }
+
+    /*Move big image to center*/
+    main div.container div.row div.col-md-6 div.row.col-12.col-sm-12.col-md-12.col-lg-12{
+        margin-left: 0rem;
+    }
+
+    /*Sizing of big image*/
+    main div.container div.row div.col-md-6 div.row.col-12.col-sm-12.col-md-12 img{
+        height: 100%;
+        width: 100%;
+    }
+
+    /*Sizing of small images*/
+    main div.container div.row div.col-4.col-sm-4.col-md-4 img{
+        width: 90%;
+        height: 90%;
+        margin: 0.5rem;
+        padding-left: 1%;
+    }
+
+    main div.container div.row button.btn-lg {
+        font-size: 1.6rem;
+    }
+
+}
+
+@media (max-width: 767px) {
+    /*Moving small images to center in row*/
+    main div.container div.row div.col-4.col-sm-4.col-md-4 img {
+        margin: 0.25rem;
+        padding-left: 0;
+        margin-left: 20%;
+    }
+}

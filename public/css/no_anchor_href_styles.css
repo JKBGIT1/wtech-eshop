@@ -1,0 +1,11 @@
+.no-anchor-href-style {
+    text-decoration: none;
+}
+
+.no-anchor-href-style:hover {
+    text-decoration: none;
+}
+
+.no-anchor-href-style:visited {
+    text-decoration: none;
+}
