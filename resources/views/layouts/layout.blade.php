@@ -98,12 +98,12 @@
                         </a>
 
                         <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                            <a class="dropdown-item" href="/categories/kitchen">Kuchyňa</a>
-                            <a class="dropdown-item" href="/categories/living_room">Obývačka</a>
-                            <a class="dropdown-item" href="/categories/bedroom">Spálňa</a>
-                            <a class="dropdown-item" href="/categories/bathroom">Kúpelňa</a>
-                            <a class="dropdown-item" href="/categories/working_room">Pracovňa</a>
-                            <a class="dropdown-item" href="/categories/garden">Záhrada</a>
+                            <a class="dropdown-item" href="/categories/1">Kuchyňa</a>
+                            <a class="dropdown-item" href="/categories/2">Obývačka</a>
+                            <a class="dropdown-item" href="/categories/3">Spálňa</a>
+                            <a class="dropdown-item" href="/categories/4">Kúpelňa</a>
+                            <a class="dropdown-item" href="/categories/5">Pracovňa</a>
+                            <a class="dropdown-item" href="/categories/6">Záhrada</a>
                         </div>
                     </div>
                 </li>
