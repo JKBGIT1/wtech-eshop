@@ -32,100 +32,63 @@
                 </div>
                 <!-- Products in shopping cart -->
                 <section>
-                    <!-- Product in your shopping cart -->
-                    <div class="row">
-                        <div class="product-container col">
-                            <div class="product-container-row row">
-                                <!-- Column of product image in shopping cart -->
-                                <div class="product-name-number-container col-12 col-sm-6 col-lg-3">
-                                    <div class="row">
-                                        <div class="col-10 col-lg-12">
-                                            <p class="">Veľká posteľ</p>
-                                            <p>Číslo produktu: 12358</p>
-                                        </div>
-                                        <div class="remove-icon col-2 d-lg-none">
-                                            <i class="fas fa-times"></i>
+                    @if ($products)
+                        @foreach($products as $product)
+                            <!-- Product in your shopping cart -->
+                                <div class="row">
+                                    <div class="product-container col">
+                                        <div class="product-container-row row">
+                                            <!-- Column of product image in shopping cart -->
+                                            <div class="product-name-number-container col-12 col-sm-6 col-lg-3">
+                                                <div class="row">
+                                                    <div class="col-10 col-lg-12">
+                                                        <p class="">{{ $product['product']['name'] }}</p>
+                                                        <p>Číslo produktu: {{ $product['product']['id'] }}</p>
+                                                    </div>
+                                                    <div class="remove-icon col-2 d-lg-none">
+                                                        <i class="fas fa-times"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Column of product image -->
+                                            <div class="product-image-container text-center col-12 col-sm-6 col-lg-3">
+                                                <img srcset="{{ $product['product']['images'][0] }} 420w,
+                                                    {{ $product['product']['images'][0] }} 330w,
+                                                    {{ $product['product']['images'][0] }} 250w"
+                                                     sizes="(max-width: 576px) 250px,
+                                                    250px"
+                                                     src="{{ $product['product']['images'][0] }}"
+                                                     alt="image of product in shopping cart"
+                                                >
+                                            </div>
+                                            <!-- Number of product input -->
+                                            <div class="product-input-container col-7 col-sm-6 col-lg-3">
+                                                <div class="row">
+                                                    <div class="col-3"><i class="fas fa-minus"></i></div>
+                                                    <div class="col-6">
+                                                        <input type="text" class="form-control mb-1 mr-sm-1" name="products_number" value="{{ $product['quantity'] }}">
+                                                    </div>
+                                                    <div class="col-3"><i class="fas fa-plus"></i></div>
+                                                </div>
+                                            </div>
+                                            <!-- Price for product/products -->
+                                            <div class="product-price-container col-5 col-sm-6 col-lg-2">
+                                                <p>{{ $product['price'] }}€</p>
+                                            </div>
+                                            <div class="discard-product col-lg-1 d-none d-lg-block">
+                                                <i class="fas fa-times"></i>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                                <!-- Column of product image -->
-                                <div class="product-image-container text-center col-12 col-sm-6 col-lg-3">
-                                    <img srcset="../../imgs/new_products/ikea-beds/bed-ikea.webp 420w,
-                                                ../../imgs/new_products/ikea-beds/bed-ikea.webp 330w,
-                                                ../../imgs/new_products/ikea-beds/bed-ikea.webp 250w"
-                                         sizes="(max-width: 576px) 250px,
-                                                250px"
-                                         src="../../imgs/new_products/ikea-beds/bed-ikea.webp"
-                                         alt="image of product in shopping cart"
-                                    >
-                                </div>
-                                <!-- Number of product input -->
-                                <div class="product-input-container col-7 col-sm-6 col-lg-3">
-                                    <div class="row">
-                                        <div class="col-3"><i class="fas fa-minus"></i></div>
-                                        <div class="col-6">
-                                            <input type="text" class="form-control mb-1 mr-sm-1" name="products_number" value="1">
-                                        </div>
-                                        <div class="col-3"><i class="fas fa-plus"></i></div>
-                                    </div>
-                                </div>
-                                <!-- Price for product/products -->
-                                <div class="product-price-container col-5 col-sm-6 col-lg-2">
-                                    <p>18879€</p>
-                                </div>
-                                <div class="discard-product col-lg-1 d-none d-lg-block">
-                                    <i class="fas fa-times"></i>
-                                </div>
+                        @endforeach
+                    @else
+                        <div class="row">
+                            <div class="col-12 m-4 text-center">
+                                <h2>Nákupný košík je prázdny.</h2>
                             </div>
                         </div>
-                    </div>
-                    <!-- Another product in shopping cart -->
-                    <div class="product-container row">
-                        <div class="product-container col">
-                            <div class="product-container-row row">
-                                <!-- Column of product image in shopping cart -->
-                                <div class="product-name-number-container col-12 col-sm-6 col-lg-3">
-                                    <div class="row">
-                                        <div class="col-10 col-lg-12">
-                                            <p class="">Veľká posteľ</p>
-                                            <p>Číslo produktu: 12358</p>
-                                        </div>
-                                        <div class="remove-icon col-2 d-lg-none">
-                                            <i class="fas fa-times"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Column of product image -->
-                                <div class="product-image-container text-center col-12 col-sm-6 col-lg-3">
-                                    <img srcset="../../imgs/new_products/ikea-beds/bed-ikea2.webp 420w,
-                                                ../../imgs/new_products/ikea-beds/bed-ikea2.webp 330w,
-                                                ../../imgs/new_products/ikea-beds/bed-ikea2.webp 250w"
-                                         sizes="(max-width: 576px) 250px,
-                                                250px"
-                                         src="../../imgs/new_products/ikea-beds/bed-ikea2.webp"
-                                         alt="image of product in shopping cart"
-                                    >
-                                </div>
-                                <!-- Number of product input -->
-                                <div class="product-input-container text-center col-7 col-sm-6 col-lg-3">
-                                    <div class="row">
-                                        <div class="col-3"><i class="fas fa-minus"></i></div>
-                                        <div class="col-6">
-                                            <input type="text" class="form-control mb-1 mr-sm-1" name="products_number" value="1">
-                                        </div>
-                                        <div class="col-3"><i class="fas fa-plus"></i></div>
-                                    </div>
-                                </div>
-                                <!-- Price for product/products -->
-                                <div class="product-price-container col-5 col-sm-6 col-lg-2">
-                                    <p>18879€</p>
-                                </div>
-                                <div class="discard-product col-lg-1 d-none d-lg-block">
-                                    <i class="fas fa-times"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    @endif
                 </section>
                 <!-- Súhrn and Prejsť k objednávke button -->
                 <section class="summary-section">
@@ -139,7 +102,7 @@
                             <p>Medzi súčet bez DPH:</p>
                         </div>
                         <div class="col-3 col-lg-2 summary-price-container">
-                            <p>1500€</p>
+                            <p>{{ $total_price ? $total_price * 0.8 : '0' }}€</p>
                         </div>
                     </div>
                     <div class="last-summary-row row justify-content-center">
@@ -147,7 +110,7 @@
                             <p>Medzi súčet s DPH:</p>
                         </div>
                         <div class="col-3 col-lg-2 summary-price-container">
-                            <p>1500€</p>
+                            <p>{{ $total_price ? $total_price : '0' }}€</p>
                         </div>
                     </div>
                     <!-- Prejsť k objednávke row with button -->

@@ -23,44 +23,44 @@
 
                 <div class="row col-12 col-sm-12 col-md-12 col-lg-12">
                     <!-- Dorobit srcset -->
-                    <img srcset="/imgs/new_products/bed_320w.png 320w,
-                                 /imgs/new_products/bed_480w.png 480w,
-                                 /imgs/new_products/bed_800w.png 800w"
+                    <img srcset="{{ $product->images[0] }} 320w,
+                                 {{ $product->images[0] }} 480w,
+                                 {{ $product->images[0] }} 800w"
                          sizes="(max-width: 320px) 280px,
                                 (max-width: 480px) 440px,
                                 800px"
-                         src="/imgs/new_products/bed_800w.png">
+                         src="{{ $product->images[0] }}">
                 </div>
 
                 <div class="row">
                     <div class="col-4 col-sm-4 col-md-4">
-                        <img srcset="/imgs/new_products/bed_320w.png 320w,
-                                     /imgs/new_products/bed_480w.png 480w,
-                                     /imgs/new_products/bed_800w.png 800w"
+                        <img srcset="{{ $product->images[1] }} 320w,
+                                     {{ $product->images[1] }} 480w,
+                                     {{ $product->images[1] }} 800w"
                              sizes="(max-width: 320px) 280px,
                                 (max-width: 480px) 440px,
                                 800px"
-                             src="/imgs/new_products/bed_800w.png">
+                             src="{{ $product->images[1] }}">
                     </div>
 
                     <div class="col-4 col-sm-4 col-md-4">
-                        <img srcset="/imgs/new_products/bed_320w.png 320w,
-                                     /imgs/new_products/bed_480w.png 480w,
-                                     /imgs/new_products/bed_800w.png 800w"
+                        <img srcset="{{ $product->images[2] }} 320w,
+                                     {{ $product->images[2] }} 480w,
+                                     {{ $product->images[2] }} 800w"
                              sizes="(max-width: 320px) 280px,
                                 (max-width: 480px) 440px,
                                 800px"
-                             src="/imgs/new_products/bed_800w.png">
+                             src="{{ $product->images[2] }}">
                     </div>
 
                     <div class="col-4 col-sm-4 col-md-4">
-                        <img srcset="/imgs/new_products/bed_320w.png 320w,
-                                     /imgs/new_products/bed_480w.png 480w,
-                                     /imgs/new_products/bed_800w.png 800w"
+                        <img srcset="{{ $product->images[3] }} 320w,
+                                     {{ $product->images[3] }} 480w,
+                                     {{ $product->images[3] }} 800w"
                              sizes="(max-width: 320px) 280px,
                                 (max-width: 480px) 440px,
                                 800px"
-                             src="/imgs/new_products/bed_800w.png">
+                             src="{{ $product->images[3] }}">
                     </div>
                 </div>
             </div>
@@ -72,8 +72,8 @@
             <div class="col-md-5">
                 <div class="row">
                     <div class="col-12">
-                        <h2>Názov výrobku: Veľká posteľ</h2>
-                        <h2>Kód výrobku: 012345678910</h2>
+                        <h2>Názov výrobku: {{ $product->name }}</h2>
+                        <h2>Kód výrobku: {{ $product->id }}</h2>
                         <p>Dostupný na sklade v predajni
                             <i class="fa fa-check-circle" aria-hidden="true"></i>
                         </p>
@@ -85,7 +85,22 @@
                 </div>
 
                 <div class="row">
-                    <button class="btn btn-dark btn-lg" type="submit">Vhodiť do košíka</button>
+                    <form action="{{url('/shopping_cart_review', [$product->id])}}" method="POST">
+                        <input type="hidden" name="_method" value="PUT">
+                        {{ csrf_field() }}
+                        <div class="col-12 col-sm-5 col-md-7 col-lg-8 m-1">
+                            <div class="row numbers">
+                                <div class="col-3 text-center"><i class="fas fa-minus"></i></div>
+                                <div class="col-6 text-center">
+                                    <input type="text" id="products_number" class="form-control mb-1 mr-sm-1 text-center" name="products_number" value="1">
+                                </div>
+                                <div class="col-3 text-center"><i class="fas fa-plus"></i></div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-5 col-md-7 col-lg-8 text-center m-1">
+                            <button class="btn btn-dark btn-block btn-lg" type="submit">Vhodiť do košíka</button>
+                        </div>
+                    </form>
                 </div>
 
                 <!-- Info about the product -->
@@ -99,27 +114,31 @@
 
                     <tr>
                         <th scope="row">Materiál</th>
-                        <td>Masívne drevo</td>
+                        <td>{{ $product->material }}</td>
                     </tr>
 
                     <tr>
                         <th scope="row">Farba</th>
-                        <td>Hnedá, biela</td>
+                        <td>
+                            @foreach($product->colors as $color)
+                                {{ $color }}
+                            @endforeach
+                        </td>
                     </tr>
 
                     <tr>
                         <th scope="row">Rozmery</th>
-                        <td>Šírka: 80cm, Dĺžka: 195cm, Výška: 34cm</td>
+                        <td>Šírka: {{ $product->width }}, Dĺžka: {{ $product->length }}, Výška: {{ $product->height }}</td>
                     </tr>
 
                     <tr>
                         <th scope="row">Info o montáži</th>
-                        <td>Nezmontované</td>
+                        <td>{{ $product->description }}</td>
                     </tr>
 
                     <tr>
                         <th scope="row">Počet balení</th>
-                        <td>1</td>
+                        <td>{{ $product->number_of_packs }}</td>
                     </tr>
 
 

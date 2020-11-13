@@ -66,9 +66,16 @@ main div.container div.row div.col-12 p i{
 
 
 main div.container div.row button.btn-lg {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     margin: auto;
-    width: 50%;
+}
+
+main .numbers {
+    font-size: 1.7rem;
+}
+
+main .numbers input {
+    font-size: 1.6rem;
 }
 
 
@@ -99,6 +106,17 @@ main div.container div.row button.btn-lg {
         font-size: 1.9rem;
     }
 
+    main div.container div.row button.btn-lg {
+        font-size: 1.9rem;
+    }
+
+    main .numbers {
+        font-size: 2rem;
+    }
+
+    main .numbers input {
+        font-size: 1.9rem;
+    }
 }
 
 
