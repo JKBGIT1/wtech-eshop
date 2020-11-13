@@ -23,11 +23,17 @@ class ShoppingCartReviewController extends Controller
     }
 
     public function update(Request $request, $id) {
-        $product = Product::findOrFail($id);
         $quantity = request('products_number');
+        $update = request('update');
+        $product = Product::findOrFail($id);
         $shopping_cart = Session::has('shopping_cart') ? Session::get('shopping_cart') : null;
         $new_shopping_cart = new ShoppingCart($shopping_cart);
-        $new_shopping_cart->add($id, $product, $quantity);
+
+        if ($update == 'false') {
+            $new_shopping_cart->add($id, $product, $quantity);
+        } else {
+            $new_shopping_cart->updateFromShoppingCart($id, $product, $quantity);
+        }
 
         $request->session()->put('shopping_cart', $new_shopping_cart);
 

@@ -87,14 +87,15 @@
                 <div class="row">
                     <form action="{{url('/shopping_cart_review', [$product->id])}}" method="POST">
                         <input type="hidden" name="_method" value="PUT">
+                        <input type="hidden" name="update" value="false">
                         {{ csrf_field() }}
                         <div class="col-12 col-sm-5 col-md-7 col-lg-8 m-1">
                             <div class="row numbers">
-                                <div class="col-3 text-center"><i class="fas fa-minus"></i></div>
+                                <div id="minus" class="col-3 text-center"><i class="fas fa-minus"></i></div>
                                 <div class="col-6 text-center">
                                     <input type="text" id="products_number" class="form-control mb-1 mr-sm-1 text-center" name="products_number" value="1">
                                 </div>
-                                <div class="col-3 text-center"><i class="fas fa-plus"></i></div>
+                                <div id="plus" class="col-3 text-center"><i class="fas fa-plus"></i></div>
                             </div>
                         </div>
                         <div class="col-12 col-sm-5 col-md-7 col-lg-8 text-center m-1">
@@ -150,4 +151,5 @@
         </div>
 
     </div>
+    <script src="/js/product_detail.js"></script>
 @endsection

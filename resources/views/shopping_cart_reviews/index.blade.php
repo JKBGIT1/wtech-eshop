@@ -64,11 +64,23 @@
                                             <!-- Number of product input -->
                                             <div class="product-input-container col-7 col-sm-6 col-lg-3">
                                                 <div class="row">
-                                                    <div class="col-3"><i class="fas fa-minus"></i></div>
-                                                    <div class="col-6">
-                                                        <input type="text" class="form-control mb-1 mr-sm-1" name="products_number" value="{{ $product['quantity'] }}">
-                                                    </div>
-                                                    <div class="col-3"><i class="fas fa-plus"></i></div>
+                                                    <form id="form_{{ $loop->index }}" action="{{url('/shopping_cart_review', $product['product']['id'])}}" method="POST">
+                                                        <input type="hidden" name="_method" value="PUT">
+                                                        <input type="hidden" name="update" value="true">
+                                                        {{ csrf_field() }}
+                                                        <div class="row numbers">
+                                                            <div class="col-3 text-center minus"><i class="fas fa-minus"></i></div>
+                                                            <div class="col-6 text-center">
+                                                                <input type="text"
+                                                                       data-lpignore="true"
+                                                                       name="products_number"
+                                                                       value="{{ $product['quantity'] }}"
+                                                                       id="products_number_{{ $loop->index }}"
+                                                                       class="products_number_inputs form-control mb-1 mr-sm-1 text-center">
+                                                            </div>
+                                                            <div class="col-3 text-center plus"><i class="fas fa-plus"></i></div>
+                                                        </div>
+                                                    </form>
                                                 </div>
                                             </div>
                                             <!-- Price for product/products -->
@@ -133,4 +145,5 @@
             </div>
         </div>
     </section>
+    <script src="/js/shopping_cart_review.js"></script>
 @endsection
