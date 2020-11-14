@@ -74,6 +74,7 @@
                     <div class="col-12">
                         <h2>Názov výrobku: {{ $product->name }}</h2>
                         <h2>Kód výrobku: {{ $product->id }}</h2>
+                        <h2>Cena: {{ $product->price }}€</h2>
                         <p>Dostupný na sklade v predajni
                             <i class="fa fa-check-circle" aria-hidden="true"></i>
                         </p>
