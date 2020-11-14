@@ -15,6 +15,7 @@
 @endsection
 
 @section('content')
+    <!-- IDS FOR FILTERS FORM WERE APPLIED ONLY ON BIG DEVICES FORMS, BECAUSE SMALL DEVICES CAN SUBMIT IT EVEN, WHEN IT IS HIDDEN -->
     <div class="container">
         <!-- Category name row -->
         <div class="row">
@@ -99,20 +100,20 @@
                             <form>
                                 <!-- News radio button -->
                                 <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="new_products_radio" id="new_products_radio" value="option1">
+                                    <input class="form-check-input" type="checkbox" name="new_products_radio" id="new_products_radio" value="option1">
                                     <label class="form-check-label" for="new_products_radio">
                                         Novinky
                                     </label>
                                 </div>
                                 <!-- Add products radio button -->
                                 <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="add_products_radio" id="add_products_radio" value="option1">
+                                    <input class="form-check-input" type="checkbox" name="add_products_radio" id="add_products_radio" value="option1">
                                     <label class="form-check-label" for="add_products_radio">
                                         Produkty z reklamy
                                     </label>
                                 </div>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="add_products_radio" id="add_products_radio" value="option1">
+                                    <input class="form-check-input" type="checkbox" name="add_products_radio" id="add_products_radio" value="option1">
                                     <label class="form-check-label" for="add_products_radio">
                                         Najpredávanejšie produkty
                                     </label>
@@ -160,17 +161,19 @@
                 </div>
                 <!-- Price form -->
                 <div class="collapse" id="big_price_collapse">
-                    <form>
+                    <form id="price-form" action="{{ $category_id ? url('categories', [$category_id]) : url('categories') }}" method="POST">
+                        <input type="hidden" name="_method" value="PUT">
+                        {{ csrf_field() }}
                         <div class="form-row">
                             <!-- Price from -->
                             <div class="form-group col-6">
                                 <label for="big_price_from">Od:</label>
-                                <input type="number" class="form-control" id="big_price_from" placeholder="">
+                                <input type="number" class="form-control" id="big_price_from" name="price_from" placeholder="">
                             </div>
                             <!-- Price to -->
                             <div class="form-group col-6">
                                 <label for="big_price_to">Do:</label>
-                                <input type="number" class="form-control" id="big_price_to" placeholder="">
+                                <input type="number" class="form-control" id="big_price_to" name="price_to" placeholder="">
                             </div>
                         </div>
                     </form>
@@ -187,21 +190,21 @@
                     <form>
                         <!-- Black color radio button -->
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="big_black_radio" id="big_black_radio" value="option1">
+                            <input class="form-check-input" type="checkbox" name="big_black_radio" id="big_black_radio" value="option1">
                             <label class="form-check-label" for="big_black_radio">
                                 Čierna
                             </label>
                         </div>
                         <!-- White color radio button -->
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="big_white_radio" id="big_white_radio" value="option1">
+                            <input class="form-check-input" type="checkbox" name="big_white_radio" id="big_white_radio" value="option1">
                             <label class="form-check-label" for="big_white_radio">
                                 Biela
                             </label>
                         </div>
                         <!-- Brown color radio button -->
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="big_brown_radio" id="big_brown_radio" value="option1">
+                            <input class="form-check-input" type="checkbox" name="big_brown_radio" id="big_brown_radio" value="option1">
                             <label class="form-check-label" for="big_brown_radio">
                                 Hnedá
                             </label>
@@ -224,20 +227,20 @@
                     <form>
                         <!-- News radio button -->
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="big_new_products_radio" id="big_new_products_radio" value="option1">
+                            <input class="form-check-input" type="checkbox" name="big_new_products_radio" id="big_new_products_radio" value="option1">
                             <label class="form-check-label" for="big_new_products_radio">
                                 Novinky
                             </label>
                         </div>
                         <!-- Add products radio button -->
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="big_add_products_radio" id="big_add_products_radio" value="option1">
+                            <input class="form-check-input" type="checkbox" name="big_add_products_radio" id="big_add_products_radio" value="option1">
                             <label class="form-check-label" for="big_add_products_radio">
                                 Produkty z reklamy
                             </label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="big_add_products_radio" id="big_add_products_radio" value="option1">
+                            <input class="form-check-input" type="checkbox" name="big_add_products_radio" id="big_add_products_radio" value="option1">
                             <label class="form-check-label" for="big_add_products_radio">
                                 Najpredávanejšie produkty
                             </label>
@@ -320,4 +323,5 @@
             </div>
         </div>
     </div>
+    <script src="/js/categories.js"></script>
 @endsection

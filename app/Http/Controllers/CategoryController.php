@@ -12,21 +12,7 @@ class CategoryController extends Controller
 {
     public function show($id) {
         $output = new ConsoleOutput();
-        $category_name = '';
-
-        if ($id == 1) {
-            $category_name = 'Kuchyňa';
-        } else if ($id == 2) {
-            $category_name = 'Obývačka';
-        } else if ($id == 3) {
-            $category_name = 'Spálňa';
-        } else if ($id == 4) {
-            $category_name = 'Kúpelňa';
-        } else if ($id == 5) {
-            $category_name = 'Pracovňa';
-        } else if ($id == 6) {
-            $category_name = 'Záhrada';
-        }
+        $category_name = $this->getCategoryName($id);
 
         $products_list = Category::findOrFail($id)->products()->simplePaginate(4);
 
@@ -35,5 +21,31 @@ class CategoryController extends Controller
 //        $output->writeln('PAGINATE');
 
         return view('categories.show', ['category_name' => $category_name, 'category_id' => $id, 'products_list' => $products_list]);
+    }
+
+    public function update($id) {
+        $category_name = $this->getCategoryName($id);
+
+        $products_list = Category::findOrFail($id)->products()->simplePaginate(4);
+
+        return view('categories.show', ['category_name' => $category_name, 'category_id' => $id, 'products_list' => $products_list]);
+    }
+
+    public function getCategoryName($id) {
+        if ($id == 1) {
+            return 'Kuchyňa';
+        } else if ($id == 2) {
+            return 'Obývačka';
+        } else if ($id == 3) {
+            return 'Spálňa';
+        } else if ($id == 4) {
+            return 'Kúpelňa';
+        } else if ($id == 5) {
+            return 'Pracovňa';
+        } else if ($id == 6) {
+            return 'Záhrada';
+        }
+
+        return 0;
     }
 }

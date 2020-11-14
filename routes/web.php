@@ -19,6 +19,7 @@ Route::post('/', 'App\Http\Controllers\HomepageController@store');
 
 // Categories Route
 Route::get('/categories/{id}', 'App\Http\Controllers\CategoryController@show');
+Route::put('/categories/{id}', 'App\Http\Controllers\CategoryController@update');
 
 // Products Route
 Route::get('/products/{id}', 'App\Http\Controllers\ProductController@show');
