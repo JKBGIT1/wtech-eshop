@@ -19,6 +19,10 @@ class Product extends Model
         $this->belongsTo('App\Models\Category');
     }
 
+    public function orders() {
+        return $this->belongsToMany('App\Models\Order');
+    }
+
     public function setImages($images) {
         foreach ($images as $image) {
             $this->images()->create($image);

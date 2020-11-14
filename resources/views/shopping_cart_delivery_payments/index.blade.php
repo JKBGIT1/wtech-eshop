@@ -20,7 +20,8 @@
         <!-- Form container -->
         <div class="container">
             <!-- Delivery and payment type form -->
-            <form action="/" method="GET">
+            <form action="/" method="POST">
+                {{ csrf_field() }}
                 <!-- Current step of order and Výber dopravy a platby paragraph -->
                 <div class="row">
                     <div class="shopping-cart-container col col-md-10 col-lg-5">
@@ -40,7 +41,7 @@
                         <div class="form-check col-md-10 col-lg-5">
                             <div class="row">
                                 <div class="col-10">
-                                    <input class="form-check-input" type="radio" name="radio_kurier" id="radio_kurier" value="option1">
+                                    <input class="form-check-input" type="radio" name="delivery" id="radio_kurier" value="1" required>
                                     <label class="form-check-label" for="radio_kurier">
                                         Kuriér
                                     </label>
@@ -56,7 +57,7 @@
                         <div class="form-check col-md-10 col-lg-5">
                             <div class="row">
                                 <div class="col-10">
-                                    <input class="form-check-input" type="radio" name="radio_slovenska_posta" id="radio_slovenska_posta" value="option2">
+                                    <input class="form-check-input" type="radio" name="delivery" id="radio_slovenska_posta" value="2">
                                     <label class="form-check-label" for="radio_slovenska_posta">
                                         Slovenská pošta
                                     </label>
@@ -72,7 +73,7 @@
                         <div class="form-check col-md-10 col-lg-5">
                             <div class="row">
                                 <div class="col-10">
-                                    <input class="form-check-input" type="radio" name="radia_personal_collect" id="radio_personal_collect" value="option3">
+                                    <input class="form-check-input" type="radio" name="delivery" id="radio_personal_collect" value="3">
                                     <label class="form-check-label" for="radio_personal_collect">
                                         Osobný odber
                                     </label>
@@ -97,9 +98,9 @@
                         <div class="form-check col-md-10 col-lg-5">
                             <div class="row">
                                 <div class="col-10">
-                                    <input class="form-check-input" type="radio" name="radio_dobierka" id="radio_dobierka" value="option1">
+                                    <input class="form-check-input" type="radio" name="payment" id="radio_dobierka" value="1" required>
                                     <label class="form-check-label" for="radio_dobierka">
-                                        Dobierka 4€
+                                        Dobierka
                                     </label>
                                 </div>
                                 <div class="col-2">
@@ -113,7 +114,7 @@
                         <div class="form-check col-md-10 col-lg-5">
                             <div class="row">
                                 <div class="col-10">
-                                    <input class="form-check-input" type="radio" name="radio_paypal" id="radio_paypal" value="option2">
+                                    <input class="form-check-input" type="radio" name="payment" id="radio_paypal" value="2">
                                     <label class="form-check-label" for="radio_paypal">
                                         Paypal
                                     </label>
@@ -129,7 +130,7 @@
                         <div class="form-check col-md-10 col-lg-5">
                             <div class="row">
                                 <div class="col-10">
-                                    <input class="form-check-input" type="radio" name="radio_visa_master_card" id="radio_visa_master_card" value="option3">
+                                    <input class="form-check-input" type="radio" name="payment" id="radio_visa_master_card" value="3">
                                     <label class="form-check-label" for="radio_visa_master_card">
                                         VISA/MasterCard
                                     </label>
@@ -157,7 +158,7 @@
                                     <p>Tovar:</p>
                                 </div>
                                 <div class="summary-price col-4">
-                                    <p>1449841€</p>
+                                    <p><span id="goods">{{ $total_price ? $total_price : '0' }}</span>€</p>
                                 </div>
                             </div>
                         </div>
@@ -170,7 +171,7 @@
                                     <p>Spôsob platby a doprava:</p>
                                 </div>
                                 <div class="summary-price col-4">
-                                    <p>1449841€</p>
+                                    <p><span id="payment-delivery">0</span>€</p>
                                 </div>
                             </div>
                         </div>
@@ -183,7 +184,7 @@
                                     <p>DPH:</p>
                                 </div>
                                 <div class="summary-price col-4">
-                                    <p>1449841€</p>
+                                    <p><span id="taxes">{{ $total_price ? $total_price * 0.2 : '0' }}</span>€</p>
                                 </div>
                             </div>
                         </div>
@@ -196,7 +197,7 @@
                                     <p>Celková suma:</p>
                                 </div>
                                 <div class="summary-price col-4">
-                                    <p>1449841€</p>
+                                    <p><span id="total_price">{{ $total_price ? $total_price : '0' }}</span>€</p>
                                 </div>
                             </div>
                         </div>
@@ -218,4 +219,5 @@
             </form>
         </div>
     </section>
+    <script src="/js/shopping_cart_delivery_payment.js"></script>
 @endsection
