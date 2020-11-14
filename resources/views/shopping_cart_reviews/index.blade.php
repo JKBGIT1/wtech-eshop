@@ -87,8 +87,12 @@
                                             <div class="product-price-container col-5 col-sm-6 col-lg-2">
                                                 <p>{{ $product['price'] }}€</p>
                                             </div>
-                                            <div class="discard-product col-lg-1 d-none d-lg-block">
-                                                <i class="fas fa-times"></i>
+                                            <div class="discard-product col-lg-1 d-none d-lg-block text-center">
+                                                <form id="form_discard_{{ $loop->index }}" action="{{url('/shopping_cart_review', $product['product']['id'])}}" method="POST">
+                                                    <input type="hidden" name="_method" value="DELETE">
+                                                    {{ csrf_field() }}
+                                                    <i class="icon-discard-product fas fa-times "></i>
+                                                </form>
                                             </div>
                                         </div>
                                     </div>

@@ -19,17 +19,13 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="50e01064-0ed9-4354-8fad-d97c4e1ae879" name="Default Changelist" comment="Adding products to shopping cart.">
-      <change afterPath="$PROJECT_DIR$/public/js/product_detail.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/shopping_cart_review.js" afterDir="false" />
+    <list default="true" id="50e01064-0ed9-4354-8fad-d97c4e1ae879" name="Default Changelist" comment="Shopping cart working expect removing product from shopping cart.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ShoppingCartReviewController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ShoppingCartReviewController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Models/ShoppingCart.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/ShoppingCart.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/product_detail.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/product_detail.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/shopping_cart_review.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/shopping_cart_review.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/products/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/products/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/shopping_cart_review.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/shopping_cart_review.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/shopping_cart_reviews/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/shopping_cart_reviews/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -208,7 +204,8 @@
       <workItem from="1604767348352" duration="30000" />
       <workItem from="1605205696799" duration="876000" />
       <workItem from="1605251469166" duration="31308000" />
-      <workItem from="1605293429571" duration="7409000" />
+      <workItem from="1605293429571" duration="7605000" />
+      <workItem from="1605339495924" duration="2378000" />
     </task>
     <task id="LOCAL-00001" summary="Pagination working with some products on Spálňa category.">
       <created>1605271874541</created>
@@ -224,7 +221,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605288922505</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Shopping cart working expect removing product from shopping cart.">
+      <created>1605301067465</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1605301067465</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -246,7 +250,8 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Pagination working with some products on Spálňa category." />
     <MESSAGE value="Adding products to shopping cart." />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding products to shopping cart." />
+    <MESSAGE value="Shopping cart working expect removing product from shopping cart." />
+    <option name="LAST_COMMIT_MESSAGE" value="Shopping cart working expect removing product from shopping cart." />
   </component>
   <component name="WindowStateProjectService">
     <state x="426" y="214" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1605281933017">
@@ -269,10 +274,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="538" y="117" key="Github.UntrackedFilesDialog/0.0.1536.824@0.0.1536.824" timestamp="1604675711359" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1605288926624">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1605301070402">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1605288926624" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1605301070402" />
     <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1604672717482">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

@@ -27,6 +27,7 @@ Route::get('/products/{id}', 'App\Http\Controllers\ProductController@show');
 // Shopping cart review Route
 Route::get('/shopping_cart_review', 'App\Http\Controllers\ShoppingCartReviewController@index');
 Route::put('/shopping_cart_review/{id}', 'App\Http\Controllers\ShoppingCartReviewController@update');
+Route::delete('/shopping_cart_review/{id}', 'App\Http\Controllers\ShoppingCartReviewController@destroy');
 
 // Shopping cart delivery details Route
 Route::get('/shopping_cart_delivery_details', 'App\Http\Controllers\ShoppingCartDeliveryDetailController@index');

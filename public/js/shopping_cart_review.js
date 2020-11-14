@@ -1,14 +1,20 @@
 const pluses = document.getElementsByClassName('plus');
 const minuses = document.getElementsByClassName('minus');
 const inputs = document.getElementsByClassName('products_number_inputs');
+const discardIcons = document.getElementsByClassName('icon-discard-product');
 
 for (let i = 0; i < inputs.length; i++) {
     pluses[i].addEventListener('click', () => increaseProductNumber(i));
     minuses[i].addEventListener('click', () => decreaseProductNumber(i));
-    inputs[i].addEventListener('change', () => print(i));
+    inputs[i].addEventListener('change', () => submitForm(i));
+    discardIcons[i].addEventListener('click', () => submitOnDiscard(i));
 }
 
-function print(i) {
+function submitOnDiscard(i) {
+    document.getElementById('form_discard_' + i).submit();
+}
+
+function submitForm(i) {
     document.getElementById('form_' + i).submit();
 }
 

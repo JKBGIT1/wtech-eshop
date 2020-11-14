@@ -23,20 +23,25 @@ class ShoppingCart
             }
         }
 
-        $stored_product['quantity'] += $quantity;
-        $stored_product['price'] = $stored_product['quantity'] * $product->price;
-        $this->products[$id] = $stored_product;
-        $this->total_price += $stored_product['price'];
+        $stored_product['quantity'] += $quantity; // increase quantity of product
+        $stored_product['price'] = $stored_product['quantity'] * $product->price; // calculate total price for this product
+        $this->products[$id] = $stored_product; // store product into array based on key value $id
+        $this->total_price += $stored_product['price']; // add total price of product to total price of shopping cart
     }
 
     public function updateFromShoppingCart($id, $product, $quantity) {
         $stored_product = $this->products[$id];
-        $this->total_price -= $stored_product['price'];
+        $this->total_price -= $stored_product['price']; // deduct old total price of product from total price of shopping cart
 
-        $stored_product['quantity'] = $quantity;
-        $stored_product['price'] = $stored_product['quantity'] * $product->price;
-        $this->total_price += $stored_product['price'];
+        $stored_product['quantity'] = $quantity; // set new quantity of product based on user choice
+        $stored_product['price'] = $stored_product['quantity'] * $product->price; // calculate new total price of product based on new quantity of product in shopping cart
+        $this->total_price += $stored_product['price']; // add new total price of product to total price of shopping cart
 
         $this->products[$id] = $stored_product;
+    }
+
+    public function shoppingCartRemove($id) {
+        $this->total_price -= $this->products[$id]['price'];
+        unset($this->products[$id]); // this removes product from products array in shopping_cart object
     }
 }
