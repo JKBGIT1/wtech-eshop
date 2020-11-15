@@ -24,7 +24,7 @@ class CategoryController extends Controller
             'category_name' => $category_name,
             'category_id' => $id,
             'products_list' => $products_list,
-            'order' => 0,
+            'order' => '',
             'colors' => [],
             'advantages' => [],
             'price_to' => '',
@@ -72,28 +72,56 @@ class CategoryController extends Controller
     }
 
     public function applyFilters($id, $advantages, $colors, $price_from, $price_to, $order) {
-        if ($price_from && $price_to) {
+        if ($price_from && $price_to && $order) {
             $products_list = Category::findOrFail($id)->products()
-                ->whereBetween('price', [$price_from, $price_to])->whereJsonContains('colors',$colors)
+                ->whereBetween('price', [$price_from, $price_to])
+                ->whereJsonContains('advantages', $advantages)
+                ->whereJsonContains('colors', $colors)
+                ->orderBy('price', $order)
+                ->simplePaginate(4);
+        } else if ($price_from && $price_to) {
+            $products_list = Category::findOrFail($id)->products()
+                ->whereBetween('price', [$price_from, $price_to])
+                ->whereJsonContains('advantages', $advantages)
+                ->whereJsonContains('colors', $colors)
+                ->simplePaginate(4);
+        } else if ($price_from && $order) {
+            $products_list = Category::findOrFail($id)->products()
+                ->whereJsonContains('advantages', $advantages)
+                ->whereJsonContains('colors', $colors)
+                ->where('price', '>=', $price_from)
+                ->orderBy('price', $order)
+                ->simplePaginate(4);
+        } else if ($price_to && $order) {
+            $products_list = Category::findOrFail($id)->products()
+                ->whereJsonContains('advantages', $advantages)
+                ->whereJsonContains('colors', $colors)
+                ->where('price', '<=', $price_to)
+                ->orderBy('price', $order)
                 ->simplePaginate(4);
         } else if ($price_from) {
             $products_list = Category::findOrFail($id)->products()
+                ->whereJsonContains('advantages', $advantages)
+                ->whereJsonContains('colors', $colors)
                 ->where('price', '>=', $price_from)
                 ->simplePaginate(4);
         } else if ($price_to) {
             $products_list = Category::findOrFail($id)->products()
+                ->whereJsonContains('advantages', $advantages)
+                ->whereJsonContains('colors', $colors)
                 ->where('price', '<=', $price_to)
                 ->simplePaginate(4);
-        } else if ($order == 1) {
-            $products_list = Category::findOrFail($id)->products()->orderBy('price', 'asc')->simplePaginate(4);
-        } else if ($order == 2) {
-            $products_list = Category::findOrFail($id)->products()->orderBy('price', 'desc')->simplePaginate(4);
-        } else if (count($colors)) { // colors filter works, have to handle
-            $products_list = Category::findOrFail($id)->products()->whereJsonContains('colors', $colors)->simplePaginate(4);
-        } else if (count($advantages)) {
-            $products_list = Category::findOrFail($id)->products()->whereJsonContains('advantages', $advantages)->simplePaginate(4);
+        } else if ($order) {
+            $products_list = Category::findOrFail($id)->products()
+                ->whereJsonContains('advantages', $advantages)
+                ->whereJsonContains('colors', $colors)
+                ->orderBy('price', $order)
+                ->simplePaginate(4);
         } else {
-            $products_list = Category::findOrFail($id)->products()->simplePaginate(4);
+            $products_list = Category::findOrFail($id)->products()
+                ->whereJsonContains('advantages', $advantages)
+                ->whereJsonContains('colors', $colors)
+                ->simplePaginate(4);
         }
 
         return $products_list;

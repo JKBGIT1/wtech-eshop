@@ -180,10 +180,10 @@
                                        type="radio"
                                        name="order"
                                        id="ascending_checkbox"
-                                       @if ($order == 1)
+                                       @if ($order == 'desc')
                                             checked="true"
                                        @endif
-                                       value="1">
+                                       value="desc">
                                 <label class="form-check-label" for="ascending_radio">
                                     Cena zostupne
                                 </label>
@@ -194,10 +194,10 @@
                                        type="radio"
                                        name="order"
                                        id="descending_checkbox"
-                                       @if ($order == 2)
+                                       @if ($order == 'asc')
                                             checked="true"
                                        @endif
-                                       value="2">
+                                       value="asc">
                                 <label class="form-check-label" for="descending_radio">
                                     Cena vzostupne
                                 </label>
@@ -376,10 +376,10 @@
                                        type="checkbox"
                                        name="order"
                                        id="big_ascending_checkbox"
-                                       @if ($order == 1)
+                                       @if ($order == 'desc')
                                             checked="true"
                                        @endif
-                                       value="1">
+                                       value="desc">
                                 <label class="form-check-label" for="big_ascending_radio">
                                     Cena zostupne
                                 </label>
@@ -390,10 +390,10 @@
                                        type="checkbox"
                                        name="order"
                                        id="big_descending_checkbox"
-                                       @if ($order == 2)
+                                       @if ($order == 'asc')
                                            checked="true"
                                        @endif
-                                       value="2">
+                                       value="asc">
                                 <label class="form-check-label" for="big_descending_radio">
                                     Cena vzostupne
                                 </label>
