@@ -42,12 +42,12 @@ class CategoryController extends Controller
         $price_to = request('price_to');
         $order = request('order');
 
-        $output = new ConsoleOutput();
-        $output->writeln($colors);
-        $output->writeln($advantages);
-        $output->writeln($price_from);
-        $output->writeln($price_to);
-        $output->writeln($order);
+//        $output = new ConsoleOutput();
+//        $output->writeln($colors);
+//        $output->writeln($advantages);
+//        $output->writeln($price_from);
+//        $output->writeln($price_to);
+//        $output->writeln($order);
 
         if (!$colors) {
             $colors = [];
@@ -74,7 +74,7 @@ class CategoryController extends Controller
     public function applyFilters($id, $advantages, $colors, $price_from, $price_to, $order) {
         if ($price_from && $price_to) {
             $products_list = Category::findOrFail($id)->products()
-                ->whereBetween('price', [$price_from, $price_to])
+                ->whereBetween('price', [$price_from, $price_to])->whereJsonContains('colors',$colors)
                 ->simplePaginate(4);
         } else if ($price_from) {
             $products_list = Category::findOrFail($id)->products()
@@ -89,7 +89,9 @@ class CategoryController extends Controller
         } else if ($order == 2) {
             $products_list = Category::findOrFail($id)->products()->orderBy('price', 'desc')->simplePaginate(4);
         } else if (count($colors)) { // colors filter works, have to handle
-            $products_list = Category::findOrFail($id)->products()->whereJsonContains('colors',$colors)->simplePaginate(4);
+            $products_list = Category::findOrFail($id)->products()->whereJsonContains('colors', $colors)->simplePaginate(4);
+        } else if (count($advantages)) {
+            $products_list = Category::findOrFail($id)->products()->whereJsonContains('advantages', $advantages)->simplePaginate(4);
         } else {
             $products_list = Category::findOrFail($id)->products()->simplePaginate(4);
         }
