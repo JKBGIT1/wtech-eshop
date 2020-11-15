@@ -2,31 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="50e01064-0ed9-4354-8fad-d97c4e1ae879" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/phpunit.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/wtech-eshop.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_11_13_073626_create_categories_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_11_13_081025_create_products_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/seeders/CategoriesTableSeeder.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/seeders/ProductsTableSeeder.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/imgs/bedroom/ikea_bed_1_1.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/imgs/bedroom/ikea_bed_1_2.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/imgs/bedroom/ikea_bed_1_3.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/imgs/bedroom/ikea_bed_1_4.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/imgs/bedroom/ikea_bed_2_1.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/imgs/bedroom/ikea_bed_2_2.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/imgs/bedroom/ikea_bed_2_3.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/imgs/bedroom/ikea_bed_2_4.webp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CategoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CategoryController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Category.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Category.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Product.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Product.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/categories/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/categories/show.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/layout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/layout.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/database.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/database.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -165,7 +143,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/PhpstormProjects/responsive_layouts" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../TaskManager" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -201,6 +179,7 @@
       <workItem from="1604767348352" duration="30000" />
       <workItem from="1605205696799" duration="876000" />
       <workItem from="1605251469166" duration="15777000" />
+      <workItem from="1605459967573" duration="1319000" />
     </task>
     <servers />
   </component>
@@ -217,16 +196,22 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="2654" y="321" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1605284546501">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2654" y="321" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1605284546501" />
     <state x="115" y="170" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1605255955255">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="115" y="170" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1536.824@0.0.1536.824" timestamp="1605255955255" />
-    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1605269669345">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="2606" y="211" key="FileChooserDialogImpl" timestamp="1605284603506">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1605269669345" />
+    <state x="2606" y="211" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1605284603506" />
     <state x="640" y="310" key="Github.ShareDialog" timestamp="1604675676204">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
