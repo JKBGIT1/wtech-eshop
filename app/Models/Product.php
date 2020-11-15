@@ -9,8 +9,9 @@ class Product extends Model
 {
     use HasFactory;
     protected $table = 'products';
-    protected $fillable = ['colors', 'images'];
+    protected $fillable = ['colors', 'images', 'advantages'];
     protected $casts = [
+        'advantages' => 'array',
         'colors' => 'array',
         'images' => 'array'
     ];

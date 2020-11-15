@@ -24,9 +24,7 @@ class CreateProductsTable extends Migration
             $table->decimal('length', 5, 2)->nullable();
             $table->integer('number_of_packs')->nullable();
             $table->text('description')->nullable();
-            $table->boolean('new');
-            $table->boolean('best_selling');
-            $table->boolean('add_product');
+            $table->json('advantages')->nullable();
             $table->json('images')->nullable();
             $table->integer('category_id');
         });
