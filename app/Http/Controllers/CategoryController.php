@@ -20,15 +20,54 @@ class CategoryController extends Controller
 //        $output->writeln($products_list);
 //        $output->writeln('PAGINATE');
 
-        return view('categories.show', ['category_name' => $category_name, 'category_id' => $id, 'products_list' => $products_list]);
+        return view('categories.show', [
+            'category_name' => $category_name,
+            'category_id' => $id,
+            'products_list' => $products_list,
+            'order' => 0,
+            'colors' => [],
+            'advantages' => [],
+            'price_to' => '',
+            'price_from' => '',
+        ]);
     }
 
     public function update($id) {
         $category_name = $this->getCategoryName($id);
 
+        $colors = request('colors');
+        $advantages = request('advantages');
+        $price_from = request('price_from');
+        $price_to = request('price_to');
+        $order = request('order');
+
+        $output = new ConsoleOutput();
+        $output->writeln($colors);
+        $output->writeln($advantages);
+        $output->writeln($price_from);
+        $output->writeln($price_to);
+        $output->writeln($order);
+
+        if (!$colors) {
+            $colors = [];
+        }
+
+        if (!$advantages) {
+            $advantages = [];
+        }
+
         $products_list = Category::findOrFail($id)->products()->simplePaginate(4);
 
-        return view('categories.show', ['category_name' => $category_name, 'category_id' => $id, 'products_list' => $products_list]);
+        return view('categories.show', [
+            'category_name' => $category_name,
+            'category_id' => $id,
+            'products_list' => $products_list,
+            'order' => $order,
+            'colors' => $colors,
+            'advantages' => $advantages,
+            'price_to' => $price_to,
+            'price_from' => $price_from,
+        ]);
     }
 
     public function getCategoryName($id) {

@@ -42,19 +42,15 @@ main .container .btn {
     font-size: 1.6rem;
 }
 
-main .container form {
-    margin: 0.5rem;
-}
-
-main form .form-check label {
+main .form-check label {
     padding: 0.5rem;
 }
 
-main .container form .form-check-input {
+main .container .form-check-input {
     margin-top: 1rem;
 }
 
-main .container .big-device-filtering {
+main .container #big-device-form {
     display: none;
 }
 
@@ -97,11 +93,11 @@ main .container .pagination {
         font-size: 1.6rem;
     }
 
-    main .container .big-device-filtering {
+    main .container #big-device-form {
         display: block;
     }
 
-    main .container .small-devices-filter {
+    main .container .small-devices-container {
         display: none;
     }
 
@@ -111,7 +107,7 @@ main .container .pagination {
         border: 1px solid lightgrey;
     }
 
-    main .container .big-device-filtering form {
+    main .container .big-device-filtering .my-wrap {
         margin: 0.5rem 0;
         padding: 0.5rem 1rem;
         border: 1px solid lightgrey;

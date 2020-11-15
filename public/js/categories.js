@@ -1,17 +1,43 @@
-const price_from = document.getElementById('price_from');
-const price_to = document.getElementById('price_to');
-const big_price_from = document.getElementById('big_price_from');
-const big_price_to = document.getElementById('big_price_to');
+const smallDevicesInputs = document.getElementsByClassName('small-device-input');
+const bigDevicesInputs = document.getElementsByClassName('big-device-input');
 
-console.log(price_from);
-console.log(price_to);
+for (let i = 0; i < smallDevicesInputs.length; i++) {
+    smallDevicesInputs[i].addEventListener('change', submitSmallDeviceForm);
+    bigDevicesInputs[i].addEventListener('change', submitBigDeviceForm);
+}
 
-price_from.addEventListener('change', submitPriceForm);
-price_to.addEventListener('change', submitPriceForm);
+const smallAscending = document.getElementById('ascending_checkbox');
+const smallDescending = document.getElementById('ascending_checkbox');
+const bigAscending = document.getElementById('big_ascending_checkbox');
+const bigDescending = document.getElementById('big_descending_checkbox');
 
-big_price_from.addEventListener('change', submitPriceForm);
-big_price_to.addEventListener('change', submitPriceForm);
+smallAscending.addEventListener('click', setDescendingFalse);
+smallDescending.addEventListener('click', setAscendingFalse);
+bigAscending.addEventListener('click', setBigDescendingFalse);
+bigDescending.addEventListener('click', setBigAscendingFalse);
 
-function submitPriceForm() {
-    document.getElementById('price-form').submit();
+function setDescendingFalse() {
+    smallDescending.checked = false;
+}
+
+function setAscendingFalse() {
+    smallAscending.checked = false;
+}
+
+function setBigDescendingFalse() {
+    bigDescending.checked = false;
+}
+
+function setBigAscendingFalse() {
+    bigAscending.checked = false;
+}
+
+function submitSmallDeviceForm() {
+    document.getElementById('small-device-form').submit();
+    console.log('HEllo small');
+}
+
+function submitBigDeviceForm() {
+    document.getElementById('big-device-form').submit();
+    console.log('HEllo big');
 }

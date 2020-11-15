@@ -19,9 +19,12 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="50e01064-0ed9-4354-8fad-d97c4e1ae879" name="Default Changelist" comment="Started working on filters, but have no clue.">
+    <list default="true" id="50e01064-0ed9-4354-8fad-d97c4e1ae879" name="Default Changelist" comment="Price of product added to products.show">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/products/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/products/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CategoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CategoryController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/products_from_category.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/products_from_category.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/categories.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/categories.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/categories/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/categories/show.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -202,7 +205,8 @@
       <workItem from="1605251469166" duration="31308000" />
       <workItem from="1605293429571" duration="7605000" />
       <workItem from="1605339495924" duration="19177000" />
-      <workItem from="1605371679838" duration="3573000" />
+      <workItem from="1605371679838" duration="3790000" />
+      <workItem from="1605439257067" duration="8645000" />
     </task>
     <task id="LOCAL-00001" summary="Pagination working with some products on Spálňa category.">
       <created>1605271874541</created>
@@ -246,7 +250,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605375187148</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Price of product added to products.show">
+      <created>1605375480227</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1605375480227</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -272,7 +283,8 @@
     <MESSAGE value="Shopping cart review working." />
     <MESSAGE value="Shopping cart working with storing into database." />
     <MESSAGE value="Started working on filters, but have no clue." />
-    <option name="LAST_COMMIT_MESSAGE" value="Started working on filters, but have no clue." />
+    <MESSAGE value="Price of product added to products.show" />
+    <option name="LAST_COMMIT_MESSAGE" value="Price of product added to products.show" />
   </component>
   <component name="WindowStateProjectService">
     <state x="426" y="214" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1605281933017">
@@ -295,10 +307,14 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="538" y="117" key="Github.UntrackedFilesDialog/0.0.1536.824@0.0.1536.824" timestamp="1604675711359" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1605375206372">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1605375481431">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1605375206372" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1605375481431" />
+    <state x="586" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1605439517618">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="586" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1605439517618" />
     <state x="425" y="187" key="run.anything.popup" timestamp="1605373933505">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
