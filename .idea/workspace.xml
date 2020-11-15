@@ -1,10 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="50e01064-0ed9-4354-8fad-d97c4e1ae879" name="Default Changelist" comment="">
+    <list default="true" id="50e01064-0ed9-4354-8fad-d97c4e1ae879" name="Default Changelist" comment="Category filters working on frontend.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/database.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/database.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CategoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CategoryController.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +36,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -135,15 +153,18 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1juYwsPEF3UpqDF2H5i67KYBeny" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../TaskManager" />
+    <property name="last_opened_file_path" value="$USER_HOME$/PhpstormProjects/responsive_layouts" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -178,9 +199,70 @@
       <workItem from="1604767138128" duration="16000" />
       <workItem from="1604767348352" duration="30000" />
       <workItem from="1605205696799" duration="876000" />
-      <workItem from="1605251469166" duration="15777000" />
-      <workItem from="1605459967573" duration="1319000" />
+      <workItem from="1605251469166" duration="31308000" />
+      <workItem from="1605293429571" duration="7605000" />
+      <workItem from="1605339495924" duration="19177000" />
+      <workItem from="1605371679838" duration="3790000" />
+      <workItem from="1605439257067" duration="8825000" />
+      <workItem from="1605458470396" duration="3118000" />
     </task>
+    <task id="LOCAL-00001" summary="Pagination working with some products on Spálňa category.">
+      <created>1605271874541</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1605271874541</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Adding products to shopping cart.">
+      <created>1605288922505</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1605288922505</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Shopping cart working expect removing product from shopping cart.">
+      <created>1605301067465</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1605301067465</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Shopping cart review working.">
+      <created>1605341936980</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1605341936980</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Shopping cart working with storing into database.">
+      <created>1605359398282</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1605359398282</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Started working on filters, but have no clue.">
+      <created>1605375187148</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1605375187148</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Price of product added to products.show">
+      <created>1605375480227</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1605375480227</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Category filters working on frontend.">
+      <created>1605448619653</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1605448619653</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -198,20 +280,31 @@
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Pagination working with some products on Spálňa category." />
+    <MESSAGE value="Adding products to shopping cart." />
+    <MESSAGE value="Shopping cart working expect removing product from shopping cart." />
+    <MESSAGE value="Shopping cart review working." />
+    <MESSAGE value="Shopping cart working with storing into database." />
+    <MESSAGE value="Started working on filters, but have no clue." />
+    <MESSAGE value="Price of product added to products.show" />
+    <MESSAGE value="Category filters working on frontend." />
+    <option name="LAST_COMMIT_MESSAGE" value="Category filters working on frontend." />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="2654" y="321" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1605284546501">
-      <screen x="1920" y="0" width="1920" height="1040" />
-    </state>
-    <state x="2654" y="321" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1605284546501" />
-    <state x="115" y="170" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1605255955255">
+    <state x="426" y="214" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1605281933017">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="115" y="170" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1536.824@0.0.1536.824" timestamp="1605255955255" />
-    <state x="2606" y="211" key="FileChooserDialogImpl" timestamp="1605284603506">
-      <screen x="1920" y="0" width="1920" height="1040" />
+    <state x="426" y="214" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1605281933017" />
+    <state x="115" y="170" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1605346258587">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="115" y="170" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1536.824@0.0.1536.824" timestamp="1605346258587" />
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1605269669345">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1605269669345" />
-    <state x="2606" y="211" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1605284603506" />
     <state x="640" y="310" key="Github.ShareDialog" timestamp="1604675676204">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -220,9 +313,21 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="538" y="117" key="Github.UntrackedFilesDialog/0.0.1536.824@0.0.1536.824" timestamp="1604675711359" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1604672717482">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1605448621088">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1604672717482" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1605448621088" />
+    <state x="586" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1605439517618">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="586" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1605439517618" />
+    <state x="425" y="187" key="run.anything.popup" timestamp="1605373933505">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1605373933505" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1605372557119">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1605372557119" />
   </component>
 </project>

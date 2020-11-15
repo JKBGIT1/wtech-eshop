@@ -64,11 +64,22 @@ main div.container div.row div.col-12 p i{
     margin-left: 2rem;
 }
 
-
 main div.container div.row button.btn-lg {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     margin: auto;
-    width: 50%;
+}
+
+/* product_number input and icons for decrease and increase */
+main .numbers {
+    font-size: 1.7rem;
+}
+
+main .numbers input {
+    font-size: 1.6rem;
+}
+
+#minus:hover, #plus:hover {
+    cursor: pointer;
 }
 
 
@@ -99,6 +110,17 @@ main div.container div.row button.btn-lg {
         font-size: 1.9rem;
     }
 
+    main div.container div.row button.btn-lg {
+        font-size: 1.9rem;
+    }
+
+    main .numbers {
+        font-size: 2rem;
+    }
+
+    main .numbers input {
+        font-size: 1.9rem;
+    }
 }
 
 

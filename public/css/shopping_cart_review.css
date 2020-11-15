@@ -85,6 +85,10 @@ main .button-container {
     justify-content: center;
 }
 
+main .minus:hover, main .plus:hover {
+    cursor: pointer;
+}
+
 @media (min-width: 576px) {
     main .product-image-container {
         order: 1;
