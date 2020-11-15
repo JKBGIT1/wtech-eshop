@@ -33,6 +33,7 @@ class CategoryController extends Controller
     }
 
     public function update($id) {
+        $products_list = null;
         $category_name = $this->getCategoryName($id);
 
         $colors = request('colors');
@@ -56,7 +57,7 @@ class CategoryController extends Controller
             $advantages = [];
         }
 
-        $products_list = Category::findOrFail($id)->products()->simplePaginate(4);
+        $products_list = $this->applyFilters($id, $advantages, $colors, $price_from, $price_to, $order);
 
         return view('categories.show', [
             'category_name' => $category_name,
@@ -68,6 +69,32 @@ class CategoryController extends Controller
             'price_to' => $price_to,
             'price_from' => $price_from,
         ]);
+    }
+
+    public function applyFilters($id, $advantages, $colors, $price_from, $price_to, $order) {
+        if ($price_from && $price_to) {
+            $products_list = Category::findOrFail($id)->products()
+                ->whereBetween('price', [$price_from, $price_to])
+                ->simplePaginate(4);
+        } else if ($price_from) {
+            $products_list = Category::findOrFail($id)->products()
+                ->where('price', '>=', $price_from)
+                ->simplePaginate(4);
+        } else if ($price_to) {
+            $products_list = Category::findOrFail($id)->products()
+                ->where('price', '<=', $price_to)
+                ->simplePaginate(4);
+        } else if ($order == 1) {
+            $products_list = Category::findOrFail($id)->products()->orderBy('price', 'asc')->simplePaginate(4);
+        } else if ($order == 2) {
+            $products_list = Category::findOrFail($id)->products()->orderBy('price', 'desc')->simplePaginate(4);
+        } else if (count($colors)) { // colors filter works, have to handle
+            $products_list = Category::findOrFail($id)->products()->whereJsonContains('colors',$colors)->simplePaginate(4);
+        } else {
+            $products_list = Category::findOrFail($id)->products()->simplePaginate(4);
+        }
+
+        return $products_list;
     }
 
     public function getCategoryName($id) {
