@@ -18,8 +18,8 @@ Route::get('/', function () { return view('welcome'); });
 Route::post('/', 'App\Http\Controllers\HomepageController@store');
 
 // Categories Route
-Route::get('/categories/{id}', 'App\Http\Controllers\CategoryController@show');
-Route::put('/categories/{id}', 'App\Http\Controllers\CategoryController@update');
+Route::get('/categories/{id}', 'App\Http\Controllers\CategoryController@show')->middleware(\App\Http\Middleware\DeleteFilters::class);
+Route::put('/categories/{id}', 'App\Http\Controllers\CategoryController@update')->middleware(\App\Http\Middleware\DeleteFilters::class);
 
 // Products Route
 Route::get('/products/{id}', 'App\Http\Controllers\ProductController@show');

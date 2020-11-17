@@ -2,6 +2,10 @@ html {
     font-size: 10px;
 }
 
+main {
+    min-height: 100vh;
+}
+
 /* This styles are needed for header */
 /* This styles are needed for navbar */
 button:focus {

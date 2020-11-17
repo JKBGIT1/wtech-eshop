@@ -206,11 +206,6 @@
                     </div>
                 </div>
                 </form>
-                <div class="row">
-                    <div class="col">
-                        <button class="btn btn-outline-dark btn-block" type="button">Filtrovať</button>
-                    </div>
-                </div>
             </div>
         </div>
         <!-- Start of big devices filtering -->

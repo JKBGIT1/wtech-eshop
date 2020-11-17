@@ -4,16 +4,13 @@ namespace App\Http\Controllers;
 
 use App\Models\Category;
 use App\Models\Filters;
-use App\Models\Product;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Session;
-use Symfony\Component\Console\Output\ConsoleOutput;
 
 
 class CategoryController extends Controller
 {
-    public function show(Request $request, $id) {
-        $output = new ConsoleOutput();
+    public function show($id) {
         $category_name = $this->getCategoryName($id);
 
         if (Session::has('filters')) {
@@ -21,6 +18,8 @@ class CategoryController extends Controller
         } else {
             $filters = new Filters();
         }
+
+        $filters->setCategoryId($id); // DeleteFilters middleware takes care of deleting filters, if user changes category
 
         $products_list = $this->applyFilters(
             $id,
@@ -48,6 +47,8 @@ class CategoryController extends Controller
         $category_name = $this->getCategoryName($id);
 
         $filters = $this->changeFiltersAndStoreIntoSession($request);
+
+        $filters->setCategoryId($id); // DeleteFilters middleware takes care of deleting filters, if user changes category
 
         $products_list = $this->applyFilters(
             $id,

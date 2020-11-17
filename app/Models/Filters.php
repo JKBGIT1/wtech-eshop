@@ -12,6 +12,7 @@ class Filters extends Model
     public $price_from = '';
     public $price_to = '';
     public $order = '';
+    public $category_id = null;
 
     public function changeFilters($colors, $advantages, $price_from, $price_to, $order) {
         if (!$colors) {
@@ -43,5 +44,9 @@ class Filters extends Model
         } else {
             $this->order = $order;
         }
+    }
+
+    public function setCategoryId($id) {
+        $this->category_id = $id;
     }
 }
