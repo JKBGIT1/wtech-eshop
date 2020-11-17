@@ -3,72 +3,92 @@
 namespace App\Http\Controllers;
 
 use App\Models\Category;
+use App\Models\Filters;
 use App\Models\Product;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Session;
 use Symfony\Component\Console\Output\ConsoleOutput;
 
 
 class CategoryController extends Controller
 {
-    public function show($id) {
+    public function show(Request $request, $id) {
         $output = new ConsoleOutput();
         $category_name = $this->getCategoryName($id);
 
-        $products_list = Category::findOrFail($id)->products()->simplePaginate(4);
+        if (Session::has('filters')) {
+            $filters = Session::get('filters');
+        } else {
+            $filters = new Filters();
+        }
 
-//        $output->writeln('PAGINATE');
-//        $output->writeln($products_list);
-//        $output->writeln('PAGINATE');
+        $products_list = $this->applyFilters(
+            $id,
+            $filters->advantages,
+            $filters->colors,
+            $filters->price_from,
+            $filters->price_to,
+            $filters->order
+        );
 
         return view('categories.show', [
             'category_name' => $category_name,
             'category_id' => $id,
             'products_list' => $products_list,
-            'order' => '',
-            'colors' => [],
-            'advantages' => [],
-            'price_to' => '',
-            'price_from' => '',
+            'order' => $filters->order,
+            'colors' => $filters->colors,
+            'advantages' => $filters->advantages,
+            'price_to' => $filters->price_to,
+            'price_from' => $filters->price_from,
         ]);
     }
 
-    public function update($id) {
+    public function update(Request $request, $id) {
         $products_list = null;
         $category_name = $this->getCategoryName($id);
 
-        $colors = request('colors');
-        $advantages = request('advantages');
-        $price_from = request('price_from');
-        $price_to = request('price_to');
-        $order = request('order');
+        $filters = $this->changeFiltersAndStoreIntoSession($request);
 
-//        $output = new ConsoleOutput();
-//        $output->writeln($colors);
-//        $output->writeln($advantages);
-//        $output->writeln($price_from);
-//        $output->writeln($price_to);
-//        $output->writeln($order);
-
-        if (!$colors) {
-            $colors = [];
-        }
-
-        if (!$advantages) {
-            $advantages = [];
-        }
-
-        $products_list = $this->applyFilters($id, $advantages, $colors, $price_from, $price_to, $order);
+        $products_list = $this->applyFilters(
+            $id,
+            $filters->advantages,
+            $filters->colors,
+            $filters->price_from,
+            $filters->price_to,
+            $filters->order
+        );
 
         return view('categories.show', [
             'category_name' => $category_name,
             'category_id' => $id,
             'products_list' => $products_list,
-            'order' => $order,
-            'colors' => $colors,
-            'advantages' => $advantages,
-            'price_to' => $price_to,
-            'price_from' => $price_from,
+            'order' => $filters->order,
+            'colors' => $filters->colors,
+            'advantages' => $filters->advantages,
+            'price_to' => $filters->price_to,
+            'price_from' => $filters->price_from,
         ]);
+    }
+
+    public function changeFiltersAndStoreIntoSession(Request $request) {
+        if (Session::has('filters')) {
+            $filters = Session::get('filters');
+        } else {
+            $filters = new Filters();
+        }
+
+        // Change filters based on values from form
+        $filters->changeFilters(
+            request('colors'),
+            request('advantages'),
+            request('price_from'),
+            request('price_to'),
+            request('order')
+        );
+
+        $request->session()->put('filters', $filters); // store filters objects into session
+
+        return $filters;
     }
 
     public function applyFilters($id, $advantages, $colors, $price_from, $price_to, $order) {
@@ -78,50 +98,50 @@ class CategoryController extends Controller
                 ->whereJsonContains('advantages', $advantages)
                 ->whereJsonContains('colors', $colors)
                 ->orderBy('price', $order)
-                ->simplePaginate(4);
+                ->paginate(4);
         } else if ($price_from && $price_to) {
             $products_list = Category::findOrFail($id)->products()
                 ->whereBetween('price', [$price_from, $price_to])
                 ->whereJsonContains('advantages', $advantages)
                 ->whereJsonContains('colors', $colors)
-                ->simplePaginate(4);
+                ->paginate(4);
         } else if ($price_from && $order) {
             $products_list = Category::findOrFail($id)->products()
                 ->whereJsonContains('advantages', $advantages)
                 ->whereJsonContains('colors', $colors)
                 ->where('price', '>=', $price_from)
                 ->orderBy('price', $order)
-                ->simplePaginate(4);
+                ->paginate(4);
         } else if ($price_to && $order) {
             $products_list = Category::findOrFail($id)->products()
                 ->whereJsonContains('advantages', $advantages)
                 ->whereJsonContains('colors', $colors)
                 ->where('price', '<=', $price_to)
                 ->orderBy('price', $order)
-                ->simplePaginate(4);
+                ->paginate(4);
         } else if ($price_from) {
             $products_list = Category::findOrFail($id)->products()
                 ->whereJsonContains('advantages', $advantages)
                 ->whereJsonContains('colors', $colors)
                 ->where('price', '>=', $price_from)
-                ->simplePaginate(4);
+                ->paginate(4);
         } else if ($price_to) {
             $products_list = Category::findOrFail($id)->products()
                 ->whereJsonContains('advantages', $advantages)
                 ->whereJsonContains('colors', $colors)
                 ->where('price', '<=', $price_to)
-                ->simplePaginate(4);
+                ->paginate(4);
         } else if ($order) {
             $products_list = Category::findOrFail($id)->products()
                 ->whereJsonContains('advantages', $advantages)
                 ->whereJsonContains('colors', $colors)
                 ->orderBy('price', $order)
-                ->simplePaginate(4);
+                ->paginate(4);
         } else {
             $products_list = Category::findOrFail($id)->products()
                 ->whereJsonContains('advantages', $advantages)
                 ->whereJsonContains('colors', $colors)
-                ->simplePaginate(4);
+                ->paginate(4);
         }
 
         return $products_list;

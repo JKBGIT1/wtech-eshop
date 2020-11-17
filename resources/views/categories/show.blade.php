@@ -177,9 +177,9 @@
                             <!-- Ascending by price radio button -->
                             <div class="form-check">
                                 <input class="small-device-input radios form-check-input"
-                                       type="radio"
+                                       type="checkbox"
                                        name="order"
-                                       id="ascending_checkbox"
+                                       id="descending_checkbox"
                                        @if ($order == 'desc')
                                             checked="true"
                                        @endif
@@ -191,9 +191,9 @@
                             <!-- Descending by price radio button -->
                             <div class="form-check">
                                 <input class="small-device-input radios form-check-input"
-                                       type="radio"
+                                       type="checkbox"
                                        name="order"
-                                       id="descending_checkbox"
+                                       id="ascending_checkbox"
                                        @if ($order == 'asc')
                                             checked="true"
                                        @endif
@@ -428,25 +428,6 @@
         <!-- Pagination -->
         <div class="row">
             <div class="col-12 text-center">
-{{--                <nav aria-label="Page navigation example">--}}
-{{--                    <ul class="pagination justify-content-center">--}}
-{{--                        <li class="page-item">--}}
-{{--                            <a class="page-link" href="#" aria-label="Previous">--}}
-{{--                                <span aria-hidden="true">&laquo;</span>--}}
-{{--                                <span class="sr-only">Previous</span>--}}
-{{--                            </a>--}}
-{{--                        </li>--}}
-{{--                        <li class="page-item active"><a class="page-link" href="#">1</a></li>--}}
-{{--                        <li class="page-item"><a class="page-link" href="#">2</a></li>--}}
-{{--                        <li class="page-item"><a class="page-link" href="#">3</a></li>--}}
-{{--                        <li class="page-item">--}}
-{{--                            <a class="page-link" href="#" aria-label="Next">--}}
-{{--                                <span aria-hidden="true">&raquo;</span>--}}
-{{--                                <span class="sr-only">Next</span>--}}
-{{--                            </a>--}}
-{{--                        </li>--}}
-{{--                    </ul>--}}
-{{--                </nav>--}}
                 {{ $products_list->links() }}
             </div>
         </div>
