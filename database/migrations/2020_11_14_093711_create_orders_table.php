@@ -26,6 +26,7 @@ class CreateOrdersTable extends Migration
             $table->text('phone');
             $table->integer('delivery_id')->nullable();
             $table->integer('payment_id')->nullable();
+            $table->integer('user_id')->nullable();
         });
     }
 

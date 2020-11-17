@@ -113,6 +113,19 @@
                                     Hnedá
                                 </label>
                             </div>
+                            <div class="form-check">
+                                <input class="small-device-input form-check-input"
+                                       type="checkbox"
+                                       name="colors[]"
+                                       id="grey_checkbox"
+                                       @if (in_array( "šedá", $colors))
+                                       checked="true"
+                                       @endif
+                                       value="šedá">
+                                <label class="form-check-label" for="brown_checkbox">
+                                    Hnedá
+                                </label>
+                            </div>
                             <!-- Show more colors button -->
                             <div class="form-group">
                                 <button type="button" class="btn btn-dark btn-block">Zobraziť viac</button>
@@ -294,6 +307,19 @@
                                        value="hnedá">
                                 <label class="form-check-label" for="big_brown_checkbox">
                                     Hnedá
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="big-device-input form-check-input"
+                                       type="checkbox"
+                                       name="colors[]"
+                                       id="big_grey_checkbox"
+                                       @if (in_array( "šedá", $colors ))
+                                       checked="true"
+                                       @endif
+                                       value="šedá">
+                                <label class="form-check-label" for="big_brown_checkbox">
+                                    Šedá
                                 </label>
                             </div>
                             <!-- Show more colors button -->
