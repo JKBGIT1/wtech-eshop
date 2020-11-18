@@ -1,0 +1,42 @@
+div.container div.search-heading h2{
+    text-align: center;
+}
+
+div.container div.search-heading h2{
+    font-size: 2rem;
+}
+
+div.container .product-container{
+    margin-bottom: 2rem;
+    background-color: #95999c;
+}
+
+div.container .product-container .image-container img{
+    height: 100%;
+    width: 80%;
+}
+
+div.container .product-container div.row-name-price{
+    font-size: 1.8rem;
+    color: black;
+}
+
+div.container .product-container a {
+    color: black;
+    border-bottom: 1px solid black;
+}
+
+div.container .product-container a:hover {
+    all:unset;
+    cursor: pointer;
+    border-bottom: 1px solid black;
+}
+
+div.container .product-container a:visited {
+    color: black;
+}
+
+
+div.container .product-container div.row-name-price div.price-part{
+    text-align: end;
+}

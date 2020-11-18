@@ -1,0 +1,56 @@
+div.container div.card form {
+    font-size: 1.6rem;
+}
+
+div.container div.card div.card-header {
+    font-size: 1.8rem;
+}
+
+div.container div.card form .form-control {
+    font-size: 1.6rem;
+}
+
+div.container div.card form .btn {
+    margin-top: 1rem;
+    font-size: 1.6rem;
+}
+
+div.container div.card form .checkbox-group {
+    margin: 1rem 0;
+}
+
+div.container div.card form .form-check-input {
+    margin-top: 0.5rem;
+    margin-left: 0.1rem;
+}
+
+div.container div.card form .form-check-label {
+    margin-left: 2rem;
+}
+
+div.container div.card .row {
+    justify-content: center;
+}
+
+div.container div.card .form-row {
+    justify-content: center;
+}
+
+div.container div.card form .form-check label {
+    padding: 0.25rem 0.5rem;
+}
+
+div.container div.card form a {
+    color: black;
+    border-bottom: 1px solid black;
+}
+
+div.container div.card form a:hover {
+    all:unset;
+    cursor: pointer;
+    border-bottom: 1px solid black;
+}
+
+div.container div.card form a:visited {
+    color: black;
+}

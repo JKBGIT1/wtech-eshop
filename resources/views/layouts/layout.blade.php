@@ -26,14 +26,76 @@
         <!-- Search & icon container -->
         <div class="container-search-user-cart">
             <div class="row">
-                <form id="form-inside-navbar" class="form-inline" action="" method="get">
-                    <input class="form-control" type="text" placeholder="Zadajte hľadaný výraz" aria-label="Search">
+
+                <!-- Fulltext search -->
+                <form id="form-inside-navbar" class="form-inline" action="{{ route('search') }}" method="get">   <!--  action dopln a method nechaj get-->
+                    <input name="searchText" class="form-control" type="text" placeholder="Zadajte hľadaný výraz" aria-label="Search" value="{{ request()->input('searchText')}}">
                     <button class="btn btn-light"><i class="fas fa-search"></i></button>
                 </form>
+
+
                 <!-- User icon --> <!-- Pridanie spustenia modalu na prihlasenie pouzivatela -->
-                <button type="button" class="btn btn-light" data-toggle="modal" data-target="#loginModal">
-                    <i class="fas fa-user-circle"></i>
-                </button>
+                <!-- Authentication Links -->
+                @guest
+                    @if (Route::has('login'))
+                        <!--
+                            <button type="button" class="btn btn-light" data-toggle="modal" data-target="#loginModal">
+                                <i class="fas fa-user-circle"></i>
+                            </button>-->
+
+                            <a class="btn btn-light nav-link" href="{{ route('login') }}" role="button"><i class="fas fa-user-circle"></i></a>
+
+                        <!--<li class="nav-item">
+                                <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+                            </li>-->
+                        @endif
+                    @else
+
+                        <div class="dropdown">
+                            <!--
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                               Dropdown button
+                            </button>-->
+
+                            <a class="btn btn-light dropdown-toggle" href="#" role="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-user-circle" ></i>
+                            </a>
+
+                            <div class="dropdown-menu bg-danger" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item bg-danger" href="{{ route('logout') }}"
+                                   onclick="event.preventDefault();
+                                                         document.getElementById('logout-form').submit();">
+                                    {{ __('Logout') }}
+
+                                </a>
+
+                                <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                    @csrf
+                                </form>
+
+                            </div>
+                        </div>
+
+
+                    <!--
+                        <li class="nav-item dropdown">
+                            <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                {{ Auth::user()->name }}
+                        </a>
+
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="{{ route('logout') }}"
+                                   onclick="event.preventDefault();
+                                                         document.getElementById('logout-form').submit();">
+                                    {{ __('Logout') }}
+                        </a>
+
+                        <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                    @csrf
+                        </form>
+                    </div>
+                </li>-->
+                @endguest
 
                 <!-- Login window -->
                 <div class="modal fade bd-example-modal-lg" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">

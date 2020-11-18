@@ -36,6 +36,9 @@ Route::get('/shopping_cart_delivery_details', 'App\Http\Controllers\ShoppingCart
 Route::get('/shopping_cart_delivery_payment', 'App\Http\Controllers\ShoppingCartDeliveryPaymentController@index');
 Route::post('/shopping_cart_delivery_payment', 'App\Http\Controllers\ShoppingCartDeliveryPaymentController@store');
 
+// Search
+Route::get('/search', 'App\Http\Controllers\SearchController@show')->name('search');
+
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

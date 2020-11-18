@@ -1,0 +1,36 @@
+div.container div.card div.card-header {
+    font-size: 2rem;
+}
+
+div.container div.card {
+    font-size: 1.6rem;
+}
+
+div.container div.card input{
+    font-size: 1.4rem;
+}
+
+div.container div.card button{
+    font-size: 1.8rem;
+}
+
+div.container div.card-body form a{
+    font-size: 1.4rem;
+    margin-left: 2.5rem;
+}
+
+div.container div.card-body a.btn{
+    font-size: 1.8rem;
+}
+
+div.container  div.card-body div.form-group.row div.form-check{
+    align-items: center;
+}
+
+div.container div.card-footer{
+    justify-content: space-around;
+}
+
+div.container div.card-footer a.btn{
+    font-size: 1.8rem;
+}
