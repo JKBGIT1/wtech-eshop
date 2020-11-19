@@ -1,7 +1,7 @@
 @extends('layouts.layout')
 
 @section('head')
-    <title>{{__('Login') }}</title>
+    <title>{{__('Prihlásenie') }}</title>
     <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1 shrink-to-fit=no">
     <script src="https://kit.fontawesome.com/2343b3bcb7.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
@@ -17,14 +17,14 @@
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <div class="card">
-                    <div class="card-header">{{ __('Login') }}</div>
+                    <div class="card-header">{{ __('Prihlásenie') }}</div>
 
                     <div class="card-body">
                         <form method="POST" action="{{ route('login') }}">
                             @csrf
 
                             <div class="form-group row">
-                                <label for="email" class="col-md-3 col-form-label text-md-right">{{ __('E-Mail Address') }}</label>
+                                <label for="email" class="col-md-3 col-form-label text-md-right">{{ __('E-Mail') }}</label>
 
                                 <div class="col-md-8">
                                     <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
@@ -38,7 +38,7 @@
                             </div>
 
                             <div class="form-group row">
-                                <label for="password" class="col-md-3 col-form-label text-md-right">{{ __('Password') }}</label>
+                                <label for="password" class="col-md-3 col-form-label text-md-right">{{ __('Heslo') }}</label>
 
                                 <div class="col-md-8">
                                     <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="current-password">
@@ -66,12 +66,12 @@
                             <div class="form-group row mb-0">
                                 <div class="col-xl-12 offset-xl-3 col-lg-12 offset-lg-3 col-md-12 offset-md-3 col-sm-12 offset-sm-0">
                                     <button type="submit" class="btn btn-primary">
-                                        {{ __('Login') }}
+                                        {{ __('Prihlásiť sa') }}
                                     </button>
 
                                     @if (Route::has('password.request'))
                                         <a class="btn btn-link" href="{{ route('password.request') }}">
-                                            {{ __('Forgot Your Password?') }}
+                                            {{ __('Zabudol som heslo') }}
                                         </a>
                                     @endif
                                 </div>
@@ -81,8 +81,8 @@
 
                     <div class="card-footer">
                         <div class="form-group row mb-1">
-                            <div class="col-xl-12 offset-xl-10 col-lg-12 offset-lg-9 col-md-12 offset-md-8 col-sm-12 offset-sm-8">
-                                <a class="btn btn-primary btn-dark" href="{{ route('register') }}" role="button">{{__('Register')}}</a>
+                            <div class="col-xl-12 offset-xl-9 col-lg-12 offset-lg-8 col-md-12 offset-md-7 col-sm-12 offset-sm-7">
+                                <a class="btn btn-primary btn-dark" href="{{ route('register') }}" role="button">{{__('Zaregistrovať sa')}}</a>
                             </div>
                         </div>
 

@@ -90,6 +90,11 @@ header #form-under-navbar .header-search .form-control {
     padding: 2rem 1.2rem;
     background-color: #f8f9fa;
 }
+
+.container a.logout-button {
+    font-size: 1.6rem;
+}
+
 /* There ends header styles */
 
 /* This styles are needed for main */

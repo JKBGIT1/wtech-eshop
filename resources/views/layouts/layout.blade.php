@@ -61,11 +61,11 @@
                                 <i class="fas fa-user-circle" ></i>
                             </a>
 
-                            <div class="dropdown-menu bg-danger" aria-labelledby="dropdownMenuButton">
-                                <a class="dropdown-item bg-danger" href="{{ route('logout') }}"
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item logout-button" href="{{ route('logout') }}"
                                    onclick="event.preventDefault();
                                                          document.getElementById('logout-form').submit();">
-                                    {{ __('Logout') }}
+                                    {{ __('Odhlásiť sa') }}
 
                                 </a>
 

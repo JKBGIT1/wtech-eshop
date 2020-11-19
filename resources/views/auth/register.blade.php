@@ -1,7 +1,7 @@
 @extends('layouts.layout')
 
 @section('head')
-    <title>{{__('Register') }}</title>
+    <title>{{__('Registrácia') }}</title>
     <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1 shrink-to-fit=no">
     <script src="https://kit.fontawesome.com/2343b3bcb7.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
@@ -17,14 +17,14 @@
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <div class="card">
-                    <div class="card-header">{{ __('Register') }}</div>
+                    <div class="card-header">{{ __('Registrácia') }}</div>
 
                     <div class="card-body">
                         <form method="POST" action="{{ route('register') }}">
                             @csrf
 
                             <div class="form-group row">
-                                <label for="name" class="col-md-3 col-form-label text-md-right">{{ __('Name') }}</label>
+                                <label for="name" class="col-md-3 col-form-label text-md-right">{{ __('Meno') }}</label>
 
                                 <div class="col-md-8">
                                     <input id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
@@ -38,7 +38,7 @@
                             </div>
 
                             <div class="form-group row">
-                                <label for="email" class="col-md-3 col-form-label text-md-right">{{ __('E-Mail Address') }}</label>
+                                <label for="email" class="col-md-3 col-form-label text-md-right">{{ __('E-Mail') }}</label>
 
                                 <div class="col-md-8">
                                     <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email">
@@ -52,7 +52,7 @@
                             </div>
 
                             <div class="form-group row">
-                                <label for="password" class="col-md-3 col-form-label text-md-right">{{ __('Password') }}</label>
+                                <label for="password" class="col-md-3 col-form-label text-md-right">{{ __('Heslo') }}</label>
 
                                 <div class="col-md-8">
                                     <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="new-password">
@@ -66,7 +66,7 @@
                             </div>
 
                             <div class="form-group row">
-                                <label for="password-confirm" class="col-md-3 col-form-label text-md-right">{{ __('Confirm Password') }}</label>
+                                <label for="password-confirm" class="col-md-3 col-form-label text-md-right">{{ __('Potvrď heslo') }}</label>
 
                                 <div class="col-md-8">
                                     <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password">
@@ -105,7 +105,7 @@
                             <div class="form-group row mb-1">
                                 <div class="col-md-6 offset-md-4">
                                     <button type="submit" class="btn btn-primary btn-lg btn-dark">
-                                        {{ __('Register') }}
+                                        {{ __('Registrovať') }}
                                     </button>
                                 </div>
                             </div>

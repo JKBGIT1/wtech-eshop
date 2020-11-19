@@ -1,7 +1,7 @@
 @extends('layouts.layout')
 
 @section('head')
-    <title>{{__('Search')}}</title>
+    <title>{{__('Vyhľadávanie')}}</title>
     <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1 shrink-to-fit=no">
     <script src="https://kit.fontawesome.com/2343b3bcb7.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
@@ -16,7 +16,7 @@
     <div class="container">
 
         <div class="search-heading">
-            <h2>Najdenych vysledkov ({{ request()->input('searchText') }}): {{$products->count()}}</h2>
+            <h2>Výsledky hľadania</h2>
         </div>
 
         <div class="search-container">
