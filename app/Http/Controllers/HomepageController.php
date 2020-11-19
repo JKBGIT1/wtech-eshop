@@ -4,8 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Models\OrderProduct;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Session;
-use Symfony\Component\Console\Output\ConsoleOutput;
 
 class HomepageController extends Controller
 {
@@ -19,6 +19,11 @@ class HomepageController extends Controller
 
             $payment = request('payment');
             $payment_price = $this->getPaymentPrice($payment);
+
+            $user = Auth::user();
+            if ($user) { // if some user is loged in, then map this order to him.
+                $order->user_id = $user->getAuthIdentifier();
+            }
 
             // make timestamp $order->ordered_at = ...
             $order->ordered_at = now();

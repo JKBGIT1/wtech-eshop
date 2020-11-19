@@ -19,83 +19,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="50e01064-0ed9-4354-8fad-d97c4e1ae879" name="Default Changelist" comment="Category filters should work... If user change category, then filters are deleted thanks to the DeleteFilters middleware.">
-      <change afterPath="$PROJECT_DIR$/public/imgs/bathroom/ikea_bathroom_1_1.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/imgs/bathroom/ikea_bathroom_1_2.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/imgs/bathroom/ikea_bathroom_1_3.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/imgs/bathroom/ikea_bathroom_1_4.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/imgs/bathroom/ikea_bathroom_2_1.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/imgs/bathroom/ikea_bathroom_2_2.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/imgs/bathroom/ikea_bathroom_2_3.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/imgs/bathroom/ikea_bathroom_2_4.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/imgs/bedroom/ikea_bed_10_1.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/imgs/bedroom/ikea_bed_10_2.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/imgs/bedroom/ikea_bed_10_3.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/imgs/bedroom/ikea_bed_10_4.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/imgs/bedroom/ikea_bed_3_1.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/imgs/bedroom/ikea_bed_3_2.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/imgs/bedroom/ikea_bed_3_3.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/imgs/bedroom/ikea_bed_3_4.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/imgs/bedroom/ikea_bed_4_1.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/imgs/bedroom/ikea_bed_4_2.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/imgs/bedroom/ikea_bed_4_3.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/imgs/bedroom/ikea_bed_4_4.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/imgs/bedroom/ikea_bed_5_1.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/imgs/bedroom/ikea_bed_5_2.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/imgs/bedroom/ikea_bed_5_3.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/imgs/bedroom/ikea_bed_5_4.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/imgs/bedroom/ikea_bed_6_1.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/imgs/bedroom/ikea_bed_6_2.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/imgs/bedroom/ikea_bed_6_3.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/imgs/bedroom/ikea_bed_6_4.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/imgs/bedroom/ikea_bed_7_1.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/imgs/bedroom/ikea_bed_7_2.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/imgs/bedroom/ikea_bed_7_3.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/imgs/bedroom/ikea_bed_7_4.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/imgs/bedroom/ikea_bed_8_1.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/imgs/bedroom/ikea_bed_8_2.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/imgs/bedroom/ikea_bed_8_3.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/imgs/bedroom/ikea_bed_8_4.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/imgs/bedroom/ikea_bed_9_1.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/imgs/bedroom/ikea_bed_9_2.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/imgs/bedroom/ikea_bed_9_3.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/imgs/bedroom/ikea_bed_9_4.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/imgs/garden/ikea_garden_1_1.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/imgs/garden/ikea_garden_1_2.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/imgs/garden/ikea_garden_1_3.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/imgs/garden/ikea_garden_1_4.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/imgs/garden/ikea_garden_2_1.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/imgs/garden/ikea_garden_2_2.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/imgs/garden/ikea_garden_2_3.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/imgs/garden/ikea_garden_2_4.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/imgs/kitchen/ikea_kitchen_1_1.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/imgs/kitchen/ikea_kitchen_1_2.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/imgs/kitchen/ikea_kitchen_1_3.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/imgs/kitchen/ikea_kitchen_1_4.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/imgs/kitchen/ikea_kitchen_2_1.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/imgs/kitchen/ikea_kitchen_2_2.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/imgs/kitchen/ikea_kitchen_2_3.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/imgs/kitchen/ikea_kitchen_2_4.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/imgs/living_room/ikea_living_room_1_1.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/imgs/living_room/ikea_living_room_1_2.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/imgs/living_room/ikea_living_room_1_3.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/imgs/living_room/ikea_living_room_1_4.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/imgs/living_room/ikea_living_room_2_1.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/imgs/living_room/ikea_living_room_2_2.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/imgs/living_room/ikea_living_room_2_3.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/imgs/living_room/ikea_living_room_2_4.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/imgs/working_room/ikea_working_room_1_1.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/imgs/working_room/ikea_working_room_1_2.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/imgs/working_room/ikea_working_room_1_3.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/imgs/working_room/ikea_working_room_1_4.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/imgs/working_room/ikea_working_room_2_1.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/imgs/working_room/ikea_working_room_2_2.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/imgs/working_room/ikea_working_room_2_3.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/imgs/working_room/ikea_working_room_2_4.webp" afterDir="false" />
+    <list default="true" id="50e01064-0ed9-4354-8fad-d97c4e1ae879" name="Default Changelist" comment="Product db seeder">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_11_14_093711_create_orders_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_11_14_093711_create_orders_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeders/ProductsTableSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/ProductsTableSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/categories/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/categories/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CategoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CategoryController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomepageController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomepageController.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -281,7 +208,8 @@
       <workItem from="1605439257067" duration="8825000" />
       <workItem from="1605458470396" duration="7739000" />
       <workItem from="1605608038419" duration="9173000" />
-      <workItem from="1605619176103" duration="6150000" />
+      <workItem from="1605619176103" duration="6410000" />
+      <workItem from="1605771044078" duration="2148000" />
     </task>
     <task id="LOCAL-00001" summary="Pagination working with some products on Spálňa category.">
       <created>1605271874541</created>
@@ -374,7 +302,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605616622742</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Product db seeder">
+      <created>1605625873139</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1605625873139</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -407,17 +342,18 @@
     <MESSAGE value="Product filters in categories should work." />
     <MESSAGE value="Filters working with pagination, because filters data are stored in session." />
     <MESSAGE value="Category filters should work... If user change category, then filters are deleted thanks to the DeleteFilters middleware." />
-    <option name="LAST_COMMIT_MESSAGE" value="Category filters should work... If user change category, then filters are deleted thanks to the DeleteFilters middleware." />
+    <MESSAGE value="Product db seeder" />
+    <option name="LAST_COMMIT_MESSAGE" value="Product db seeder" />
   </component>
   <component name="WindowStateProjectService">
     <state x="426" y="214" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1605620555896">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="426" y="214" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1605620555896" />
-    <state x="115" y="170" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1605612541952">
+    <state x="115" y="170" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1605772589243">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="115" y="170" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1536.824@0.0.1536.824" timestamp="1605612541952" />
+    <state x="115" y="170" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1536.824@0.0.1536.824" timestamp="1605772589243" />
     <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1605269669345">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -430,14 +366,14 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="538" y="117" key="Github.UntrackedFilesDialog/0.0.1536.824@0.0.1536.824" timestamp="1604675711359" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1605616628473">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1605625876933">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1605616628473" />
-    <state x="586" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1605608584734">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1605625876933" />
+    <state x="586" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1605771091960">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="586" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1605608584734" />
+    <state x="586" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1605771091960" />
     <state x="486" y="184" key="refactoring.ChangeSignatureDialog" timestamp="1605613639174">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
