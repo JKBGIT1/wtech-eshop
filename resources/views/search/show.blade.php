@@ -20,7 +20,7 @@
             <!-- Category name row -->
             <div class="row">
                 <div class="col-12">
-                    <h2>{{ 'Výsledky hľadania:'}}</h2>
+                    <h2>{{ 'Výsledky hľadania'}}</h2>
                 </div>
             </div>
 
@@ -49,7 +49,7 @@
             <!-- Pagination -->
             <div class="row">
                 <div class="col-12 text-center">
-                    {{ $products->links() }}
+                    {{$products->appends(Request::all())->links()}}
                 </div>
             </div>
         </div>
