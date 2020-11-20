@@ -28,9 +28,11 @@
             <div class="row">
 
                 <!-- Fulltext search -->
-                <form id="form-inside-navbar" class="form-inline" action="{{ route('search') }}" method="get">   <!--  action dopln a method nechaj get-->
-                    <input name="searchText" class="form-control" type="text" placeholder="Zadajte hľadaný výraz" aria-label="Search" value="{{ request()->input('searchText')}}">
-                    <button class="btn btn-light"><i class="fas fa-search"></i></button>
+                <form id="form-inside-navbar" class="form-inline" action="{{ route('search') }}" method="GET">   <!--  action dopln a method nechaj get-->
+
+                    <input id="text" name="text" class="form-control" type="text" placeholder="Zadajte hľadaný výraz" aria-label="Search" value="{{ $text ?? '' ? $text ?? '' : '' }}">
+
+                    <button id="button-searching" class="btn btn-light"><i class="fas fa-search"></i></button>
                 </form>
 
 

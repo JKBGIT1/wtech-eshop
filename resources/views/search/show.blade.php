@@ -9,46 +9,48 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/layout.css" />
-    <link rel="stylesheet" href="/css/custom_search.css" />
+    <link rel="stylesheet" href="/css/products_from_category.css" />
+    <link rel="stylesheet" href="/css/main_container_products.css" />
 @endsection
 
 @section('content')
     <div class="container">
 
-        <div class="search-heading">
-            <h2>Výsledky hľadania</h2>
-        </div>
-
-        <div class="search-container">
-            @foreach($products as $product)
-                <div class="product-container col-12">
-                    <a href="/products/{{ $product->id }}">
-                        <div class="product-container-row row">
-
-                            <div class="image-container col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 text-center">
-                                <img src="{{ $product->images[0] }}" alt="Obrázok produktu {{ $product->name }}">  <!-- ../../imgs/new_products/ikea-beds/bed-ikea.webp -->
-                            </div>
-
-                        </div>
-
-
-                        <div class="product-container-row row row-name-price">
-                            <div class="col col-sm col-md col-lg col-xl">
-                                Produkt: {{ $product->name }}
-                            </div>
-
-                            <!--Empty space for formating-->
-                            <div class="col col-sm col-md col-lg col-xl">
-                            </div>
-
-                            <!--Price tag to know to align to the end-->
-                            <div class="col col-sm col-md col-lg col-xl price-part">
-                                Cena: {{ $product->price }}€
-                            </div>
-                        </div>
-                    </a>
+        <div class="container">
+            <!-- Category name row -->
+            <div class="row">
+                <div class="col-12">
+                    <h2>{{ 'Výsledky hľadania:'}}</h2>
                 </div>
-            @endforeach
+            </div>
+
+            <!-- Products from category -->
+            <article>
+                <div class="row">
+                    @foreach($products as $product)
+                        <div class="product-container col-12 col-md-6">
+                            <a href="/products/{{ $product->id }}">
+                                <div class="product-container-row row">
+                                    <div class="image-container col-12">
+                                        <img src="{{ $product->images[0] }}" alt="Obrázok s názvom {{ $product->name }}">  <!-- ../../imgs/new_products/ikea-beds/bed-ikea.webp -->
+                                    </div>
+                                    <div class="col-8">
+                                        <p>{{ $product->name }}</p>
+                                    </div>
+                                    <div class="product-price col-4">
+                                        <p>{{ $product->price }}€</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    @endforeach
+                </div>
+            </article>
+            <!-- Pagination -->
+            <div class="row">
+                <div class="col-12 text-center">
+                    {{ $products->links() }}
+                </div>
+            </div>
         </div>
-    </div>
 @endsection

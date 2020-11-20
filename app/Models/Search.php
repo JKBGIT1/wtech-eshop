@@ -6,20 +6,11 @@ use Illuminate\Database\Eloquent\Model;
 
 class Search extends Model
 {
-    //use HasFactory;
-    protected $table = 'products';
-    protected $fillable = ['id', 'name', 'images', 'advantages', 'description'];
+    public $searchText = '';
 
-    public function  search2($searchText){
+    public function setSearchText($fraza){
 
-        $hladanaFraza = array_values($searchText);
-        $hladanaFraza = $hladanaFraza[0];
+        $this->searchText = $fraza;
 
-        /*Inspiracia > https://stackoverflow.com/questions/48089966/how-to-get-search-query-from-multiple-columns-in-database*/
-        $products = Product::where('name', 'LIKE', '%'.$hladanaFraza.'%')
-            ->orWhere('description', 'LIKE', '%'.$hladanaFraza.'%')
-            ->orWhere('advantages', 'LIKE', '%'.$hladanaFraza.'%')->get();
-
-        return $products;
     }
 }
