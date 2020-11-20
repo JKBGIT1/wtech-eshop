@@ -49,7 +49,7 @@
             <!-- Pagination -->
             <div class="row">
                 <div class="col-12 text-center">
-                    {{$products->appends(Request::all())->links()}}
+                    {{$products->appends(Request::all())->links()}}         <!-- pomoc so strankovanim z: https://stackoverflow.com/questions/50957776/laravel-pagination-is-not-working-after-first-page -->
                 </div>
             </div>
         </div>
