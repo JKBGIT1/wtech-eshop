@@ -22,7 +22,7 @@
                 <!-- Ďalej nakupovať anchor tag and Nákupný košík -->
                 <div class="row">
                     <div class="col-12">
-                        <a class="keep-shopping" href="{{ url()->previous() }}">
+                        <a class="keep-shopping" href="{{ $previous_page }}">
                             <i class="fas fa-arrow-left"></i> Ďalej nakupovať
                         </a>
                     </div>
@@ -140,7 +140,7 @@
                     <!-- Späť row with button -->
                     <div class="button-container row">
                         <div class="col col-md-6 col-lg-5">
-                            <a class="no-anchor-href-style" href="{{ url()->previous() }}">
+                            <a class="no-anchor-href-style" href="{{ $previous_page }}">
                                 <button type="button" class="btn btn-outline-dark btn-block">Späť</button>
                             </a>
                         </div>

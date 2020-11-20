@@ -10,15 +10,24 @@ use Symfony\Component\Console\Output\ConsoleOutput;
 
 class ShoppingCartReviewController extends Controller
 {
-    public function index() {
+    public function index(Request $request) {
+        $previous_page = str_replace(url('/'), '', url()->previous());
+        $request->session()->put('previous_page', $previous_page);
+
         if (!Session::has('shopping_cart')) {
-            return view('shopping_cart_reviews.index', ['products' => null, 'total_price' => null]);
+            return view('shopping_cart_reviews.index', [
+                'products' => null,
+                'total_price' => null,
+                'previous_page' => $previous_page
+            ]);
         }
+
         $shopping_cart = Session::get('shopping_cart');
         $new_shopping_cart = new ShoppingCart($shopping_cart);
         return view('shopping_cart_reviews.index', [
             'products' => $new_shopping_cart->products,
-            'total_price' => $new_shopping_cart->total_price
+            'total_price' => $new_shopping_cart->total_price,
+            'previous_page' => $previous_page
         ]);
     }
 
@@ -39,7 +48,8 @@ class ShoppingCartReviewController extends Controller
 
         return view('shopping_cart_reviews.index', [
             'products' => $new_shopping_cart->products,
-            'total_price' => $new_shopping_cart->total_price
+            'total_price' => $new_shopping_cart->total_price,
+            'previous_page' => Session::get('previous_page')
         ]);
     }
 
@@ -51,14 +61,16 @@ class ShoppingCartReviewController extends Controller
             $request->session()->put('shopping_cart', null); // shopping_cart object has zero products
             return view('shopping_cart_reviews.index', [
                 'products' => null,
-                'total_price' => null
+                'total_price' => null,
+                'previous_page' => Session::get('previous_page')
             ]);
         } else {
             $request->session()->put('shopping_cart', $shopping_cart); // update shopping_cart object in session
             return view('shopping_cart_reviews.index', [
-                        'products' => $shopping_cart->products,
-                        'total_price' => $shopping_cart->total_price
-                    ]);
+                'products' => $shopping_cart->products,
+                'total_price' => $shopping_cart->total_price,
+                'previous_page' => Session::get('previous_page')
+            ]);
         }
     }
 }
