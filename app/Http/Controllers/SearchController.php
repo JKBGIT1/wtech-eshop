@@ -56,7 +56,9 @@ class SearchController extends Controller
         //$fraza = array_values($hladanaFraza);
         //$fraza = $fraza[0];
         $fraza = $hladanaFraza;
+        $fraza = mb_strtolower($fraza, 'UTF-8');        // da na lowercase aj pismena s diakritikou
 
+        /*
         if(strtolower($fraza) == "novinka" || strtolower($fraza) == "novinky" || strtolower($fraza) == "nove"){
             $fraza="new";
         }
@@ -65,7 +67,23 @@ class SearchController extends Controller
         }
         else if (strtolower($fraza) == "najpredavanejsie" || strtolower($fraza) == "hit"){
             $fraza="best_selling";
+        }*/
+
+        if($fraza == "novinka" || $fraza == "novinky" || $fraza == "nove" || $fraza == "nové" || $fraza == "nová"
+            || $fraza == "nový" || $fraza == "nova" || $fraza == "novy") {
+
+            $fraza="new";
         }
+        else if ($fraza == "reklama" || $fraza == "z reklamy" || $fraza == "produkty z reklamy"){
+
+            $fraza="add_product";
+        }
+        else if ($fraza == "najpredavanejsie" || $fraza == "hit"|| $fraza == "najpredávanejšie"
+            || $fraza == "najpredávanejší" || $fraza == "najpredavanejsi"){
+
+            $fraza="best_selling";
+        }
+
 
         //Inspiracia > https://stackoverflow.com/questions/48089966/how-to-get-search-query-from-multiple-columns-in-database
         $products = Product::where(DB::raw('lower("name")'), 'LIKE', '%'.$fraza.'%')
