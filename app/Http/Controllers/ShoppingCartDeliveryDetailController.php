@@ -15,7 +15,11 @@ class ShoppingCartDeliveryDetailController extends Controller
             }
             return view('shopping_cart_delivery_details.index', ['order' => null]);
         } else {
-            return view('shopping_cart_reviews.index', ['products' => null, 'total_price' => null]);
+            return view('shopping_cart_reviews.index', [
+                'products' => null,
+                'total_price' => null,
+                'previous_page' => Session::get('previous_page')
+            ]);
         }
     }
 }
