@@ -19,144 +19,195 @@
         <!-- Image under navbar -->
         <div class="home-image-container"></div>
         <div class="container">
-            <!-- New products -->
-            <section class="new-products">
+            <!-- Kitchen products -->
+            <section class="kitchen">
                 <div class="row">
                     <div class="col-12">
-                        <h2>Novinky</h2>
+                        <h2>Kuchyňa</h2>
                     </div>
                 </div>
                 <div class="row">
-                    <!-- First new product on page -->
-                    <div class="product-container col-12 col-md-6">
-                        <a href="../product_detail/product_detail.html">
-                            <div class="product-container-row row">
-                                <div class="col-12">
-                                    <img src="/imgs/new_products/ikea-beds/bed-ikea.webp" alt="Obrazok produktu">
+                    @foreach($all_categories[1] as $product)
+                        <div class="product-container col-12 col-md-6">
+                            <a href="/products/{{ $product->id }}">
+                                <div class="product-container-row row">
+                                    <div class="image-container col-12">
+                                        <img src="{{ $product->images[0] }}" alt="Obrázok postele s názvom {{ $product->name }}">  <!-- ../../imgs/new_products/ikea-beds/bed-ikea.webp -->
+                                    </div>
+                                    <div class="col-8">
+                                        <p>{{ $product->name }}</p>
+                                    </div>
+                                    <div class="product-price col-4">
+                                        <p>{{ $product->price }}€</p>
+                                    </div>
                                 </div>
-                                <div class="col-8">
-                                    <p>Veľká posteľ</p>
-                                </div>
-                                <div class="product-price col-4">
-                                    <p>1000€</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <!-- Second new product on page -->
-                    <div class="product-container col-12 col-md-6">
-                        <a href="../product_detail/product_detail.html">
-                            <div class="product-container-row row">
-                                <div class="col-12">
-                                    <img src="/imgs/new_products/ikea-beds/bed-ikea2.webp" alt="Obrazok produktu">
-                                </div>
-                                <div class="col-8">
-                                    <p>Manželská posteľ</p>
-                                </div>
-                                <div class="product-price col-4">
-                                    <p>1000€</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
+                            </a>
+                        </div>
+                    @endforeach
                 </div>
                 <div class="row justify-content-center">
                     <div class="col-12 col-lg-5">
-                        <button type="button" class="btn btn-dark btn-lg btn-block">Zobraziť novinky</button>
+                        <a href="/categories/1" type="button" class="btn btn-dark btn-lg btn-block">Zobraziť kategóriu Kuchyňa</a>
                     </div>
                 </div>
             </section>
-            <!-- Products from advertising -->
-            <section class="advertising-products">
+            <!-- Living room products -->
+            <section class="living_room">
                 <div class="row">
                     <div class="col-12">
-                        <h2>Produkty z reklám</h2>
+                        <h2>Obývačka</h2>
                     </div>
                 </div>
                 <div class="row">
-                    <!-- First product from advertising on page -->
-                    <div class="product-container col-12 col-md-6">
-                        <a href="../product_detail/product_detail.html">
-                            <div class="product-container-row row">
-                                <div class="col-12">
-                                    <img src="/imgs/new_products/ikea-beds/bed-ikea.webp" alt="Obrazok produktu">
+                    @foreach($all_categories[2] as $product)
+                        <div class="product-container col-12 col-md-6">
+                            <a href="/products/{{ $product->id }}">
+                                <div class="product-container-row row">
+                                    <div class="image-container col-12">
+                                        <img src="{{ $product->images[0] }}" alt="Obrázok postele s názvom {{ $product->name }}">  <!-- ../../imgs/new_products/ikea-beds/bed-ikea.webp -->
+                                    </div>
+                                    <div class="col-8">
+                                        <p>{{ $product->name }}</p>
+                                    </div>
+                                    <div class="product-price col-4">
+                                        <p>{{ $product->price }}€</p>
+                                    </div>
                                 </div>
-                                <div class="col-8">
-                                    <p>Veľká posteľ</p>
-                                </div>
-                                <div class="product-price col-4">
-                                    <p>1000€</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <!-- Second product from advertising on page -->
-                    <div class="product-container col-12 col-md-6">
-                        <a href="../product_detail/product_detail.html">
-                            <div class="product-container-row row">
-                                <div class="col-12">
-                                    <img src="/imgs/new_products/ikea-beds/bed-ikea2.webp" alt="Obrazok produktu">
-                                </div>
-                                <div class="col-8">
-                                    <p>Manželská posteľ</p>
-                                </div>
-                                <div class="product-price col-4">
-                                    <p>1000€</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
+                            </a>
+                        </div>
+                    @endforeach
                 </div>
                 <div class="row justify-content-center">
                     <div class="col-12 col-lg-5">
-                        <button type="button" class="btn btn-dark btn-lg btn-block">Zobraziť produky z reklamy</button>
+                        <a href="/categories/2" type="button" class="btn btn-dark btn-lg btn-block">Zobraziť kategóriu Obývačka</a>
                     </div>
                 </div>
             </section>
-            <!-- Best selling products -->
-            <section class="best-selling-products">
+            <!-- Bedroom products -->
+            <section class="bedroom">
                 <div class="row">
                     <div class="col-12">
-                        <h2>Najpredávanejšie produkty</h2>
+                        <h2>Spálňa</h2>
                     </div>
                 </div>
                 <div class="row">
-                    <!-- First best selling product on page -->
-                    <div class="product-container col-12 col-md-6">
-                        <a href="../product_detail/product_detail.html">
-                            <div class="product-container-row row">
-                                <div class="col-12">
-                                    <img src="/imgs/new_products/ikea-beds/bed-ikea.webp" alt="Obrazok produktu">
+                    @foreach($all_categories[3] as $product)
+                        <div class="product-container col-12 col-md-6">
+                            <a href="/products/{{ $product->id }}">
+                                <div class="product-container-row row">
+                                    <div class="image-container col-12">
+                                        <img src="{{ $product->images[0] }}" alt="Obrázok postele s názvom {{ $product->name }}">  <!-- ../../imgs/new_products/ikea-beds/bed-ikea.webp -->
+                                    </div>
+                                    <div class="col-8">
+                                        <p>{{ $product->name }}</p>
+                                    </div>
+                                    <div class="product-price col-4">
+                                        <p>{{ $product->price }}€</p>
+                                    </div>
                                 </div>
-                                <div class="col-8">
-                                    <p>Veľká posteľ</p>
-                                </div>
-                                <div class="product-price col-4">
-                                    <p>1000€</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <!-- Second best selling product on page -->
-                    <div class="product-container col-12 col-md-6">
-                        <a href="../product_detail/product_detail.html">
-                            <div class="product-container-row row">
-                                <div class="col-12">
-                                    <img src="/imgs/new_products/ikea-beds/bed-ikea2.webp" alt="Obrazok produktu">
-                                </div>
-                                <div class="col-8">
-                                    <p>Manželská posteľ</p>
-                                </div>
-                                <div class="product-price col-4">
-                                    <p>1000€</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
+                            </a>
+                        </div>
+                    @endforeach
                 </div>
                 <div class="row justify-content-center">
                     <div class="col-12 col-lg-5">
-                        <button type="button" class="btn btn-dark btn-lg btn-block">Zobraziť najpredávanejšie produkty</button>
+                        <a href="/categories/3" type="button" class="btn btn-dark btn-lg btn-block">Zobraziť kategóriu Spálňa</a>
+                    </div>
+                </div>
+            </section>
+            <!-- Bathroom products -->
+            <section class="bathroom">
+                <div class="row">
+                    <div class="col-12">
+                        <h2>Kúpelňa</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    @foreach($all_categories[4] as $product)
+                        <div class="product-container col-12 col-md-6">
+                            <a href="/products/{{ $product->id }}">
+                                <div class="product-container-row row">
+                                    <div class="image-container col-12">
+                                        <img src="{{ $product->images[0] }}" alt="Obrázok postele s názvom {{ $product->name }}">  <!-- ../../imgs/new_products/ikea-beds/bed-ikea.webp -->
+                                    </div>
+                                    <div class="col-8">
+                                        <p>{{ $product->name }}</p>
+                                    </div>
+                                    <div class="product-price col-4">
+                                        <p>{{ $product->price }}€</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    @endforeach
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-12 col-lg-5">
+                        <a href="/categories/4" type="button" class="btn btn-dark btn-lg btn-block">Zobraziť kategóriu Kúpelňa</a>
+                    </div>
+                </div>
+            </section>
+            <!-- Working room products -->
+            <section class="working_room">
+                <div class="row">
+                    <div class="col-12">
+                        <h2>Pracovňa</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    @foreach($all_categories[5] as $product)
+                        <div class="product-container col-12 col-md-6">
+                            <a href="/products/{{ $product->id }}">
+                                <div class="product-container-row row">
+                                    <div class="image-container col-12">
+                                        <img src="{{ $product->images[0] }}" alt="Obrázok postele s názvom {{ $product->name }}">  <!-- ../../imgs/new_products/ikea-beds/bed-ikea.webp -->
+                                    </div>
+                                    <div class="col-8">
+                                        <p>{{ $product->name }}</p>
+                                    </div>
+                                    <div class="product-price col-4">
+                                        <p>{{ $product->price }}€</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    @endforeach
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-12 col-lg-5">
+                        <a href="/categories/5" class="btn btn-dark btn-lg btn-block">Zobraziť kategóriu Pracovňa</a>
+                    </div>
+                </div>
+            </section>
+            <!-- Garden products -->
+            <section class="garden">
+                <div class="row">
+                    <div class="col-12">
+                        <h2>Záhrada</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    @foreach($all_categories[6] as $product)
+                        <div class="product-container col-12 col-md-6">
+                            <a href="/products/{{ $product->id }}">
+                                <div class="product-container-row row">
+                                    <div class="image-container col-12">
+                                        <img src="{{ $product->images[0] }}" alt="Obrázok postele s názvom {{ $product->name }}">  <!-- ../../imgs/new_products/ikea-beds/bed-ikea.webp -->
+                                    </div>
+                                    <div class="col-8">
+                                        <p>{{ $product->name }}</p>
+                                    </div>
+                                    <div class="product-price col-4">
+                                        <p>{{ $product->price }}€</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    @endforeach
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-12 col-lg-5">
+                        <a href="/categories/6" type="button" class="btn btn-dark btn-lg btn-block">Zobraziť kategóriu Záhrada</a>
                     </div>
                 </div>
             </section>

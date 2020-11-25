@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Category;
 use App\Models\OrderProduct;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -9,6 +10,19 @@ use Illuminate\Support\Facades\Session;
 
 class HomepageController extends Controller
 {
+    public function index() {
+        $all_categories = [];
+
+        for ($i = 1; $i <= 6; $i++) {
+            $products_list = Category::findOrFail($i)->products()->limit(2)->get();
+            $all_categories[$i] = $products_list;
+        }
+
+        return view('welcome', [
+            'all_categories' => $all_categories
+        ]);
+    }
+
     public function store(Request $request) {
         if (Session::has('shopping_cart') && Session::has('order')) {
             $shopping_cart = Session::get('shopping_cart');
@@ -33,8 +47,6 @@ class HomepageController extends Controller
             $order->timestamps = false;
 
             $order->save();
-//            $output = new ConsoleOutput();
-//            $output->writeln($order->id);
 
             $order_id = $order->id;
 
@@ -52,7 +64,16 @@ class HomepageController extends Controller
             $request->session()->put('order', null);
         }
 
-        return view('welcome');
+        $all_categories = [];
+
+        for ($i = 1; $i <= 6; $i++) {
+            $products_list = Category::findOrFail($i)->products()->limit(2)->get();
+            $all_categories[$i] = $products_list;
+        }
+
+        return view('welcome', [
+            'all_categories' => $all_categories
+        ]);
     }
 
     public function getDeliveryPrice($delivery) {

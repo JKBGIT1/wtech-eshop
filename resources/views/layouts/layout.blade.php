@@ -171,20 +171,6 @@
                         </div>
                     </div>
                 </li>
-                <!-- Dropdown link for Produkty -->
-                <li class="nav-item">
-                    <div class="dropdown show">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Produkty
-                        </a>
-
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                            <a class="dropdown-item" href="#">Novinky</a>
-                            <a class="dropdown-item" href="#">Produkty z reklám</a>
-                            <a class="dropdown-item" href="#">Najpredávanejšie produkty</a>
-                        </div>
-                    </div>
-                </li>
             </ul>
         </div>
     </nav>

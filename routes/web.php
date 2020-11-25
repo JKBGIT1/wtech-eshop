@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 // Homepage Route
-Route::get('/', function () { return view('welcome'); });
+Route::get('/', 'App\Http\Controllers\HomepageController@index');
 Route::post('/', 'App\Http\Controllers\HomepageController@store');
 
 // Categories Route

@@ -6,19 +6,20 @@ use App\Models\Product;
 use App\Models\ShoppingCart;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Session;
-use Symfony\Component\Console\Output\ConsoleOutput;
 
 class ShoppingCartReviewController extends Controller
 {
     public function index(Request $request) {
         $previous_page = str_replace(url('/'), '', url()->previous());
-        $request->session()->put('previous_page', $previous_page);
+        if ($previous_page != '/shopping_cart_delivery_details') {
+            $request->session()->put('previous_page', $previous_page);
+        }
 
         if (!Session::has('shopping_cart')) {
             return view('shopping_cart_reviews.index', [
                 'products' => null,
                 'total_price' => null,
-                'previous_page' => $previous_page
+                'previous_page' => Session::get('previous_page')
             ]);
         }
 
@@ -27,7 +28,7 @@ class ShoppingCartReviewController extends Controller
         return view('shopping_cart_reviews.index', [
             'products' => $new_shopping_cart->products,
             'total_price' => $new_shopping_cart->total_price,
-            'previous_page' => $previous_page
+            'previous_page' => Session::get('previous_page')
         ]);
     }
 
