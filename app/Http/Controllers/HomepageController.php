@@ -19,6 +19,7 @@ class HomepageController extends Controller
         }
 
         return view('welcome', [
+            'message' => null,
             'all_categories' => $all_categories
         ]);
     }
@@ -72,6 +73,7 @@ class HomepageController extends Controller
         }
 
         return view('welcome', [
+            'message' => 'Vaša objednávka prebehla úspešne.',
             'all_categories' => $all_categories
         ]);
     }

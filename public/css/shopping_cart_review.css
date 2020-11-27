@@ -49,6 +49,10 @@ main .remove-icon {
     text-align: right;
 }
 
+main .icon-discard-product:hover {
+    cursor: pointer;
+}
+
 main .product-input-container {
     margin-top: 2rem;
 }

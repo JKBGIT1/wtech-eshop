@@ -427,23 +427,29 @@
         <!-- Products from category -->
         <article>
             <div class="row">
-                @foreach($products_list as $product)
-                    <div class="product-container col-12 col-md-6">
-                        <a href="/products/{{ $product->id }}">
-                            <div class="product-container-row row">
-                                <div class="image-container col-12">
-                                    <img src="{{ $product->images[0] }}" alt="Obrázok postele s názvom {{ $product->name }}">  <!-- ../../imgs/new_products/ikea-beds/bed-ikea.webp -->
+                @if (count($products_list) > 0)
+                    @foreach($products_list as $product)
+                        <div class="product-container col-12 col-md-6">
+                            <a href="/products/{{ $product->id }}">
+                                <div class="product-container-row row">
+                                    <div class="image-container col-12">
+                                        <img src="{{ $product->images[0] }}" alt="Obrázok postele s názvom {{ $product->name }}">  <!-- ../../imgs/new_products/ikea-beds/bed-ikea.webp -->
+                                    </div>
+                                    <div class="col-8">
+                                        <p>{{ $product->name }}</p>
+                                    </div>
+                                    <div class="product-price col-4">
+                                        <p>{{ $product->price }}€</p>
+                                    </div>
                                 </div>
-                                <div class="col-8">
-                                    <p>{{ $product->name }}</p>
-                                </div>
-                                <div class="product-price col-4">
-                                    <p>{{ $product->price }}€</p>
-                                </div>
-                            </div>
-                        </a>
+                            </a>
+                        </div>
+                    @endforeach
+                @else
+                    <div class="col-12 alert alert-light text-center" role="alert">
+                        Nenašli sa výsledky filtrovania.
                     </div>
-                @endforeach
+                @endif
             </div>
         </article>
         <!-- Pagination -->

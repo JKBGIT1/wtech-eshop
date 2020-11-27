@@ -3,6 +3,16 @@ main div.container {
     font-size: 1.6rem;
 }
 
+main .go-to-category {
+    color: black;
+    font-size: 1.6rem;
+    padding-bottom: 1rem;
+}
+
+main .go-to-category-container {
+    margin-bottom: 1.5rem;
+}
+
 /*Margin two parts(columns) of page*/
 
 main div.container div.row div.col-md-6{
@@ -46,6 +56,10 @@ main div.container div.row div.col-4.col-sm-4.col-md-4 img{
     justify-self: center;
     padding-left: 20%;
 }
+
+main div.container div.row div.col-4.col-sm-4.col-md-4 img:hover {
+    cursor: pointer;
+}
 /*Sizing and positioning images end*/
 
 
@@ -86,6 +100,10 @@ main .numbers input {
 @media (min-width: 991px) {
     main .container {
         padding: 1rem;
+        font-size: 1.9rem;
+    }
+
+    main .go-to-category {
         font-size: 1.9rem;
     }
 

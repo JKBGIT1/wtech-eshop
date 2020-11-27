@@ -14,8 +14,16 @@
 @endsection
 
 @section('content')
+    <div class="container go-to-category-container">
+        <div class="row">
+            <div class="col-12">
+                <a class="go-to-category" href="{{ url('categories', [$product->category_id])}}">
+                    <i class="fas fa-arrow-left"></i> Späť do kategórie
+                </a>
+            </div>
+        </div>
+    </div>
     <div class="container">
-
         <div class="row">
 
             <!-- Image part of page -->

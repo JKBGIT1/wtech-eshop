@@ -3,17 +3,22 @@
 namespace App\Http\Controllers;
 
 use App\Models\Product;
+use Illuminate\Support\Str;
 use App\Models\ShoppingCart;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Session;
+use Symfony\Component\Console\Output\ConsoleOutput;
 
 class ShoppingCartReviewController extends Controller
 {
     public function index(Request $request) {
         $previous_page = str_replace(url('/'), '', url()->previous());
-        if ($previous_page != '/shopping_cart_delivery_details') {
+        if ($previous_page != '/shopping_cart_delivery_details' and !Str::contains($previous_page, '/shopping_cart_review')) {
             $request->session()->put('previous_page', $previous_page);
         }
+
+        $output = new ConsoleOutput();
+        $output->writeln($previous_page);
 
         if (!Session::has('shopping_cart')) {
             return view('shopping_cart_reviews.index', [

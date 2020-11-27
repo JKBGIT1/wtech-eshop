@@ -17,6 +17,9 @@
 @section('content')
     <section>
         <!-- Image under navbar -->
+        @if ($message)
+            <div class="alert alert-success text-center">{{ $message }}</div>
+        @endif
         <div class="home-image-container"></div>
         <div class="container">
             <!-- Kitchen products -->

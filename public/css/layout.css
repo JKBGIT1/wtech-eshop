@@ -101,6 +101,11 @@ header #form-under-navbar .header-search .form-control {
 main {
     margin: 60px 0 20px 0;
 }
+
+main .alert {
+    margin: 0;
+    font-size: 1.6rem;
+}
 /* There ends main styles */
 
 /* This styles are needed for footer */
@@ -193,6 +198,10 @@ footer .container .row div p {
 }
 
 @media (min-width: 991px) {
+    main .alert {
+        font-size: 1.9rem;
+    }
+
     header .navbar {
         padding: 0.5rem 2rem;
     }

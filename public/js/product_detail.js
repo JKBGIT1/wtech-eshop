@@ -15,3 +15,15 @@ function decreaseProductNumber () {
         inputProductsNumber.value = newValue;
     }
 }
+
+const images = document.querySelectorAll('img');
+
+for (let i = 1; i < images.length; i++) {
+    images[i].addEventListener('click', () => changeSrcSetWithMain(images[i]));
+}
+
+function changeSrcSetWithMain(image) {
+    let helpful = images[0].srcset;
+    images[0].srcset = image.srcset;
+    image.srcset = helpful;
+}
