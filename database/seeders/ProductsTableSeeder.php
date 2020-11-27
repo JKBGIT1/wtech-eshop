@@ -14,7 +14,7 @@ class ProductsTableSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('products')->insert([
+        $bedroom1 = [
             'name' => 'Songesand',
             'price' => 149,
             'material' => 'Dub',
@@ -25,11 +25,11 @@ class ProductsTableSeeder extends Seeder
             'number_of_packs' => 1,
             'description' => 'Nezmontované',
             'advantages' => '["new","best_selling"]',
-            'images' => '["/imgs/bedroom/ikea_bed_1_1.webp","/imgs/bedroom/ikea_bed_1_2.webp","/imgs/bedroom/ikea_bed_1_3.webp","/imgs/bedroom/ikea_bed_1_4.webp"]',
+            'images' => '["/imgs/bedroom/bed.jpg","/imgs/bedroom/bed.jpg","/imgs/bedroom/bed.jpg","/imgs/bedroom/bed.jpg"]',
             'category_id' => 3
-        ]);
+        ];
 
-        DB::table('products')->insert([
+        $bedroom2 = [
             'name' => 'Dunvik',
             'price' => 981,
             'material' => 'Čalunená posteľ',
@@ -40,129 +40,159 @@ class ProductsTableSeeder extends Seeder
             'number_of_packs' => 1,
             'description' => 'Nezmontované',
             'advantages' => '["new","add_product"]',
-            'images' => '["/imgs/bedroom/ikea_bed_2_1.webp","/imgs/bedroom/ikea_bed_2_2.webp","/imgs/bedroom/ikea_bed_2_3.webp","/imgs/bedroom/ikea_bed_2_4.webp"]',
+            'images' => '["/imgs/bedroom/bed2.jpg","/imgs/bedroom/bed2.jpg","/imgs/bedroom/bed2.jpg","/imgs/bedroom/bed2.jpg"]',
             'category_id' => 3
-        ]);
+        ];
 
-        DB::table('products')->insert([
-            'name' => 'Hemnes',
-            'price' => 329,
-            'material' => 'Rám postele Lönset',
-            'colors' => '["biela"]',
-            'width' => 180,
-            'height' => NULL,
-            'length' => 200,
-            'number_of_packs' => 1,
-            'description' => 'Nezmontované',
-            'advantages' => '["new","best_selling"]',
-            'images' => '["/imgs/bedroom/ikea_bed_3_1.webp","/imgs/bedroom/ikea_bed_3_2.webp","/imgs/bedroom/ikea_bed_3_3.webp","/imgs/bedroom/ikea_bed_3_4.webp"]',
-            'category_id' => 3
-        ]);
+//        DB::table('products')->insert([
+//            'name' => 'Songesand',
+//            'price' => 149,
+//            'material' => 'Dub',
+//            'colors' => '["hnedá"]',
+//            'width' => 140,
+//            'height' => NULL,
+//            'length' => 200,
+//            'number_of_packs' => 1,
+//            'description' => 'Nezmontované',
+//            'advantages' => '["new","best_selling"]',
+//            'images' => '["/imgs/bedroom/ikea_bed_1_1.webp","/imgs/bedroom/ikea_bed_1_2.webp","/imgs/bedroom/ikea_bed_1_3.webp","/imgs/bedroom/ikea_bed_1_4.webp"]',
+//            'category_id' => 3
+//        ]);
+//
+//        DB::table('products')->insert([
+//            'name' => 'Dunvik',
+//            'price' => 981,
+//            'material' => 'Čalunená posteľ',
+//            'colors' => '["šedá"]',
+//            'width' => 160,
+//            'height' => NULL,
+//            'length' => 200,
+//            'number_of_packs' => 1,
+//            'description' => 'Nezmontované',
+//            'advantages' => '["new","add_product"]',
+//            'images' => '["/imgs/bedroom/ikea_bed_2_1.webp","/imgs/bedroom/ikea_bed_2_2.webp","/imgs/bedroom/ikea_bed_2_3.webp","/imgs/bedroom/ikea_bed_2_4.webp"]',
+//            'category_id' => 3
+//        ]);
 
-        DB::table('products')->insert([
-            'name' => 'Hauga',
-            'price' => 179,
-            'material' => 'Čalunená posteľný rám',
-            'colors' => '["šedá"]',
-            'width' => 160,
-            'height' => NULL,
-            'length' => 200,
-            'number_of_packs' => 1,
-            'description' => 'Zmontované',
-            'advantages' => '["new","add_product"]',
-            'images' => '["/imgs/bedroom/ikea_bed_4_1.webp","/imgs/bedroom/ikea_bed_4_2.webp","/imgs/bedroom/ikea_bed_4_3.webp","/imgs/bedroom/ikea_bed_4_4.webp"]',
-            'category_id' => 3
-        ]);
-
-        DB::table('products')->insert([
-            'name' => 'Songesand Big',
-            'price' => 301,
-            'material' => 'Rám postele Lönset',
-            'colors' => '["hnedá"]',
-            'width' => 180,
-            'height' => NULL,
-            'length' => 200,
-            'number_of_packs' => 1,
-            'description' => 'Nezmontované',
-            'advantages' => '["best_selling"]',
-            'images' => '["/imgs/bedroom/ikea_bed_5_1.webp","/imgs/bedroom/ikea_bed_5_2.webp","/imgs/bedroom/ikea_bed_5_3.webp","/imgs/bedroom/ikea_bed_5_4.webp"]',
-            'category_id' => 3
-        ]);
-
-        DB::table('products')->insert([
-            'name' => 'Sagstua',
-            'price' => 259,
-            'material' => 'Rám postele Leirsund',
-            'colors' => '["čierna"]',
-            'width' => 160,
-            'height' => NULL,
-            'length' => 200,
-            'number_of_packs' => 1,
-            'description' => 'Zmontované',
-            'advantages' => '["new"]',
-            'images' => '["/imgs/bedroom/ikea_bed_6_1.webp","/imgs/bedroom/ikea_bed_6_2.webp","/imgs/bedroom/ikea_bed_6_3.webp","/imgs/bedroom/ikea_bed_6_4.webp"]',
-            'category_id' => 3
-        ]);
-
-        DB::table('products')->insert([
-            'name' => 'Hauga Small',
-            'price' => 209,
-            'material' => 'Čalunená posteľ',
-            'colors' => '["šedá"]',
-            'width' => 140,
-            'height' => NULL,
-            'length' => 200,
-            'number_of_packs' => 1,
-            'description' => 'Nezmontované',
-            'advantages' => '["add_product"]',
-            'images' => '["/imgs/bedroom/ikea_bed_7_1.webp","/imgs/bedroom/ikea_bed_7_2.webp","/imgs/bedroom/ikea_bed_7_3.webp","/imgs/bedroom/ikea_bed_7_4.webp"]',
-            'category_id' => 3
-        ]);
-
-        DB::table('products')->insert([
-            'name' => 'Hemnes',
-            'price' => 299,
-            'material' => 'Rám rozkladacej postele s 3 zásuvkami',
-            'colors' => '["biela"]',
-            'width' => 80,
-            'height' => NULL,
-            'length' => 200,
-            'number_of_packs' => 1,
-            'description' => 'Nezmontované',
-            'advantages' => '["new"]',
-            'images' => '["/imgs/bedroom/ikea_bed_9_1.webp","/imgs/bedroom/ikea_bed_9_2.webp","/imgs/bedroom/ikea_bed_9_3.webp","/imgs/bedroom/ikea_bed_9_4.webp"]',
-            'category_id' => 3
-        ]);
-
-        DB::table('products')->insert([
-            'name' => 'Neiden',
-            'price' => 46.99,
-            'material' => 'Rám postele borovica',
-            'colors' => '["hnedá"]',
-            'width' => 90,
-            'height' => NULL,
-            'length' => 200,
-            'number_of_packs' => 1,
-            'description' => 'Nezmontované',
-            'advantages' => '["best_selling"]',
-            'images' => '["/imgs/bedroom/ikea_bed_8_1.webp","/imgs/bedroom/ikea_bed_8_2.webp","/imgs/bedroom/ikea_bed_8_3.webp","/imgs/bedroom/ikea_bed_8_4.webp"]',
-            'category_id' => 3
-        ]);
-
-        DB::table('products')->insert([
-            'name' => 'Malm',
-            'price' => 178,
-            'material' => 'Rám postele Leirsund',
-            'colors' => '["čierna"]',
-            'width' => 90,
-            'height' => NULL,
-            'length' => 200,
-            'number_of_packs' => 1,
-            'description' => 'Nezmontované',
-            'advantages' => '["new"]',
-            'images' => '["/imgs/bedroom/ikea_bed_10_1.webp","/imgs/bedroom/ikea_bed_10_2.webp","/imgs/bedroom/ikea_bed_10_3.webp","/imgs/bedroom/ikea_bed_10_4.webp"]',
-            'category_id' => 3
-        ]);
+//        DB::table('products')->insert([
+//            'name' => 'Hemnes',
+//            'price' => 329,
+//            'material' => 'Rám postele Lönset',
+//            'colors' => '["biela"]',
+//            'width' => 180,
+//            'height' => NULL,
+//            'length' => 200,
+//            'number_of_packs' => 1,
+//            'description' => 'Nezmontované',
+//            'advantages' => '["new","best_selling"]',
+//            'images' => '["/imgs/bedroom/ikea_bed_3_1.webp","/imgs/bedroom/ikea_bed_3_2.webp","/imgs/bedroom/ikea_bed_3_3.webp","/imgs/bedroom/ikea_bed_3_4.webp"]',
+//            'category_id' => 3
+//        ]);
+//
+//        DB::table('products')->insert([
+//            'name' => 'Hauga',
+//            'price' => 179,
+//            'material' => 'Čalunená posteľný rám',
+//            'colors' => '["šedá"]',
+//            'width' => 160,
+//            'height' => NULL,
+//            'length' => 200,
+//            'number_of_packs' => 1,
+//            'description' => 'Zmontované',
+//            'advantages' => '["new","add_product"]',
+//            'images' => '["/imgs/bedroom/ikea_bed_4_1.webp","/imgs/bedroom/ikea_bed_4_2.webp","/imgs/bedroom/ikea_bed_4_3.webp","/imgs/bedroom/ikea_bed_4_4.webp"]',
+//            'category_id' => 3
+//        ]);
+//
+//        DB::table('products')->insert([
+//            'name' => 'Songesand Big',
+//            'price' => 301,
+//            'material' => 'Rám postele Lönset',
+//            'colors' => '["hnedá"]',
+//            'width' => 180,
+//            'height' => NULL,
+//            'length' => 200,
+//            'number_of_packs' => 1,
+//            'description' => 'Nezmontované',
+//            'advantages' => '["best_selling"]',
+//            'images' => '["/imgs/bedroom/ikea_bed_5_1.webp","/imgs/bedroom/ikea_bed_5_2.webp","/imgs/bedroom/ikea_bed_5_3.webp","/imgs/bedroom/ikea_bed_5_4.webp"]',
+//            'category_id' => 3
+//        ]);
+//
+//        DB::table('products')->insert([
+//            'name' => 'Sagstua',
+//            'price' => 259,
+//            'material' => 'Rám postele Leirsund',
+//            'colors' => '["čierna"]',
+//            'width' => 160,
+//            'height' => NULL,
+//            'length' => 200,
+//            'number_of_packs' => 1,
+//            'description' => 'Zmontované',
+//            'advantages' => '["new"]',
+//            'images' => '["/imgs/bedroom/ikea_bed_6_1.webp","/imgs/bedroom/ikea_bed_6_2.webp","/imgs/bedroom/ikea_bed_6_3.webp","/imgs/bedroom/ikea_bed_6_4.webp"]',
+//            'category_id' => 3
+//        ]);
+//
+//        DB::table('products')->insert([
+//            'name' => 'Hauga Small',
+//            'price' => 209,
+//            'material' => 'Čalunená posteľ',
+//            'colors' => '["šedá"]',
+//            'width' => 140,
+//            'height' => NULL,
+//            'length' => 200,
+//            'number_of_packs' => 1,
+//            'description' => 'Nezmontované',
+//            'advantages' => '["add_product"]',
+//            'images' => '["/imgs/bedroom/ikea_bed_7_1.webp","/imgs/bedroom/ikea_bed_7_2.webp","/imgs/bedroom/ikea_bed_7_3.webp","/imgs/bedroom/ikea_bed_7_4.webp"]',
+//            'category_id' => 3
+//        ]);
+//
+//        DB::table('products')->insert([
+//            'name' => 'Hemnes',
+//            'price' => 299,
+//            'material' => 'Rám rozkladacej postele s 3 zásuvkami',
+//            'colors' => '["biela"]',
+//            'width' => 80,
+//            'height' => NULL,
+//            'length' => 200,
+//            'number_of_packs' => 1,
+//            'description' => 'Nezmontované',
+//            'advantages' => '["new"]',
+//            'images' => '["/imgs/bedroom/ikea_bed_9_1.webp","/imgs/bedroom/ikea_bed_9_2.webp","/imgs/bedroom/ikea_bed_9_3.webp","/imgs/bedroom/ikea_bed_9_4.webp"]',
+//            'category_id' => 3
+//        ]);
+//
+//        DB::table('products')->insert([
+//            'name' => 'Neiden',
+//            'price' => 46.99,
+//            'material' => 'Rám postele borovica',
+//            'colors' => '["hnedá"]',
+//            'width' => 90,
+//            'height' => NULL,
+//            'length' => 200,
+//            'number_of_packs' => 1,
+//            'description' => 'Nezmontované',
+//            'advantages' => '["best_selling"]',
+//            'images' => '["/imgs/bedroom/ikea_bed_8_1.webp","/imgs/bedroom/ikea_bed_8_2.webp","/imgs/bedroom/ikea_bed_8_3.webp","/imgs/bedroom/ikea_bed_8_4.webp"]',
+//            'category_id' => 3
+//        ]);
+//
+//        DB::table('products')->insert([
+//            'name' => 'Malm',
+//            'price' => 178,
+//            'material' => 'Rám postele Leirsund',
+//            'colors' => '["čierna"]',
+//            'width' => 90,
+//            'height' => NULL,
+//            'length' => 200,
+//            'number_of_packs' => 1,
+//            'description' => 'Nezmontované',
+//            'advantages' => '["new"]',
+//            'images' => '["/imgs/bedroom/ikea_bed_10_1.webp","/imgs/bedroom/ikea_bed_10_2.webp","/imgs/bedroom/ikea_bed_10_3.webp","/imgs/bedroom/ikea_bed_10_4.webp"]',
+//            'category_id' => 3
+//        ]);
 
         $kitchen1 = [
             'name' => 'Enhet',
@@ -321,12 +351,14 @@ class ProductsTableSeeder extends Seeder
                 DB::table('products')->insert($bathroom1);
                 DB::table('products')->insert($working_room1);
                 DB::table('products')->insert($garden1);
+                DB::table('products')->insert($bedroom1);
             } else {
                 DB::table('products')->insert($kitchen2);
                 DB::table('products')->insert($living_room2);
                 DB::table('products')->insert($bathroom2);
                 DB::table('products')->insert($working_room2);
                 DB::table('products')->insert($garden2);
+                DB::table('products')->insert($bedroom2);
             }
         }
     }

@@ -19,19 +19,14 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="50e01064-0ed9-4354-8fad-d97c4e1ae879" name="Default Changelist" comment="Homepage finished. Ďalej nakupovať link working right.">
+    <list default="true" id="50e01064-0ed9-4354-8fad-d97c4e1ae879" name="Default Changelist" comment="Some minor changes. Everything should work, but check filters, search and make order usecase. Finally need to change images from ikea to free stock.">
+      <change afterPath="$PROJECT_DIR$/public/imgs/bedroom/bed.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/imgs/bedroom/bed2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/imgs/bedroom/free_stock_1.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/imgs/bedroom/free_stock_2.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/imgs/bedroom/free_stock_3.jpeg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomepageController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomepageController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProductController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ShoppingCartReviewController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ShoppingCartReviewController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/layout.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/layout.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/product_detail.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/product_detail.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/shopping_cart_review.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/shopping_cart_review.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/product_detail.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/product_detail.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/categories/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/categories/show.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/products/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/products/show.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/search/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/search/show.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeders/ProductsTableSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/ProductsTableSeeder.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -181,11 +176,12 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\wtech-eshop\public\imgs\bedroom" />
+      <recent name="C:\wamp64\www\wtech-eshop\public\css" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\wamp64\www\wtech-eshop\public" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\wamp64\www\wtech-eshop\public\css" />
     </key>
   </component>
   <component name="RunManager">
@@ -225,7 +221,7 @@
       <workItem from="1606205431557" duration="1535000" />
       <workItem from="1606312928598" duration="4512000" />
       <workItem from="1606317556530" duration="151000" />
-      <workItem from="1606483346820" duration="4158000" />
+      <workItem from="1606483346820" duration="7694000" />
     </task>
     <task id="LOCAL-00001" summary="Pagination working with some products on Spálňa category.">
       <created>1605271874541</created>
@@ -353,7 +349,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606317469383</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Some minor changes. Everything should work, but check filters, search and make order usecase. Finally need to change images from ikea to free stock.">
+      <created>1606487692898</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1606487692898</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -391,7 +394,8 @@
     <MESSAGE value="Fixing href in Ďalej Nakupovať link and Späť button in Shopping review." />
     <MESSAGE value="Fix empty shopping cart Prejsť k objednávke." />
     <MESSAGE value="Homepage finished. Ďalej nakupovať link working right." />
-    <option name="LAST_COMMIT_MESSAGE" value="Homepage finished. Ďalej nakupovať link working right." />
+    <MESSAGE value="Some minor changes. Everything should work, but check filters, search and make order usecase. Finally need to change images from ikea to free stock." />
+    <option name="LAST_COMMIT_MESSAGE" value="Some minor changes. Everything should work, but check filters, search and make order usecase. Finally need to change images from ikea to free stock." />
   </component>
   <component name="WindowStateProjectService">
     <state x="426" y="214" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1605620555896">
@@ -414,10 +418,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="538" y="117" key="Github.UntrackedFilesDialog/0.0.1536.824@0.0.1536.824" timestamp="1604675711359" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1606317471826">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1606487696367">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1606317471826" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1606487696367" />
     <state x="586" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1606483741957">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
