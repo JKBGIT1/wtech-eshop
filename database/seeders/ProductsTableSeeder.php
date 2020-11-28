@@ -205,7 +205,7 @@ class ProductsTableSeeder extends Seeder
             'number_of_packs' => 2,
             'description' => 'Nezmontované',
             'advantages' => '["new"]',
-            'images' => '["/imgs/kitchen/ikea_kitchen_1_1.webp","/imgs/kitchen/ikea_kitchen_1_2.webp","/imgs/kitchen/ikea_kitchen_1_3.webp","/imgs/kitchen/ikea_kitchen_1_4.webp"]',
+            'images' => '["/imgs/kitchen/kitchen1.jpg","/imgs/kitchen/kitchen1.jpg","/imgs/kitchen/kitchen1.jpg","/imgs/kitchen/kitchen1.jpg"]',
             'category_id' => 1
         ];
 
@@ -220,7 +220,7 @@ class ProductsTableSeeder extends Seeder
             'number_of_packs' => 2,
             'description' => 'Nezmontované',
             'advantages' => '["add_product"]',
-            'images' => '["/imgs/kitchen/ikea_kitchen_2_1.webp","/imgs/kitchen/ikea_kitchen_2_2.webp","/imgs/kitchen/ikea_kitchen_2_3.webp","/imgs/kitchen/ikea_kitchen_2_4.webp"]',
+            'images' => '["/imgs/kitchen/kitchen2.jpg","/imgs/kitchen/kitchen2.jpg","/imgs/kitchen/kitchen2.jpg","/imgs/kitchen/kitchen2.jpg"]',
             'category_id' => 1
         ];
 
@@ -235,7 +235,7 @@ class ProductsTableSeeder extends Seeder
             'number_of_packs' => 1,
             'description' => 'Nezmontované',
             'advantages' => '["add_product"]',
-            'images' => '["/imgs/living_room/ikea_living_room_1_1.webp","/imgs/living_room/ikea_living_room_1_2.webp","/imgs/living_room/ikea_living_room_1_3.webp","/imgs/living_room/ikea_living_room_1_4.webp"]',
+            'images' => '["/imgs/living_room/sofa1.jpg","/imgs/living_room/sofa1.jpg","/imgs/living_room/sofa1.jpg","/imgs/living_room/sofa1.jpg"]',
             'category_id' => 2
         ];
 
@@ -250,7 +250,7 @@ class ProductsTableSeeder extends Seeder
             'number_of_packs' => 1,
             'description' => 'Nezmontované',
             'advantages' => '["best_selling","add_product","new"]',
-            'images' => '["/imgs/living_room/ikea_living_room_2_1.webp","/imgs/living_room/ikea_living_room_2_2.webp","/imgs/living_room/ikea_living_room_2_3.webp","/imgs/living_room/ikea_living_room_2_4.webp"]',
+            'images' => '["/imgs/living_room/sofa2.jpg","/imgs/living_room/sofa2.jpg","/imgs/living_room/sofa2.jpg","/imgs/living_room/sofa2.jpg"]',
             'category_id' => 2
         ];
 
@@ -265,7 +265,7 @@ class ProductsTableSeeder extends Seeder
             'number_of_packs' => 1,
             'description' => 'Nezmontované',
             'advantages' => '["best_selling"]',
-            'images' => '["/imgs/bathroom/ikea_bathroom_1_1.webp","/imgs/bathroom/ikea_bathroom_1_2.webp","/imgs/bathroom/ikea_bathroom_1_3.webp","/imgs/bathroom/ikea_bathroom_1_4.webp"]',
+            'images' => '["/imgs/bathroom/shower1.jpg","/imgs/bathroom/shower1.jpg","/imgs/bathroom/shower1.jpg","/imgs/bathroom/shower1.jpg"]',
             'category_id' => 4
         ];
 
@@ -280,7 +280,7 @@ class ProductsTableSeeder extends Seeder
             'number_of_packs' => 1,
             'description' => 'Nezmontované',
             'advantages' => '["new"]',
-            'images' => '["/imgs/bathroom/ikea_bathroom_2_1.webp","/imgs/bathroom/ikea_bathroom_2_2.webp","/imgs/bathroom/ikea_bathroom_2_3.webp","/imgs/bathroom/ikea_bathroom_2_4.webp"]',
+            'images' => '["/imgs/bathroom/shower2.jpg","/imgs/bathroom/shower2.jpg","/imgs/bathroom/shower2.jpg","/imgs/bathroom/shower2.jpg"]',
             'category_id' => 4
         ];
 
@@ -295,7 +295,7 @@ class ProductsTableSeeder extends Seeder
             'number_of_packs' => 1,
             'description' => 'Nezmontované',
             'advantages' => '["add_product"]',
-            'images' => '["/imgs/working_room/ikea_working_room_1_1.webp","/imgs/working_room/ikea_working_room_1_2.webp","/imgs/working_room/ikea_working_room_1_3.webp","/imgs/working_room/ikea_working_room_1_4.webp"]',
+            'images' => '["/imgs/working_room/desk1.jpg","/imgs/working_room/desk1.jpg","/imgs/working_room/desk1.jpg","/imgs/working_room/desk1.jpg"]',
             'category_id' => 5
         ];
 
@@ -310,7 +310,7 @@ class ProductsTableSeeder extends Seeder
             'number_of_packs' => 1,
             'description' => 'Nezmontované',
             'advantages' => '["new"]',
-            'images' => '["/imgs/working_room/ikea_working_room_2_1.webp","/imgs/working_room/ikea_working_room_2_2.webp","/imgs/working_room/ikea_working_room_2_3.webp","/imgs/working_room/ikea_working_room_2_4.webp"]',
+            'images' => '["/imgs/working_room/desk2.jpg","/imgs/working_room/desk2.jpg","/imgs/working_room/desk2.jpg","/imgs/working_room/desk2.jpg"]',
             'category_id' => 5
         ];
 
@@ -325,7 +325,7 @@ class ProductsTableSeeder extends Seeder
             'number_of_packs' => 1,
             'description' => 'Zmontované',
             'advantages' => '["new"]',
-            'images' => '["/imgs/garden/ikea_garden_1_1.webp","/imgs/garden/ikea_garden_1_2.webp","/imgs/garden/ikea_garden_1_3.webp","/imgs/garden/ikea_garden_1_4.webp"]',
+            'images' => '["/imgs/garden/garden1.jpg","/imgs/garden/garden1.jpg","/imgs/garden/garden1.jpg","/imgs/garden/garden1.jpg"]',
             'category_id' => 6
         ];
 
@@ -340,7 +340,7 @@ class ProductsTableSeeder extends Seeder
             'number_of_packs' => 2,
             'description' => 'Zmontované',
             'advantages' => '["best_selling"]',
-            'images' => '["/imgs/garden/ikea_garden_2_1.webp","/imgs/garden/ikea_garden_2_2.webp","/imgs/garden/ikea_garden_2_3.webp","/imgs/garden/ikea_garden_2_4.webp"]',
+            'images' => '["/imgs/garden/garden2.jpg","/imgs/garden/garden2.jpg","/imgs/garden/garden2.jpg","/imgs/garden/garden2.jpg"]',
             'category_id' => 6
         ];
 

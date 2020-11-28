@@ -19,12 +19,27 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="50e01064-0ed9-4354-8fad-d97c4e1ae879" name="Default Changelist" comment="Some minor changes. Everything should work, but check filters, search and make order usecase. Finally need to change images from ikea to free stock.">
-      <change afterPath="$PROJECT_DIR$/public/imgs/bedroom/bed.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/imgs/bedroom/bed2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/imgs/bedroom/free_stock_1.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/imgs/bedroom/free_stock_2.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/imgs/bedroom/free_stock_3.jpeg" afterDir="false" />
+    <list default="true" id="50e01064-0ed9-4354-8fad-d97c4e1ae879" name="Default Changelist" comment="Imported some bed images from freestock.">
+      <change afterPath="$PROJECT_DIR$/public/imgs/bathroom/free_stock_1.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/imgs/bathroom/free_stock_2.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/imgs/bathroom/shower1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/imgs/bathroom/shower2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/imgs/garden/free_stock_1.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/imgs/garden/free_stock_2.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/imgs/garden/garden1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/imgs/garden/garden2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/imgs/kitchen/free_stock_1.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/imgs/kitchen/free_stock_2.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/imgs/kitchen/kitchen1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/imgs/kitchen/kitchen2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/imgs/living_room/free_stock_1.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/imgs/living_room/free_stock_2.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/imgs/living_room/sofa1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/imgs/living_room/sofa2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/imgs/working_room/desk1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/imgs/working_room/desk2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/imgs/working_room/free_stock_1.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/imgs/working_room/free_stock_2.jpeg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/seeders/ProductsTableSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/ProductsTableSeeder.php" afterDir="false" />
     </list>
@@ -176,12 +191,15 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\wamp64\www\wtech-eshop\public\imgs\bedroom" />
-      <recent name="C:\wamp64\www\wtech-eshop\public\css" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\wamp64\www\wtech-eshop\public" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\wtech-eshop\public\imgs\garden" />
+      <recent name="C:\wamp64\www\wtech-eshop\public\imgs\working_room" />
+      <recent name="C:\wamp64\www\wtech-eshop\public\imgs\living_room" />
+      <recent name="C:\wamp64\www\wtech-eshop\public\imgs\bathroom" />
+      <recent name="C:\wamp64\www\wtech-eshop\public\imgs\kitchen" />
     </key>
   </component>
   <component name="RunManager">
@@ -221,7 +239,8 @@
       <workItem from="1606205431557" duration="1535000" />
       <workItem from="1606312928598" duration="4512000" />
       <workItem from="1606317556530" duration="151000" />
-      <workItem from="1606483346820" duration="7694000" />
+      <workItem from="1606483346820" duration="7816000" />
+      <workItem from="1606565210424" duration="2482000" />
     </task>
     <task id="LOCAL-00001" summary="Pagination working with some products on Spálňa category.">
       <created>1605271874541</created>
@@ -356,7 +375,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606487692898</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Imported some bed images from freestock.">
+      <created>1606495227514</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1606495227514</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -395,7 +421,8 @@
     <MESSAGE value="Fix empty shopping cart Prejsť k objednávke." />
     <MESSAGE value="Homepage finished. Ďalej nakupovať link working right." />
     <MESSAGE value="Some minor changes. Everything should work, but check filters, search and make order usecase. Finally need to change images from ikea to free stock." />
-    <option name="LAST_COMMIT_MESSAGE" value="Some minor changes. Everything should work, but check filters, search and make order usecase. Finally need to change images from ikea to free stock." />
+    <MESSAGE value="Imported some bed images from freestock." />
+    <option name="LAST_COMMIT_MESSAGE" value="Imported some bed images from freestock." />
   </component>
   <component name="WindowStateProjectService">
     <state x="426" y="214" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1605620555896">
@@ -418,14 +445,14 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="538" y="117" key="Github.UntrackedFilesDialog/0.0.1536.824@0.0.1536.824" timestamp="1604675711359" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1606487696367">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1606495255620">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1606487696367" />
-    <state x="586" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1606483741957">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1606495255620" />
+    <state x="586" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1606565321044">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="586" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1606483741957" />
+    <state x="586" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1606565321044" />
     <state x="486" y="184" key="refactoring.ChangeSignatureDialog" timestamp="1605613639174">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
