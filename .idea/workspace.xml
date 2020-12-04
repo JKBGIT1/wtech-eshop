@@ -19,29 +19,12 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="50e01064-0ed9-4354-8fad-d97c4e1ae879" name="Default Changelist" comment="Imported some bed images from freestock.">
-      <change afterPath="$PROJECT_DIR$/public/imgs/bathroom/free_stock_1.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/imgs/bathroom/free_stock_2.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/imgs/bathroom/shower1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/imgs/bathroom/shower2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/imgs/garden/free_stock_1.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/imgs/garden/free_stock_2.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/imgs/garden/garden1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/imgs/garden/garden2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/imgs/kitchen/free_stock_1.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/imgs/kitchen/free_stock_2.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/imgs/kitchen/kitchen1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/imgs/kitchen/kitchen2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/imgs/living_room/free_stock_1.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/imgs/living_room/free_stock_2.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/imgs/living_room/sofa1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/imgs/living_room/sofa2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/imgs/working_room/desk1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/imgs/working_room/desk2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/imgs/working_room/free_stock_1.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/imgs/working_room/free_stock_2.jpeg" afterDir="false" />
+    <list default="true" id="50e01064-0ed9-4354-8fad-d97c4e1ae879" name="Default Changelist" comment="Images from freestock.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeders/ProductsTableSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/ProductsTableSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProductController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/cors.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/cors.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -185,7 +168,7 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/PhpstormProjects/responsive_layouts" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -240,7 +223,9 @@
       <workItem from="1606312928598" duration="4512000" />
       <workItem from="1606317556530" duration="151000" />
       <workItem from="1606483346820" duration="7816000" />
-      <workItem from="1606565210424" duration="2482000" />
+      <workItem from="1606565210424" duration="2764000" />
+      <workItem from="1606812970200" duration="286000" />
+      <workItem from="1607065925934" duration="8034000" />
     </task>
     <task id="LOCAL-00001" summary="Pagination working with some products on Spálňa category.">
       <created>1605271874541</created>
@@ -382,7 +367,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606495227514</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Images from freestock.">
+      <created>1606567933182</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1606567933182</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -422,17 +414,18 @@
     <MESSAGE value="Homepage finished. Ďalej nakupovať link working right." />
     <MESSAGE value="Some minor changes. Everything should work, but check filters, search and make order usecase. Finally need to change images from ikea to free stock." />
     <MESSAGE value="Imported some bed images from freestock." />
-    <option name="LAST_COMMIT_MESSAGE" value="Imported some bed images from freestock." />
+    <MESSAGE value="Images from freestock." />
+    <option name="LAST_COMMIT_MESSAGE" value="Images from freestock." />
   </component>
   <component name="WindowStateProjectService">
     <state x="426" y="214" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1605620555896">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="426" y="214" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1605620555896" />
-    <state x="115" y="170" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1606314293221">
+    <state x="115" y="170" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1607066691566">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="115" y="170" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1536.824@0.0.1536.824" timestamp="1606314293221" />
+    <state x="115" y="170" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1536.824@0.0.1536.824" timestamp="1607066691566" />
     <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1605269669345">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -445,10 +438,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="538" y="117" key="Github.UntrackedFilesDialog/0.0.1536.824@0.0.1536.824" timestamp="1604675711359" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1606495255620">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1606568005672">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1606495255620" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1606568005672" />
     <state x="586" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1606565321044">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

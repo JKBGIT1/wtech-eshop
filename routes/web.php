@@ -22,7 +22,13 @@ Route::get('/categories/{id}', 'App\Http\Controllers\CategoryController@show')->
 Route::put('/categories/{id}', 'App\Http\Controllers\CategoryController@update')->middleware(\App\Http\Middleware\DeleteFilters::class);
 
 // Products Route
+Route::post('products/', 'App\Http\Controllers\ProductController@store'); // Admin interface
+Route::get('/products/list', 'App\Http\Controllers\ProductController@list'); // Admin interface
 Route::get('/products/{id}', 'App\Http\Controllers\ProductController@show');
+Route::get('/products/list/{page}', 'App\Http\Controllers\ProductController@list'); // Admin interface
+Route::delete('/products/{product}', 'App\Http\Controllers\ProductController@destroy'); // Admin interface
+Route::get('products/{product}/edit', 'App\Http\Controllers\ProductController@edit'); // Admin interface
+Route::put('products/{product}', 'App\Http\Controllers\ProductController@update'); // Admin interface
 
 // Shopping cart review Route
 Route::get('/shopping_cart_review', 'App\Http\Controllers\ShoppingCartReviewController@index');
