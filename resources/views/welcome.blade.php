@@ -20,6 +20,11 @@
         @if ($message)
             <div class="alert alert-success text-center">{{ $message }}</div>
         @endif
+{{--        <form action="{{url('/products')}}" method="POST">--}}
+{{--            <input type="hidden" name="_method" value="POST">--}}
+{{--            <input type="hidden" name="update" value="true">--}}
+{{--            <input type="submit">--}}
+{{--        </form>--}}
         <div class="home-image-container"></div>
         <div class="container">
             <!-- Kitchen products -->

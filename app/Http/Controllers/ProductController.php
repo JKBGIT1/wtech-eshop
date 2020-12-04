@@ -64,20 +64,63 @@ class ProductController extends Controller
 
     public function store(Request $request) {
         $output = new ConsoleOutput();
-        $output->writeln($request->name);
-        $output->writeln($request->description);
 
         // Need to make own product creation
-        $product = Product::create(['name' => $request->name, 'description' => $request->description]);
+        $product = $this->createOrUpdateProduct($request, null);
+//            $product->name = "Nazdar";
+//            $product->price = (float) 1257;
+//            $product->width = (int) 999;
+//            $product->length = (int) 888;
+//            $product->height = (int) 777;
+//            $product->colors = ["cierna"];
+//            $product->category_id = (int) 1;
+//            $product->number_of_packs = (int) 2;
+//            $product->material = "Velky";
+//            $product->advantages = ["new","add_product","best_selling"];
+//            $product->description = "Hello there";
+//            $product->timestamps = false;
+
+
+        $product->save();
+
         return response()->json(['id' => $product->id]);
+//        return view('welcome');
     }
 
-    public function update() {
+    public function update(Request $request) {
+        // need to update product
+        $product_id = $request->id;
+        $product = Product::find($product_id);
 
+        $product = $this->createOrUpdateProduct($request, $product);
+
+        $product->save();
+
+        return response()->json(['product' => $product_id]);
     }
 
     public function edit(Product $product) {
-        $get_product = Product::findOrFail($product);
-        return response()->json(['id' => $get_product->id]);
+        return response()->json(['product' => $product]);
+    }
+
+    public function createOrUpdateProduct($request, $product) {
+        if ($product == null) { // we need to create new Product object
+            $product = new Product();
+        }
+
+        $product->name = $request->name;
+        $product->price = (float) $request->price;
+        $product->width = (int) $request->width;
+        $product->length = (int) $request->length;
+        $product->height = (int) $request->height;
+        $product->colors = $request->colors;
+        $product->category_id = (int) $request->category_id;
+        $product->number_of_packs = (int) $request->number_of_packs;
+        $product->material = $request->material;
+        $product->advantages = $request->advantages;
+        $product->description = $request->description;
+        $product->timestamps = false;
+
+        return $product;
     }
 }

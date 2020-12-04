@@ -16,7 +16,7 @@ class CreateOrdersTable extends Migration
         Schema::create('orders', function (Blueprint $table) {
             $table->increments('id');
             $table->timestamp('ordered_at')->nullable();
-            $table->decimal('price', 6, 2);
+            $table->decimal('price', 12, 2);
             $table->text('first_name');
             $table->text('last_name');
             $table->text('street');
