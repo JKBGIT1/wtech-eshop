@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Support\Facades\Storage;
 use Throwable;
 use App\Models\Product;
 use Illuminate\Http\Request;
@@ -64,7 +65,9 @@ class ProductController extends Controller
 
     public function store(Request $request) {
         $output = new ConsoleOutput();
-
+//        $images = $request->images;
+//        $output->writeln($images);
+//        Storage::disk('public')->putFileAs('/', $images, 'hello_there.jpg');
         // Need to make own product creation
         $product = $this->createOrUpdateProduct($request, null);
 //            $product->name = "Nazdar";
