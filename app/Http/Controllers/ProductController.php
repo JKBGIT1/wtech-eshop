@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Support\Facades\Storage;
 use Throwable;
 use App\Models\Product;
 use Illuminate\Http\Request;
@@ -66,9 +65,20 @@ class ProductController extends Controller
     public function imageUpload(Request $request) {
         $output = new ConsoleOutput();
 
-        $output->writeln($request->file->getClientOriginalName());
+        try {
+            if ($request->hasFile('file')) {
+                $destination_path = 'public/imgs';
+                $image_name = $request->file->getClientOriginalName();
+                $request->file('file')->storeAs($destination_path, $image_name);
 
-        return response()->json(['path' => 'good']);
+                return response()->json(['path' => '/imgs/'.$image_name]);
+            }
+
+            return response()->json(['path' => 'fail']);
+        } catch (Throwable $e) {
+            $output->writeln($e);
+            return response()->json(['path' => 'fail']);
+        }
     }
 
     public function store(Request $request) {
@@ -131,6 +141,7 @@ class ProductController extends Controller
         $product->advantages = $request->advantages;
         $product->description = $request->description;
         $product->timestamps = false;
+        $product->images = $request->images;
 
         return $product;
     }
