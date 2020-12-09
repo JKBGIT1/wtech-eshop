@@ -19,9 +19,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="50e01064-0ed9-4354-8fad-d97c4e1ae879" name="Default Changelist" comment="Working delete of product from Admin interface. Create and Edit are working too, but without images.">
+    <list default="true" id="50e01064-0ed9-4354-8fad-d97c4e1ae879" name="Default Changelist" comment="Trying to make images uploader.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProductController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -165,7 +166,7 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/PhpstormProjects/Quasar-tutorial" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -224,7 +225,9 @@
       <workItem from="1606812970200" duration="286000" />
       <workItem from="1607065925934" duration="8925000" />
       <workItem from="1607083984118" duration="8667000" />
-      <workItem from="1607165343475" duration="2833000" />
+      <workItem from="1607165343475" duration="3129000" />
+      <workItem from="1607265006316" duration="869000" />
+      <workItem from="1607516758568" duration="3685000" />
     </task>
     <task id="LOCAL-00001" summary="Pagination working with some products on Spálňa category.">
       <created>1605271874541</created>
@@ -387,7 +390,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607098496067</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Trying to make images uploader.">
+      <created>1607169405172</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1607169405172</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -430,7 +440,8 @@
     <MESSAGE value="Images from freestock." />
     <MESSAGE value="Admin connection with admin interface." />
     <MESSAGE value="Working delete of product from Admin interface. Create and Edit are working too, but without images." />
-    <option name="LAST_COMMIT_MESSAGE" value="Working delete of product from Admin interface. Create and Edit are working too, but without images." />
+    <MESSAGE value="Trying to make images uploader." />
+    <option name="LAST_COMMIT_MESSAGE" value="Trying to make images uploader." />
   </component>
   <component name="WindowStateProjectService">
     <state x="426" y="214" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1605620555896">
@@ -441,10 +452,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="115" y="170" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1536.824@0.0.1536.824" timestamp="1607066691566" />
-    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1607098542444">
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1607517522381">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1607098542444" />
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1607517522381" />
     <state x="640" y="310" key="Github.ShareDialog" timestamp="1604675676204">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -453,14 +464,14 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="538" y="117" key="Github.UntrackedFilesDialog/0.0.1536.824@0.0.1536.824" timestamp="1604675711359" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1607098497956">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1607169406892">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1607098497956" />
-    <state x="586" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1606565321044">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1607169406892" />
+    <state x="586" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1607517551878">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="586" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1606565321044" />
+    <state x="586" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1607517551878" />
     <state x="486" y="184" key="refactoring.ChangeSignatureDialog" timestamp="1605613639174">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

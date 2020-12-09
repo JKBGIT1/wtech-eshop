@@ -63,6 +63,14 @@ class ProductController extends Controller
         }
     }
 
+    public function imageUpload(Request $request) {
+        $output = new ConsoleOutput();
+
+        $output->writeln($request->file->getClientOriginalName());
+
+        return response()->json(['path' => 'good']);
+    }
+
     public function store(Request $request) {
         $output = new ConsoleOutput();
 //        $images = $request->images;
