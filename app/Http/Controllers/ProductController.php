@@ -153,7 +153,21 @@ class ProductController extends Controller
         $product->advantages = $request->advantages;
         $product->description = $request->description;
         $product->timestamps = false;
-        $product->images = $request->images;
+        if (count($request->images) > 0) { // doesn't set blank array
+//            $images_paths = [];
+//            $last_index = count($request->images) - 1;
+//            // this loops starts from end, in case of adding new image in edit
+//            for ($i = $last_index; $i >= 0; $i++) {
+//                if (count($images_paths) < 4) { // append only first four images
+//                    $images_paths[$last_index - $i] = $request->images[$i]; // need to fix this
+//                } else { // delete others
+//                    if (File::exists(public_path($request->images[$i]))) {
+//                        File::delete(public_path($request->images[$i]));
+//                    }
+//                }
+//            }
+            $product->images = $request->images;
+        }
 
         return $product;
     }
