@@ -19,10 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="50e01064-0ed9-4354-8fad-d97c4e1ae879" name="Default Changelist" comment="Images are storing on server, but not in public folder.">
+    <list default="true" id="50e01064-0ed9-4354-8fad-d97c4e1ae879" name="Default Changelist" comment="Uploading images working right.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProductController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/filesystems.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/filesystems.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -231,7 +230,10 @@
       <workItem from="1607516758568" duration="5187000" />
       <workItem from="1607526306859" duration="8410000" />
       <workItem from="1607538322737" duration="1240000" />
-      <workItem from="1607539593254" duration="2557000" />
+      <workItem from="1607539593254" duration="2682000" />
+      <workItem from="1607542939459" duration="22000" />
+      <workItem from="1607594126870" duration="1884000" />
+      <workItem from="1607622001285" duration="1554000" />
     </task>
     <task id="LOCAL-00001" summary="Pagination working with some products on Spálňa category.">
       <created>1605271874541</created>
@@ -415,7 +417,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607538865171</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Uploading images working right.">
+      <created>1607542874228</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1607542874228</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -435,7 +444,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Adding products to shopping cart." />
     <MESSAGE value="Shopping cart working expect removing product from shopping cart." />
     <MESSAGE value="Shopping cart review working." />
     <MESSAGE value="Shopping cart working with storing into database." />
@@ -460,7 +468,8 @@
     <MESSAGE value="Trying to make images uploader." />
     <MESSAGE value="Sending images to server. Need to get response." />
     <MESSAGE value="Images are storing on server, but not in public folder." />
-    <option name="LAST_COMMIT_MESSAGE" value="Images are storing on server, but not in public folder." />
+    <MESSAGE value="Uploading images working right." />
+    <option name="LAST_COMMIT_MESSAGE" value="Uploading images working right." />
   </component>
   <component name="WindowStateProjectService">
     <state x="426" y="214" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1605620555896">
@@ -471,10 +480,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="115" y="170" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1536.824@0.0.1536.824" timestamp="1607066691566" />
-    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1607526561874">
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1607594907782">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1607526561874" />
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1607594907782" />
     <state x="640" y="310" key="Github.ShareDialog" timestamp="1604675676204">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -483,10 +492,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="538" y="117" key="Github.UntrackedFilesDialog/0.0.1536.824@0.0.1536.824" timestamp="1604675711359" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1607538877052">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1607542875631">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1607538877052" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1607542875631" />
     <state x="586" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1607517551878">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

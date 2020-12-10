@@ -2,11 +2,14 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Support\Facades\Storage;
 use Throwable;
 use App\Models\Product;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\File;
 use Symfony\Component\Console\Output\ConsoleOutput;
+
 
 class ProductController extends Controller
 {
@@ -53,11 +56,20 @@ class ProductController extends Controller
     }
 
     public function destroy(Product $product) {
+        $output = new ConsoleOutput();
+
         try {
             $product->delete();
+            foreach($product->images as $image) {
+                if (File::exists(public_path($image))) {
+                    File::delete(public_path($image));
+                } else {
+                    $output->writeln('Image doesn\'t exists.');
+                }
+            }
             return response()->json(['status'=>'success','msg' => 'Produkt bol úspešne vymazaný.']);
         } catch (Throwable $e) {
-            report($e);
+            $output->writeln($e);
             return response()->json(['status'=>'fail', 'msg' => 'Produkt sa nepodarilo vymazat']);
         }
     }
@@ -120,6 +132,7 @@ class ProductController extends Controller
     }
 
     public function edit(Product $product) {
+        // need to store edit
         return response()->json(['product' => $product]);
     }
 
