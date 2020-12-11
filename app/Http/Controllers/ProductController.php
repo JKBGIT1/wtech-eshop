@@ -93,30 +93,11 @@ class ProductController extends Controller
     }
 
     public function store(Request $request) {
-        $output = new ConsoleOutput();
-//        $images = $request->images;
-//        $output->writeln($images);
-//        Storage::disk('public')->putFileAs('/', $images, 'hello_there.jpg');
-        // Need to make own product creation
         $product = $this->createOrUpdateProduct($request, null);
-//            $product->name = "Nazdar";
-//            $product->price = (float) 1257;
-//            $product->width = (int) 999;
-//            $product->length = (int) 888;
-//            $product->height = (int) 777;
-//            $product->colors = ["cierna"];
-//            $product->category_id = (int) 1;
-//            $product->number_of_packs = (int) 2;
-//            $product->material = "Velky";
-//            $product->advantages = ["new","add_product","best_selling"];
-//            $product->description = "Hello there";
-//            $product->timestamps = false;
-
 
         $product->save();
 
         return response()->json(['id' => $product->id]);
-//        return view('welcome');
     }
 
     public function update(Request $request) {
@@ -133,7 +114,17 @@ class ProductController extends Controller
 
     public function edit(Product $product) {
         // need to store edit
-        return response()->json(['product' => $product]);
+        $product_images = [];
+        for ($i = 0; $i < count($product->images); $i++) {
+            if (File::exists(public_path($product->images[$i]))) {
+                $product_images[$i] = mb_convert_encoding(File::get(public_path($product->images[$i])), 'UTF-8', 'UTF-8');;
+            }
+        }
+
+        return response()->json([
+            'product' =>  $product,
+            'product_images' => $product_images,
+        ]);
     }
 
     public function createOrUpdateProduct($request, $product) {
@@ -154,18 +145,6 @@ class ProductController extends Controller
         $product->description = $request->description;
         $product->timestamps = false;
         if (count($request->images) > 0) { // doesn't set blank array
-//            $images_paths = [];
-//            $last_index = count($request->images) - 1;
-//            // this loops starts from end, in case of adding new image in edit
-//            for ($i = $last_index; $i >= 0; $i++) {
-//                if (count($images_paths) < 4) { // append only first four images
-//                    $images_paths[$last_index - $i] = $request->images[$i]; // need to fix this
-//                } else { // delete others
-//                    if (File::exists(public_path($request->images[$i]))) {
-//                        File::delete(public_path($request->images[$i]));
-//                    }
-//                }
-//            }
             $product->images = $request->images;
         }
 

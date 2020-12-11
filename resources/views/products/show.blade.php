@@ -42,33 +42,33 @@
 
                 <div class="row">
                     <div class="col-4 col-sm-4 col-md-4">
-                        <img srcset="{{ $product->images and count($product->images) > 1 ? $product->images[1] : '' }} 320w,
-                                     {{ $product->images and count($product->images) > 1 ? $product->images[1] : '' }} 480w,
-                                     {{ $product->images and count($product->images) > 1 ? $product->images[1] : '' }} 800w"
+                        <img srcset="{{ ($product->images and (count($product->images) > 1)) ? $product->images[1] : '' }} 320w,
+                                     {{ ($product->images and (count($product->images) > 1)) ? $product->images[1] : '' }} 480w,
+                                     {{ ($product->images and (count($product->images) > 1)) ? $product->images[1] : '' }} 800w"
                              sizes="(max-width: 320px) 280px,
                                 (max-width: 480px) 440px,
                                 800px"
-                             src="{{ $product->images and count($product->images) > 1 ? $product->images[1] : '' }}">
+                             src="{{ ($product->images and (count($product->images) > 1)) ? $product->images[1] : '' }}">
                     </div>
 
                     <div class="col-4 col-sm-4 col-md-4">
-                        <img srcset="{{ $product->images and count($product->images) > 2 ? $product->images[2] : '' }} 320w,
-                                     {{ $product->images and count($product->images) > 2 ? $product->images[2] : '' }} 480w,
-                                     {{ $product->images and count($product->images) > 2 ? $product->images[2] : '' }} 800w"
+                        <img srcset="{{ ($product->images and (count($product->images) > 2)) ? $product->images[2] : '' }} 320w,
+                                     {{ ($product->images and (count($product->images) > 2)) ? $product->images[2] : '' }} 480w,
+                                     {{ ($product->images and (count($product->images) > 2)) ? $product->images[2] : '' }} 800w"
                              sizes="(max-width: 320px) 280px,
                                 (max-width: 480px) 440px,
                                 800px"
-                             src="{{ $product->images and count($product->images) > 2 ? $product->images[2] : '' }}">
+                             src="{{ ($product->images and (count($product->images) > 2)) ? $product->images[2] : '' }}">
                     </div>
 
                     <div class="col-4 col-sm-4 col-md-4">
-                        <img srcset="{{ $product->images and count($product->images) > 3 ? $product->images[3] : '' }} 320w,
-                                     {{ $product->images and count($product->images) > 3 ? $product->images[3] : '' }} 480w,
-                                     {{ $product->images and count($product->images) > 3 ? $product->images[3] : '' }} 800w"
+                        <img srcset="{{ ($product->images and (count($product->images) > 3)) ? $product->images[3] : '' }} 320w,
+                                     {{ ($product->images and (count($product->images) > 3)) ? $product->images[3] : '' }} 480w,
+                                     {{ ($product->images and (count($product->images) > 3)) ? $product->images[3] : '' }} 800w"
                              sizes="(max-width: 320px) 280px,
                                 (max-width: 480px) 440px,
                                 800px"
-                             src="{{ $product->images and count($product->images) > 3 ? $product->images[3] : '' }}">
+                             src="{{ ($product->images and (count($product->images) > 3)) ? $product->images[3] : '' }}">
                     </div>
                 </div>
             </div>
