@@ -114,17 +114,17 @@ class ProductController extends Controller
 
     public function edit(Product $product) {
         // need to store edit
-        $product_images = [];
-        for ($i = 0; $i < count($product->images); $i++) {
-            if (File::exists(public_path($product->images[$i]))) {
-                $product_images[$i] = mb_convert_encoding(File::get(public_path($product->images[$i])), 'UTF-8', 'UTF-8');;
-            }
-        }
+//        $product_images = [];
+//        for ($i = 0; $i < count($product->images); $i++) {
+//            if (File::exists(public_path($product->images[$i]))) {
+//                $product_images[$i] = mb_convert_encoding(File::get(public_path($product->images[$i])), 'UTF-8', 'UTF-8');;
+//            }
+//        }
 
         return response()->json([
             'product' =>  $product,
-            'product_images' => $product_images,
         ]);
+        // this was inside response 'product_images' => $product_images,
     }
 
     public function createOrUpdateProduct($request, $product) {

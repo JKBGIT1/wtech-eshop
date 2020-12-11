@@ -19,10 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="50e01064-0ed9-4354-8fad-d97c4e1ae879" name="Default Changelist" comment="Minor changes. Need to make showing images in edit and removing them. Allow only 4 images.">
+    <list default="true" id="50e01064-0ed9-4354-8fad-d97c4e1ae879" name="Default Changelist" comment="Need to find out how for edit screen.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProductController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/products/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/products/show.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -235,7 +234,7 @@
       <workItem from="1607542939459" duration="22000" />
       <workItem from="1607594126870" duration="1884000" />
       <workItem from="1607622001285" duration="6127000" />
-      <workItem from="1607694936151" duration="6068000" />
+      <workItem from="1607694936151" duration="7971000" />
     </task>
     <task id="LOCAL-00001" summary="Pagination working with some products on Spálňa category.">
       <created>1605271874541</created>
@@ -440,7 +439,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607630098640</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="Need to find out how for edit screen.">
+      <created>1607706419236</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1607706419236</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -460,7 +466,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Shopping cart working with storing into database." />
     <MESSAGE value="Started working on filters, but have no clue." />
     <MESSAGE value="Price of product added to products.show" />
     <MESSAGE value="Category filters working on frontend." />
@@ -485,7 +490,8 @@
     <MESSAGE value="Uploading images working right." />
     <MESSAGE value="Storing and deleting product with images works right." />
     <MESSAGE value="Minor changes. Need to make showing images in edit and removing them. Allow only 4 images." />
-    <option name="LAST_COMMIT_MESSAGE" value="Minor changes. Need to make showing images in edit and removing them. Allow only 4 images." />
+    <MESSAGE value="Need to find out how for edit screen." />
+    <option name="LAST_COMMIT_MESSAGE" value="Need to find out how for edit screen." />
   </component>
   <component name="WindowStateProjectService">
     <state x="426" y="214" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1605620555896">
@@ -508,10 +514,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="538" y="117" key="Github.UntrackedFilesDialog/0.0.1536.824@0.0.1536.824" timestamp="1604675711359" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1607630100013">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1607706424822">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1607630100013" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1607706424822" />
     <state x="586" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1607517551878">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
