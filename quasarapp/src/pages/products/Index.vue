@@ -104,7 +104,7 @@ export default {
     },
     destroy(id, name, rowIndex) {
       this.$q.dialog({
-        title: 'Delete',
+        title: 'Vymazať',
         message: `Ste si istý, že chcete vymazať ${name}?`,
         color: 'primary',
         ok: true,

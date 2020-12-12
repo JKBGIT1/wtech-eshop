@@ -5,7 +5,7 @@
       <q-toolbar>
         <q-btn flat round dense icon="menu" @click="left = !left" class="q-mr-md"/>
         <q-toolbar-title>
-          OurESHOP - ADMIN<span @click="print" slot="subtitle">Furniture eshop</span>
+          ADMIN<span @click="print" slot="subtitle">Furniture e-shop</span>
         </q-toolbar-title>
       </q-toolbar>
     </q-layout-header>

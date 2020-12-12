@@ -81,7 +81,7 @@ class ProductController extends Controller
 
         try {
             if ($request->hasFile('file')) {
-                $image_name = $request->file->getClientOriginalName();
+                $image_name = uniqid().'~'.$request->file->getClientOriginalName();
                 $request->file('file')->storeAs('/', $image_name, 'upload_images'); // upload_images declared in /config/filesystem.php
 
                 return response()->json(['path' => '/imgs/'.$image_name]);

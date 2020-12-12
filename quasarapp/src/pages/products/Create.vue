@@ -82,7 +82,7 @@
             url="http://127.0.0.1:8000/products/product/image-upload"
             ref="uploader"
             hide-upload-button
-            float-label="Images"
+            float-label="Obrázky"
             multiple extensions=".jpg"
             @finish="createProduct"
             @uploaded="storeImagePath"
@@ -96,8 +96,8 @@
 
       <q-card-actions class="q-mt-md">
         <div class="row justify-end full-width docs-btn">
-          <q-btn label="Cancel" flat to="/products/index"/>
-          <q-btn label="Create" color="primary" @click="sendImagesFirst" />
+          <q-btn label="Späť" flat to="/products/index"/>
+          <q-btn label="Vytvoriť" color="primary" @click="sendImagesFirst" />
         </div>
       </q-card-actions>
 

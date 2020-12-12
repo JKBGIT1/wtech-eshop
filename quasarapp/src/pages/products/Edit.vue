@@ -82,14 +82,14 @@
                   class="q-ma-sm"
           >
             <q-card-title>
-              {{ path }}
+              {{ displayImageName(path) }}
             </q-card-title>
             <q-card-media>
               <img alt="Obrázok produktu" :src="path">
             </q-card-media>
             <q-card-separator />
             <q-card-actions align="right">
-              <q-btn color="negative" label="Odstrániť" @click="() => deleteImage(path, index)" />
+              <q-btn color="negative" label="Odstrániť" @click="() => deleteImage(path)" />
             </q-card-actions>
           </q-card>
         </q-field>
@@ -99,7 +99,7 @@
             url="http://127.0.0.1:8000/products/product/image-upload"
             ref="uploader"
             hide-upload-button
-            float-label="Images"
+            float-label="Obrázky"
             multiple extensions=".jpg"
             @finish="updateProduct"
             @uploaded="storeImagePath"
@@ -112,8 +112,8 @@
 
       <q-card-actions class="q-mt-md">
         <div class="row justify-end full-width docs-btn">
-          <q-btn label="Cancel" flat to="/products/index"/>
-          <q-btn label="Update" color="primary" @click="sendImagesFirst" />
+          <q-btn label="Späť" flat to="/products/index"/>
+          <q-btn label="Aktualizovať" color="primary" @click="sendImagesFirst" />
         </div>
       </q-card-actions>
     </q-card>
@@ -183,6 +183,14 @@ export default {
     };
   },
   methods: {
+    displayImageName(path) {
+      const splitted = path.split('/');
+      if (splitted[splitted.length - 1].includes('~')) {
+        const splitByDylda = splitted[splitted.length - 1].split('~');
+        return splitByDylda[splitByDylda.length - 1];
+      }
+      return splitted[splitted.length - 1];
+    },
     setCountImages() {
       if (this.productImages) {
         this.countImages = this.productImages.length;
@@ -202,7 +210,7 @@ export default {
         this.updateProduct();
       }
     },
-    deleteImage(path, index) {
+    deleteImage(path) {
       axios
         .put('http://127.0.0.1:8000/products/remove-image', { path: path })
         .then((response) => {
@@ -212,7 +220,6 @@ export default {
               document.querySelector('.q-uploader-input').disabled = false;
             }
 
-            console.log(this.productImages);
             // delete removed image from this.productImages
             const newProductImages = [];
             for (let i = 0; i < this.productImages.length; i += 1) {
