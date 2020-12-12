@@ -10777,7 +10777,7 @@ a.text-dark:focus {
 }
 
 .text-hide {
-  font: 0/0 a;  /*validne podla https://stackoverflow.com/questions/20640976/what-does-a-stand-for-in-font-0-0-a*/
+  font: 0/0 a;
   color: transparent;
   text-shadow: none;
   background-color: transparent;

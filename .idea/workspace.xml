@@ -19,9 +19,146 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="50e01064-0ed9-4354-8fad-d97c4e1ae879" name="Default Changelist" comment="Need to find out how for edit screen.">
+    <list default="true" id="50e01064-0ed9-4354-8fad-d97c4e1ae879" name="Default Changelist" comment="Everything should work in admin interface. Need to make unique image name and remove testing data from Quasar.">
+      <change afterPath="$PROJECT_DIR$/public/css/02e32f24.fa082f5c.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/12129f53.7cafeb21.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/1e36bb22.ecb81662.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/1fff6800.f917de82.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/264519e5.c89d3b09.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/3982ecde.872dc6fc.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/39ce70e8.e1a7f252.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/64839048.4500feae.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/7170c963.7576685f.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/73209fb4.c194eab7.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/80d20bee.bbd1d20a.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/abb7727c.e133d212.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/app.bff98fb4.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/c192fa1c.4205243c.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/c5850d2e.9fb02936.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/ccc287d4.5e2e082e.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/cf600894.0c958cfd.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/da801f0c.9709effe.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/e7b5ac5c.0a4f180d.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/02e32f24.b94baf5e.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/12129f53.4d089e8c.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/1e36bb22.d06f1f48.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/1fff6800.ac78160f.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/264519e5.326b9714.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/3982ecde.5594234f.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/39ce70e8.231ee1a0.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/4b47640d.4870f98a.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/64839048.dbb8af67.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/7170c963.9199fca9.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/73209fb4.f64259da.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/80d20bee.2e574262.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/abb7727c.66dcec55.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/app.05f67eb2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/app.09350076.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/app.1e5eaca2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/app.44e2d7c4.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/app.47c6ebba.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/app.49577fe5.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/app.6d9d2bda.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/app.78cd08bb.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/app.78d6ce38.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/app.7ef5c963.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/app.81b2bd9f.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/app.8d9de274.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/app.943918c2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/app.9be0bb4d.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/app.cbb746af.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/app.cd152c06.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/app.fe7820c3.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/c192fa1c.95514673.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/c5850d2e.b349ceb8.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/ccc287d4.28b88b90.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/cf600894.9a61fef2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/da801f0c.b8acbe1c.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/e7b5ac5c.e36204b4.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/runtime.1b3795ee.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/runtime.20a0a5b0.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/runtime.22a3b3eb.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/runtime.22b1f649.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/runtime.332b3218.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/runtime.534bb5d4.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/runtime.5b5c036a.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/runtime.75e803a7.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/runtime.795c15a5.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/runtime.b200858b.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/runtime.c65a924b.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/runtime.e0ce76be.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/runtime.e841b733.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/runtime.ebcf6b99.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/runtime.f362392c.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/runtime.f649c57a.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/runtime.f9d9c136.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/vendor.6d6bb2a4.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/vendor.86ababe9.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/vendor.9698fe4f.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quasarapp/.babelrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quasarapp/.editorconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quasarapp/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quasarapp/.postcssrc.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quasarapp/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quasarapp/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quasarapp/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quasarapp/quasar.conf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quasarapp/src/App.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quasarapp/src/assets/quasar-logo-full.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quasarapp/src/assets/sad.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quasarapp/src/components/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quasarapp/src/components/layouts/Main/Drawer.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quasarapp/src/css/app.styl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quasarapp/src/css/themes/common.variables.styl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quasarapp/src/css/themes/variables.ios.styl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quasarapp/src/css/themes/variables.mat.styl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quasarapp/src/i18n/en-us/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quasarapp/src/i18n/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quasarapp/src/index.template.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quasarapp/src/layouts/Main.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quasarapp/src/layouts/MyLayout.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quasarapp/src/pages/Error404.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quasarapp/src/pages/Index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quasarapp/src/pages/products/Create.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quasarapp/src/pages/products/Edit.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quasarapp/src/pages/products/Index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quasarapp/src/pages/products/Show.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quasarapp/src/plugins/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quasarapp/src/plugins/axios.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quasarapp/src/plugins/i18n.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quasarapp/src/router/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quasarapp/src/router/routes.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quasarapp/src/statics/icons/apple-icon-152x152.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quasarapp/src/statics/icons/favicon-16x16.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quasarapp/src/statics/icons/favicon-32x32.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quasarapp/src/statics/icons/icon-128x128.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quasarapp/src/statics/icons/icon-192x192.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quasarapp/src/statics/icons/icon-256x256.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quasarapp/src/statics/icons/icon-384x384.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quasarapp/src/statics/icons/icon-512x512.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quasarapp/src/statics/icons/ms-icon-144x144.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quasarapp/src/statics/quasar-logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quasarapp/src/store/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quasarapp/src/store/module-example/actions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quasarapp/src/store/module-example/getters.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quasarapp/src/store/module-example/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quasarapp/src/store/module-example/mutations.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quasarapp/src/store/module-example/state.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quasarapp/src/store/moduleUI/actions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quasarapp/src/store/moduleUI/getters.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quasarapp/src/store/moduleUI/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quasarapp/src/store/moduleUI/mutations.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quasarapp/src/store/moduleUI/state.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/app.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProductController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mix-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/mix-manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/layout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/layout.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack.mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.mix.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -165,22 +302,25 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/PhpstormProjects/Quasar-tutorial" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/quasarapp" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\wamp64\www\wtech-eshop\public\imgs" />
-      <recent name="C:\wamp64\www\wtech-eshop\public" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\wamp64\www\wtech-eshop\public\imgs\garden" />
       <recent name="C:\wamp64\www\wtech-eshop\public\imgs\working_room" />
       <recent name="C:\wamp64\www\wtech-eshop\public\imgs\living_room" />
       <recent name="C:\wamp64\www\wtech-eshop\public\imgs\bathroom" />
       <recent name="C:\wamp64\www\wtech-eshop\public\imgs\kitchen" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\wtech-eshop\quasarapp" />
+      <recent name="C:\wamp64\www\wtech-eshop\quasarapp\src\store" />
+      <recent name="C:\wamp64\www\wtech-eshop\quasarapp\src\router" />
+      <recent name="C:\wamp64\www\wtech-eshop\quasarapp\src\pages" />
+      <recent name="C:\wamp64\www\wtech-eshop\quasarapp\src\layouts" />
     </key>
   </component>
   <component name="RunManager">
@@ -234,7 +374,8 @@
       <workItem from="1607542939459" duration="22000" />
       <workItem from="1607594126870" duration="1884000" />
       <workItem from="1607622001285" duration="6127000" />
-      <workItem from="1607694936151" duration="7971000" />
+      <workItem from="1607694936151" duration="8166000" />
+      <workItem from="1607771802019" duration="18945000" />
     </task>
     <task id="LOCAL-00001" summary="Pagination working with some products on Spálňa category.">
       <created>1605271874541</created>
@@ -446,7 +587,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607706419236</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="Minor changes">
+      <created>1607710341559</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1607710341559</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -466,8 +614,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Started working on filters, but have no clue." />
-    <MESSAGE value="Price of product added to products.show" />
     <MESSAGE value="Category filters working on frontend." />
     <MESSAGE value="Some products filters in specific category are working." />
     <MESSAGE value="Products filters in categories almost working, code looks like ..." />
@@ -491,7 +637,9 @@
     <MESSAGE value="Storing and deleting product with images works right." />
     <MESSAGE value="Minor changes. Need to make showing images in edit and removing them. Allow only 4 images." />
     <MESSAGE value="Need to find out how for edit screen." />
-    <option name="LAST_COMMIT_MESSAGE" value="Need to find out how for edit screen." />
+    <MESSAGE value="Minor changes" />
+    <MESSAGE value="Everything should work in admin interface. Need to make unique image name and remove testing data from Quasar." />
+    <option name="LAST_COMMIT_MESSAGE" value="Everything should work in admin interface. Need to make unique image name and remove testing data from Quasar." />
   </component>
   <component name="WindowStateProjectService">
     <state x="426" y="214" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1605620555896">
@@ -502,10 +650,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="115" y="170" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1536.824@0.0.1536.824" timestamp="1607066691566" />
-    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1607695349443">
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1607780069467">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1607695349443" />
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1607780069467" />
     <state x="640" y="310" key="Github.ShareDialog" timestamp="1604675676204">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -514,10 +662,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="538" y="117" key="Github.UntrackedFilesDialog/0.0.1536.824@0.0.1536.824" timestamp="1604675711359" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1607706424822">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1607710342988">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1607706424822" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1607710342988" />
     <state x="586" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1607517551878">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

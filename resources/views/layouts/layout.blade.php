@@ -154,6 +154,9 @@
                 <li class="nav-item">
                     <a class="nav-link" href="#informcie">Informácie</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/cms">Admin</a>
+                </li>
                 <!-- Dropdown link for Všetky kategórie -->
                 <li class="nav-item">
                     <div class="dropdown show">

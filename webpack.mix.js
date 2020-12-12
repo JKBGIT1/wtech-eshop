@@ -19,3 +19,6 @@ mix.js('resources/js/app.js', 'public/js')
 * */
 mix.js('resources/js/app.js', 'public/js')
     .sass('resources/sass/app.scss', 'public/css');
+
+mix.copy('quasarapp/dist/spa-mat/index.html', 'resources/views/app.blade.php')
+    .copyDirectory('quasarapp/dist/spa-mat', 'public');

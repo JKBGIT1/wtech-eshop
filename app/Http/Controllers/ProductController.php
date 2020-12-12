@@ -59,14 +59,16 @@ class ProductController extends Controller
         $output = new ConsoleOutput();
 
         try {
-            $product->delete();
-            foreach($product->images as $image) {
-                if (File::exists(public_path($image))) {
-                    File::delete(public_path($image));
-                } else {
-                    $output->writeln('Image doesn\'t exists.');
+            if ($product->images) {
+                foreach($product->images as $image) {
+                    if (File::exists(public_path($image))) {
+                        File::delete(public_path($image));
+                    } else {
+                        $output->writeln('Image doesn\'t exists.');
+                    }
                 }
             }
+            $product->delete();
             return response()->json(['status'=>'success','msg' => 'Produkt bol úspešne vymazaný.']);
         } catch (Throwable $e) {
             $output->writeln($e);
@@ -101,30 +103,45 @@ class ProductController extends Controller
     }
 
     public function update(Request $request) {
+        $output = new ConsoleOutput();
         // need to update product
-        $product_id = $request->id;
-        $product = Product::find($product_id);
+        try {
+            $product_id = $request->id;
+            $product = Product::find($product_id);
 
-        $product = $this->createOrUpdateProduct($request, $product);
+            $product = $this->createOrUpdateProduct($request, $product);
 
-        $product->save();
+            $product->save();
+        } catch (Throwable $e) {
+            $output->writeln($e);
+        }
 
-        return response()->json(['product' => $product_id]);
+        return response()->json(['product' => $product]);
     }
 
     public function edit(Product $product) {
-        // need to store edit
-//        $product_images = [];
-//        for ($i = 0; $i < count($product->images); $i++) {
-//            if (File::exists(public_path($product->images[$i]))) {
-//                $product_images[$i] = mb_convert_encoding(File::get(public_path($product->images[$i])), 'UTF-8', 'UTF-8');;
-//            }
-//        }
-
         return response()->json([
             'product' =>  $product,
         ]);
-        // this was inside response 'product_images' => $product_images,
+    }
+
+    public function removeImage(Request $request) {
+        $output = new ConsoleOutput();
+
+        $image_path = $request->path;
+
+        try {
+            if (File::exists(public_path($image_path))) {
+                File::delete(public_path($image_path));
+            } else {
+                $output->writeln('Image doesn\'t exists.');
+            }
+        } catch (Throwable $e) {
+            $output->writeln($e);
+            return response()->json(['message' => 'fail']);
+        }
+
+        return response()->json(['message' => 'success']);
     }
 
     public function createOrUpdateProduct($request, $product) {
@@ -144,8 +161,10 @@ class ProductController extends Controller
         $product->advantages = $request->advantages;
         $product->description = $request->description;
         $product->timestamps = false;
-        if (count($request->images) > 0) { // doesn't set blank array
+        if ($request->images and count($request->images) > 0) { // doesn't set blank array
             $product->images = $request->images;
+        } else {
+            $product->images = null;
         }
 
         return $product;
