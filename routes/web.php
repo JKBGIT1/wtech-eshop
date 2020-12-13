@@ -47,6 +47,8 @@ Route::post('/shopping_cart_delivery_payment', 'App\Http\Controllers\ShoppingCar
 // Search
 Route::get('/search', 'App\Http\Controllers\SearchController@show')->name('search');
 
+Route::post('/admin/login', 'App\Http\Controllers\Auth\LoginController@loginAdmin');
+
 Auth::routes();
 
 Route::get('/cms', function() {

@@ -8,6 +8,9 @@
       <q-item class="q-body-1" to="/products/create">
         <q-item-main>Vytvoriť produkt</q-item-main>
       </q-item>
+      <q-btn @click="eshopRedirect">
+        Odhlásiť
+      </q-btn>
     </q-list>
   </div>
 </template>
@@ -15,6 +18,11 @@
 <script>
 export default {
   name: 'Drawer', // .vue
+  methods: {
+    eshopRedirect() {
+      window.location = '/';
+    }
+  }
 };
 </script>
 

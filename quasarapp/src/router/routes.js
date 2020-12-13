@@ -1,7 +1,8 @@
 const routes = [
   {
     path: '/',
-    redirect: () => ({ path: 'products/index' }),
+    // redirect: () => ({ path: 'products/index' }),
+    component: () => import('layouts/Login'),
   },
   {
     path: '/products',

@@ -19,45 +19,36 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="50e01064-0ed9-4354-8fad-d97c4e1ae879" name="Default Changelist" comment="Everything should work in admin interface. Need to make unique image name and remove testing data from Quasar.">
-      <change afterPath="$PROJECT_DIR$/public/css/0730aade.c0608f75.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/24312973.70caa8b7.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/2873161e.ecb81662.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/71c0b2a5.c89d3b09.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/83174482.c89d3b09.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/87d0b9de.7da61287.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/b22bc07a.77c090fb.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/e98e66d4.303fe409.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/f3d65436.b98cd649.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/0730aade.1d262433.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/24312973.1cf2c605.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/2873161e.578cc3d0.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/71c0b2a5.ed44ea19.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/83174482.150d913e.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/87d0b9de.2895f4a9.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/app.49d82ff2.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/app.62ecc2cc.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/app.906fd821.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/app.a87d478b.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/app.cc68c636.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/app.e331e764.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/b22bc07a.e595fdc6.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/e98e66d4.d05add53.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/f3d65436.3137241c.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/runtime.27ef5238.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/runtime.4b26d0ba.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/runtime.7aff1d96.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/runtime.ba90496e.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/runtime.d58ef338.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/runtime.f645396d.js" afterDir="false" />
+    <list default="true" id="50e01064-0ed9-4354-8fad-d97c4e1ae879" name="Default Changelist" comment="Unique names of images. Need to remove testing data from Quasar.">
+      <change afterPath="$PROJECT_DIR$/database/seeders/UsersTableSeeder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/472de431.8eb0f681.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/4fd57784.31fce5ab.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/583161a7.12107838.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/5d123513.0b8a37c3.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/63c671fb.b255dd1c.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/472de431.8c3aa09d.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/4fd57784.a9d70ab5.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/583161a7.a0da7a63.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/5d123513.f062cddb.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/63c671fb.11031ded.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/app.50100176.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/app.ae6af7d3.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/app.c7991db3.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/app.feeef522.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/runtime.0a4d53d7.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/runtime.2d877b28.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/runtime.51246541.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/runtime.a5d05ca8.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quasarapp/src/layouts/Login.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProductController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/quasarapp/src/components/layouts/Main/Drawer.vue" beforeDir="false" afterPath="$PROJECT_DIR$/quasarapp/src/components/layouts/Main/Drawer.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/quasarapp/src/layouts/Main.vue" beforeDir="false" afterPath="$PROJECT_DIR$/quasarapp/src/layouts/Main.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/quasarapp/src/pages/products/Create.vue" beforeDir="false" afterPath="$PROJECT_DIR$/quasarapp/src/pages/products/Create.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/quasarapp/src/pages/products/Edit.vue" beforeDir="false" afterPath="$PROJECT_DIR$/quasarapp/src/pages/products/Edit.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/quasarapp/src/pages/products/Index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/quasarapp/src/pages/products/Index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/quasarapp/src/router/routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/quasarapp/src/router/routes.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,6 +64,7 @@
       <list>
         <option value="CSS File" />
         <option value="JavaScript File" />
+        <option value="Vue Single File Component" />
       </list>
     </option>
   </component>
@@ -201,25 +193,25 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/quasarapp" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/database/seeders" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\wtech-eshop\database\seeders" />
+      <recent name="C:\wamp64\www\wtech-eshop\quasarapp" />
+      <recent name="C:\wamp64\www\wtech-eshop\quasarapp\src\store" />
+      <recent name="C:\wamp64\www\wtech-eshop\quasarapp\src\router" />
+      <recent name="C:\wamp64\www\wtech-eshop\quasarapp\src\pages" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\wamp64\www\wtech-eshop\public\imgs\garden" />
       <recent name="C:\wamp64\www\wtech-eshop\public\imgs\working_room" />
       <recent name="C:\wamp64\www\wtech-eshop\public\imgs\living_room" />
       <recent name="C:\wamp64\www\wtech-eshop\public\imgs\bathroom" />
       <recent name="C:\wamp64\www\wtech-eshop\public\imgs\kitchen" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\wamp64\www\wtech-eshop\quasarapp" />
-      <recent name="C:\wamp64\www\wtech-eshop\quasarapp\src\store" />
-      <recent name="C:\wamp64\www\wtech-eshop\quasarapp\src\router" />
-      <recent name="C:\wamp64\www\wtech-eshop\quasarapp\src\pages" />
-      <recent name="C:\wamp64\www\wtech-eshop\quasarapp\src\layouts" />
     </key>
   </component>
   <component name="RunManager">
@@ -274,7 +266,9 @@
       <workItem from="1607594126870" duration="1884000" />
       <workItem from="1607622001285" duration="6127000" />
       <workItem from="1607694936151" duration="8166000" />
-      <workItem from="1607771802019" duration="22269000" />
+      <workItem from="1607771802019" duration="23116000" />
+      <workItem from="1607854566164" duration="354000" />
+      <workItem from="1607860691442" duration="7158000" />
     </task>
     <task id="LOCAL-00001" summary="Pagination working with some products on Spálňa category.">
       <created>1605271874541</created>
@@ -500,7 +494,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607795585992</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="Unique names of images. Need to remove testing data from Quasar.">
+      <created>1607799766285</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1607799766285</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -520,7 +521,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Category filters working on frontend." />
     <MESSAGE value="Some products filters in specific category are working." />
     <MESSAGE value="Products filters in categories almost working, code looks like ..." />
     <MESSAGE value="Product filters in categories should work." />
@@ -545,17 +545,18 @@
     <MESSAGE value="Need to find out how for edit screen." />
     <MESSAGE value="Minor changes" />
     <MESSAGE value="Everything should work in admin interface. Need to make unique image name and remove testing data from Quasar." />
-    <option name="LAST_COMMIT_MESSAGE" value="Everything should work in admin interface. Need to make unique image name and remove testing data from Quasar." />
+    <MESSAGE value="Unique names of images. Need to remove testing data from Quasar." />
+    <option name="LAST_COMMIT_MESSAGE" value="Unique names of images. Need to remove testing data from Quasar." />
   </component>
   <component name="WindowStateProjectService">
     <state x="426" y="214" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1605620555896">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="426" y="214" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1605620555896" />
-    <state x="115" y="170" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1607066691566">
+    <state x="115" y="170" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1607864552332">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="115" y="170" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1536.824@0.0.1536.824" timestamp="1607066691566" />
+    <state x="115" y="170" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1536.824@0.0.1536.824" timestamp="1607864552332" />
     <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1607780069467">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -568,10 +569,14 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="538" y="117" key="Github.UntrackedFilesDialog/0.0.1536.824@0.0.1536.824" timestamp="1604675711359" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1607795596953">
+    <state x="555" y="135" key="NewPhpClassDialog" timestamp="1607864443804">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1607795596953" />
+    <state x="555" y="135" key="NewPhpClassDialog/0.0.1536.824@0.0.1536.824" timestamp="1607864443804" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1607799769118">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1607799769118" />
     <state x="586" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1607517551878">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
